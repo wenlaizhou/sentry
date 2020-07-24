@@ -388,7 +388,7 @@ class TableView extends React.Component<TableViewProps> {
           renderPrependColumns: this._renderPrependColumns as any,
           prependColumnWidths,
         }}
-        headerButtons={this.renderHeaderButtons}
+        headerButtons={null}
         location={location}
       />
     );

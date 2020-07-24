@@ -34,6 +34,7 @@ import StacktraceInterface from 'app/components/events/interfaces/stacktrace';
 import TemplateInterface from 'app/components/events/interfaces/template';
 import ThreadsInterface from 'app/components/events/interfaces/threads/threads';
 import {DataSection} from 'app/components/events/styles';
+import RelatedEvents from 'app/components/events/relatedEvents';
 import space from 'app/styles/space';
 import withOrganization from 'app/utils/withOrganization';
 
@@ -177,8 +178,7 @@ class EventEntries extends React.Component {
       location,
     } = this.props;
 
-    const features =
-      organization && organization.features ? new Set(organization.features) : new Set();
+    const features = new Set(organization.features);
     const hasQueryFeature = features.has('discover-query');
 
     if (!event) {
@@ -242,6 +242,7 @@ class EventEntries extends React.Component {
         {!isShare && event.sdkUpdates && event.sdkUpdates.length > 0 && (
           <EventSdkUpdates event={event} />
         )}
+        <RelatedEvents event={event} organization={organization} location={location} />
         {!isShare && event.groupID && (
           <EventGroupingInfo
             projectId={project.slug}

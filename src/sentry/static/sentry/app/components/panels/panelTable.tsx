@@ -73,8 +73,11 @@ const PanelTable = ({
   emptyMessage = t('There are no items to display'),
   loader,
 }: Props) => {
+  const isChildrenValid =
+    React.Children.toArray(children).filter(child => child).length > 0;
+
   const shouldShowLoading = isLoading === true;
-  const shouldShowEmptyMessage = !shouldShowLoading && isEmpty;
+  const shouldShowEmptyMessage = !shouldShowLoading && (isEmpty || !isChildrenValid);
   const shouldShowContent = !shouldShowLoading && !shouldShowEmptyMessage;
 
   return (

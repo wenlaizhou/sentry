@@ -133,6 +133,8 @@ class TraceHoverCard extends React.Component<Props> {
 
     const to = traceEventView.getResultsViewUrlTarget(orgId);
 
+    return null;
+
     return (
       <DiscoverQuery
         api={api}
