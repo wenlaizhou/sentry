@@ -1658,6 +1658,24 @@ function routes() {
             />
           </Route>
           <Route
+            path="/organizations/:orgId/performance/summary/rum/"
+            componentPromise={() =>
+              import(
+                /* webpackChunkName: "PerformanceContainer" */ 'app/views/performance'
+              )
+            }
+            component={errorHandler(LazyLoad)}
+          >
+            <IndexRoute
+              componentPromise={() =>
+                import(
+                  /* webpackChunkName: "PerformanceTransactionSummary" */ 'app/views/performance/transactionSummary'
+                )
+              }
+              component={errorHandler(LazyLoad)}
+            />
+          </Route>
+          <Route
             path="/organizations/:orgId/performance/:eventSlug/"
             componentPromise={() =>
               import(

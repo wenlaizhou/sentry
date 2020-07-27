@@ -25,6 +25,7 @@ import withOrganization from 'app/utils/withOrganization';
 import withProjects from 'app/utils/withProjects';
 
 import SummaryContent from './content';
+import RealUserMonitoring from './realUserMonitoring';
 
 type Props = {
   api: Client;
@@ -134,12 +135,23 @@ class TransactionSummary extends React.Component<Props, State> {
       return null;
     }
 
+    let Component;
+    switch (location.pathname) {
+      case `/organizations/${organization.slug}/performance/summary/rum/`: {
+        Component = RealUserMonitoring;
+        break;
+      }
+      default:
+        Component = SummaryContent;
+        break;
+    }
+
     return (
       <SentryDocumentTitle title={this.getDocumentTitle()} objSlug={organization.slug}>
         <GlobalSelectionHeader>
           <StyledPageContent>
             <LightWeightNoProjectMessage organization={organization}>
-              <SummaryContent
+              <Component
                 location={location}
                 organization={organization}
                 eventView={eventView}

@@ -285,7 +285,10 @@ type Props = {
    */
   showDaily?: boolean;
   confirmedQuery?: boolean;
-} & Pick<ChartProps, 'currentSeriesName' | 'previousSeriesName' | 'showLegend'>;
+} & Pick<
+  ChartProps,
+  'currentSeriesName' | 'previousSeriesName' | 'showLegend' | 'showHistogram'
+>;
 
 type ChartDataProps = {
   // TODO(mark) Update this when components/charts/chartZoom is updated.
