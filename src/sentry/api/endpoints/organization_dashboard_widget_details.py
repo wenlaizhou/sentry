@@ -7,7 +7,6 @@ from sentry.api.base import DocSection
 from sentry.api.bases.dashboard import OrganizationDashboardWidgetEndpoint
 from sentry.api.serializers import serialize
 from sentry.api.serializers.rest_framework import WidgetSerializer
-from sentry.models import WidgetDataSource
 
 
 class OrganizationDashboardWidgetDetailsEndpoint(OrganizationDashboardWidgetEndpoint):
@@ -63,17 +62,7 @@ class OrganizationDashboardWidgetDetailsEndpoint(OrganizationDashboardWidgetEndp
                 title=data.get("title", widget.title),
                 display_type=data.get("displayType", widget.display_type),
                 display_options=data.get("displayOptions", widget.display_options),
+                saved_query_id=data.get('saved_query_id')
             )
-
-            if "dataSources" in data:
-                WidgetDataSource.objects.filter(widget_id=widget.id).delete()
-            for widget_data in data.get("dataSources", []):
-                WidgetDataSource.objects.create(
-                    name=widget_data["name"],
-                    data=widget_data["data"],
-                    type=widget_data["type"],
-                    order=widget_data["order"],
-                    widget_id=widget.id,
-                )
 
         return Response(serialize(widget, request.user))

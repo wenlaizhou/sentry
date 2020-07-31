@@ -3,9 +3,9 @@ from __future__ import absolute_import
 from django.db.models import Max
 from rest_framework import serializers
 
-from sentry.discover.endpoints.serializers import DiscoverSavedQuerySerializer
-from sentry.api.serializers.rest_framework import JSONField, ListField, ValidationError
-from sentry.models import Widget, WidgetDisplayTypes, WidgetDataSourceTypes
+from sentry.api.serializers.rest_framework import JSONField, ValidationError
+from sentry.models import Widget, WidgetDisplayTypes
+from sentry.discover.models import DiscoverSavedQuery
 
 
 def get_next_dashboard_order(dashboard_id):
@@ -16,39 +16,24 @@ def get_next_dashboard_order(dashboard_id):
     return max_order + 1 if max_order else 1
 
 
-class WidgetDataSourceSerializer(serializers.Serializer):
-    name = serializers.CharField(required=True)
-    data = JSONField(required=True)
-    type = serializers.CharField(required=True)
-    order = serializers.IntegerField(required=True)
-
-    def validate_type(self, type):
-        if type not in WidgetDataSourceTypes.TYPE_NAMES:
-            raise ValidationError("Widget data source type %s not recognized." % type)
-        type = WidgetDataSourceTypes.get_id_for_type_name(type)
-        return type
-
-    def validate(self, data):
-        super(WidgetDataSourceSerializer, self).validate(data)
-        if data["type"] == WidgetDataSourceTypes.DISCOVER_SAVED_SEARCH:
-            serializer = DiscoverSavedQuerySerializer(data=data["data"], context=self.context)
-            if not serializer.is_valid():
-                raise ValidationError("Error validating DiscoverSavedQuery: %s" % serializer.errors)
-        else:
-            raise ValidationError("Widget data source type %s not recognized." % data["type"])
-        return data
-
-
 class WidgetSerializer(serializers.Serializer):
     displayType = serializers.CharField(required=True)
     displayOptions = JSONField(required=False)
     title = serializers.CharField(required=True)
-    dataSources = ListField(
-        child=WidgetDataSourceSerializer(required=False), required=False, allow_null=True
-    )
+    saved_query_id = serializers.IntegerField(required=True)
 
     def validate_displayType(self, display_type):
         if display_type not in WidgetDisplayTypes.TYPE_NAMES:
             raise ValidationError("Widget displayType %s not recognized." % display_type)
 
         return WidgetDisplayTypes.get_id_for_type_name(display_type)
+
+    def validate_saved_query_id(self, query_id):
+        organization = self.context['organization']
+        saved_query = DiscoverSavedQuery.objects.filter(
+            organization=organization,
+            id=query_id
+        )
+        if not saved_query.exists():
+            raise ValidationError("Invalid saved query.")
+        return query_id

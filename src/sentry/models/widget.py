@@ -55,48 +55,18 @@ class WidgetDisplayTypes(TypesClass):
     TYPE_NAMES = [t[1] for t in TYPES]
 
 
-class WidgetDataSourceTypes(TypesClass):
-    DISCOVER_SAVED_SEARCH = 0
-    TYPES = [(DISCOVER_SAVED_SEARCH, "discover_saved_search")]
-    TYPE_NAMES = [t[1] for t in TYPES]
-
-
-class WidgetDataSource(Model):
-    """
-    A dashboard widget.
-    """
-
-    __core__ = True
-
-    widget = FlexibleForeignKey("sentry.Widget")
-    type = BoundedPositiveIntegerField(choices=WidgetDataSourceTypes.as_choices())
-    name = models.CharField(max_length=255)
-    data = JSONField(default={})  # i.e. saved discover query
-    order = BoundedPositiveIntegerField()
-    date_added = models.DateTimeField(default=timezone.now)
-    status = BoundedPositiveIntegerField(
-        default=ObjectStatus.VISIBLE, choices=ObjectStatus.as_choices()
-    )
-
-    class Meta:
-        app_label = "sentry"
-        db_table = "sentry_widgetdatasource"
-        unique_together = (("widget", "name"), ("widget", "order"))
-
-    __repr__ = sane_repr("widget", "type", "name")
-
-
 class Widget(Model):
     """
     A dashboard widget.
     """
-
     __core__ = True
 
     dashboard = FlexibleForeignKey("sentry.Dashboard")
     order = BoundedPositiveIntegerField()
     title = models.CharField(max_length=255)
     display_type = BoundedPositiveIntegerField(choices=WidgetDisplayTypes.as_choices())
+    saved_query = FlexibleForeignKey("sentry.discover.models.DiscoverSavedQuery")
+    # Contains yAxis list, and width attributes.
     display_options = JSONField(default={})
     date_added = models.DateTimeField(default=timezone.now)
     status = BoundedPositiveIntegerField(
