@@ -60,10 +60,10 @@ exports[`ProjectPlugins renders 1`] = `
 >
   <Panel>
     <Component
-      className="css-ietoyz-Panel e119nu470"
+      className="css-1x7ld2l-Panel e119nu470"
     >
       <div
-        className="css-ietoyz-Panel e119nu470"
+        className="css-1x7ld2l-Panel e119nu470"
       >
         <PanelHeader>
           <div
@@ -198,6 +198,7 @@ exports[`ProjectPlugins renders 1`] = `
                                     Object {
                                       "features": Set {},
                                       "messages": Array [],
+                                      "theme": "light",
                                       "user": Object {
                                         "email": "foo@example.com",
                                         "flags": Object {
@@ -492,6 +493,7 @@ exports[`ProjectPlugins renders 1`] = `
                                 Object {
                                   "features": Set {},
                                   "messages": Array [],
+                                  "theme": "light",
                                   "user": Object {
                                     "email": "foo@example.com",
                                     "flags": Object {
@@ -903,6 +905,7 @@ exports[`ProjectPlugins renders 1`] = `
                                 Object {
                                   "features": Set {},
                                   "messages": Array [],
+                                  "theme": "light",
                                   "user": Object {
                                     "email": "foo@example.com",
                                     "flags": Object {

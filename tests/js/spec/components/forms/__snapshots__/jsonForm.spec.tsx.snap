@@ -59,10 +59,10 @@ exports[`JsonForm fields prop default 1`] = `
       >
         <Panel>
           <Component
-            className="css-ietoyz-Panel e119nu470"
+            className="css-1x7ld2l-Panel e119nu470"
           >
             <div
-              className="css-ietoyz-Panel e119nu470"
+              className="css-1x7ld2l-Panel e119nu470"
             >
               <PanelBody
                 flexible={false}
@@ -2735,11 +2735,11 @@ exports[`JsonForm form prop default 1`] = `
           id="Account-Details"
         >
           <Component
-            className="css-ietoyz-Panel e119nu470"
+            className="css-1x7ld2l-Panel e119nu470"
             id="Account-Details"
           >
             <div
-              className="css-ietoyz-Panel e119nu470"
+              className="css-1x7ld2l-Panel e119nu470"
               id="Account-Details"
             >
               <PanelHeader>

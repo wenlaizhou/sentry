@@ -154,6 +154,7 @@ exports[`ProjectPluginRow renders 1`] = `
               Object {
                 "features": Set {},
                 "messages": Array [],
+                "theme": "light",
                 "user": Object {
                   "email": "foo@example.com",
                   "flags": Object {

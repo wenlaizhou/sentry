@@ -448,6 +448,7 @@ exports[`Filter default render 1`] = `
                         "iconColor": "#E2A301",
                       },
                     },
+                    "background": "#FFFFFF",
                     "badge": Object {
                       "alpha": Object {
                         "background": "linear-gradient(90deg, #F69C7D, #BA4A23)",

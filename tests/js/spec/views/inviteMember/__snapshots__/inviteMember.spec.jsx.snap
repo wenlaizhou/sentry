@@ -185,10 +185,10 @@ exports[`InviteMember should render roles when available and allowed, and handle
       >
         <Panel>
           <Component
-            className="css-ietoyz-Panel e119nu470"
+            className="css-1x7ld2l-Panel e119nu470"
           >
             <div
-              className="css-ietoyz-Panel e119nu470"
+              className="css-1x7ld2l-Panel e119nu470"
             >
               <PanelHeader>
                 <div
@@ -515,10 +515,10 @@ exports[`InviteMember should render roles when available and allowed, and handle
         >
           <Panel>
             <Component
-              className="css-ietoyz-Panel e119nu470"
+              className="css-1x7ld2l-Panel e119nu470"
             >
               <div
-                className="css-ietoyz-Panel e119nu470"
+                className="css-1x7ld2l-Panel e119nu470"
               >
                 <PanelHeader
                   hasButtons={true}
