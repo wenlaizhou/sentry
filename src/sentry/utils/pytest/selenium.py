@@ -305,6 +305,9 @@ class Browser(object):
         if os.environ.get("VISUAL_SNAPSHOT_ENABLE") == "1":
             # wait for images to be loaded
             self.wait_for_images_loaded()
+            snapshot_dir = os.environ.get(
+                "SELENIUM_SNAPSHOTS_DIR", ".artifacts/visual-snapshots/acceptance"
+            )
 
             # Note: below will fail if these directories do not exist
 
@@ -312,14 +315,17 @@ class Browser(object):
                 # This will make sure we resize viewport height to fit contents
                 with self.full_viewport():
                     self.driver.find_element_by_tag_name("body").screenshot(
-                        u".artifacts/visual-snapshots/acceptance/{}.png".format(slugify(name))
+                        u"{}/{}.png".format(snapshot_dir, slugify(name))
                     )
 
-            with self.mobile_viewport():
-                # switch to a mobile sized viewport
-                self.driver.find_element_by_tag_name("body").screenshot(
-                    u".artifacts/visual-snapshots/acceptance-mobile/{}.png".format(slugify(name))
-                )
+            if not os.environ.get("SELENIUM_SNAPSHOTS_MOBILE", "1") == "0":
+                with self.mobile_viewport():
+                    # switch to a mobile sized viewport
+                    self.driver.find_element_by_tag_name("body").screenshot(
+                        u".artifacts/visual-snapshots/acceptance-mobile/{}.png".format(
+                            slugify(name)
+                        )
+                    )
 
         return self
 
@@ -478,10 +484,11 @@ def browser(request, live_server):
 
     browser = Browser(driver, live_server)
 
+    color_scheme = os.environment.get("SELENIUM_COLOR_SCHEME", "light")
     browser.set_emulated_media(
         [
             {"name": "prefers-reduced-motion", "value": "reduce"},
-            {"name": "prefers-color-scheme", "value": "dark"},
+            {"name": "prefers-color-scheme", "value": color_scheme},
         ]
     )
 
