@@ -262,6 +262,15 @@ class Browser(object):
 
         return self
 
+    def wait_until_background_color(self, color, timeout=10):
+        wait = WebDriverWait(self.driver, timeout)
+        wait.until(
+            lambda driver: driver.execute_script(
+                """return getComputedStyle(document.getElementsByTagName('body')[0]).backgroundColor"""
+            )
+            == color
+        )
+
     def wait_for_images_loaded(self, timeout=10):
         wait = WebDriverWait(self.driver, timeout)
         wait.until(
@@ -271,15 +280,6 @@ class Browser(object):
         )
 
         return self
-
-    def wait_for_background_color(self, color, timeout=10):
-        wait = WebDriverWait(self.driver, timeout)
-        wait.until(
-            lambda driver: driver.execute_script(
-                """return getComputedStyle(document.getElementsByTagName('body')[0]).backgroundColor"""
-            )
-            == color
-        )
 
     def blur(self):
         """
