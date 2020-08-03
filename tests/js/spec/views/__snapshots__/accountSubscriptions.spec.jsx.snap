@@ -97,15 +97,15 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
         </TextBlock>
         <Panel>
           <Component
-            className="css-1x7ld2l-Panel e119nu470"
+            className="css-yqvj9a-Panel e119nu470"
           >
             <div
-              className="css-1x7ld2l-Panel e119nu470"
+              className="css-yqvj9a-Panel e119nu470"
             >
               <div>
                 <PanelHeader>
                   <div
-                    className="css-pi486d-PanelHeader en8g1d30"
+                    className="css-8glma9-PanelHeader en8g1d30"
                   >
                     Subscription
                   </div>
@@ -126,7 +126,7 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                         p={2}
                       >
                         <div
-                          className="css-wt6qay-PanelItem ej5ox20"
+                          className="css-1qqv0xa-PanelItem ej5ox20"
                         >
                           <SubscriptionDetails>
                             <div
@@ -148,7 +148,7 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                               </Description>
                               <SubscribedDescription>
                                 <div
-                                  className="css-tn06kc-Description-SubscribedDescription er83abj3"
+                                  className="css-1icfuw1-Description-SubscribedDescription er83abj3"
                                 >
                                   <div>
                                     test@sentry.io
@@ -191,7 +191,7 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                                 >
                                   <button
                                     aria-checked={true}
-                                    className="css-1jbgjht-SwitchButton ezmyi9u0"
+                                    className="css-1umsowh-SwitchButton ezmyi9u0"
                                     data-test-id="switch"
                                     onClick={[Function]}
                                     role="checkbox"
@@ -220,7 +220,7 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                         p={2}
                       >
                         <div
-                          className="css-wt6qay-PanelItem ej5ox20"
+                          className="css-1qqv0xa-PanelItem ej5ox20"
                         >
                           <SubscriptionDetails>
                             <div
@@ -242,7 +242,7 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                               </Description>
                               <SubscribedDescription>
                                 <div
-                                  className="css-tn06kc-Description-SubscribedDescription er83abj3"
+                                  className="css-1icfuw1-Description-SubscribedDescription er83abj3"
                                 >
                                   Not currently subscribed
                                 </div>
@@ -272,7 +272,7 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                                 >
                                   <button
                                     aria-checked={false}
-                                    className="css-18mwse8-SwitchButton ezmyi9u0"
+                                    className="css-6kvq67-SwitchButton ezmyi9u0"
                                     data-test-id="switch"
                                     onClick={[Function]}
                                     role="checkbox"
@@ -284,7 +284,7 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                                       size="lg"
                                     >
                                       <span
-                                        className="css-1wbwbmn-Toggle ezmyi9u1"
+                                        className="css-jqzc0q-Toggle ezmyi9u1"
                                         size="lg"
                                       />
                                     </Toggle>

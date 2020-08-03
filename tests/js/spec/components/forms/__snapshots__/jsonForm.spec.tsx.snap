@@ -59,10 +59,10 @@ exports[`JsonForm fields prop default 1`] = `
       >
         <Panel>
           <Component
-            className="css-1x7ld2l-Panel e119nu470"
+            className="css-yqvj9a-Panel e119nu470"
           >
             <div
-              className="css-1x7ld2l-Panel e119nu470"
+              className="css-yqvj9a-Panel e119nu470"
             >
               <PanelBody
                 flexible={false}
@@ -159,7 +159,7 @@ exports[`JsonForm fields prop default 1`] = `
                                 inline={true}
                               >
                                 <div
-                                  className="css-zwp5he-FieldWrapper-FieldWrapper e2iyls20"
+                                  className="css-5z0zlt-FieldWrapper-FieldWrapper e2iyls20"
                                 >
                                   <FieldDescription
                                     htmlFor="slug"
@@ -189,7 +189,7 @@ exports[`JsonForm fields prop default 1`] = `
                                         inline={true}
                                       >
                                         <div
-                                          className="css-1ooulq2-FieldHelp e54sr8f0"
+                                          className="css-ty6413-FieldHelp e54sr8f0"
                                         >
                                           A unique ID used to identify this project
                                         </div>
@@ -307,7 +307,7 @@ exports[`JsonForm fields prop default 1`] = `
                                                     type="text"
                                                   >
                                                     <input
-                                                      className="css-1g2jzij-Input e1xej46s0"
+                                                      className="css-1sf3rg0-Input e1xej46s0"
                                                       disabled={false}
                                                       id="slug"
                                                       label="Name"
@@ -475,7 +475,7 @@ exports[`JsonForm fields prop default 1`] = `
                                 inline={true}
                               >
                                 <div
-                                  className="css-zwp5he-FieldWrapper-FieldWrapper e2iyls20"
+                                  className="css-5z0zlt-FieldWrapper-FieldWrapper e2iyls20"
                                 >
                                   <FieldDescription
                                     htmlFor="platform"
@@ -500,7 +500,7 @@ exports[`JsonForm fields prop default 1`] = `
                                         inline={true}
                                       >
                                         <div
-                                          className="css-1ooulq2-FieldHelp e54sr8f0"
+                                          className="css-ty6413-FieldHelp e54sr8f0"
                                         >
                                           The primary platform for this project, used only for aesthetics
                                         </div>
@@ -1292,7 +1292,7 @@ exports[`JsonForm fields prop default 1`] = `
                                                             allowEmpty={false}
                                                             arrowRenderer={[Function]}
                                                             backspaceRemoves={false}
-                                                            className="css-awk01x-StyledSelect e1ynsgsr0"
+                                                            className="css-1ep7pp7-StyledSelect e1ynsgsr0"
                                                             clearable={false}
                                                             deleteRemoves={false}
                                                             disabled={false}
@@ -1839,7 +1839,7 @@ exports[`JsonForm fields prop default 1`] = `
                                                               autosize={true}
                                                               backspaceRemoves={false}
                                                               backspaceToRemoveMessage="Press backspace to remove {label}"
-                                                              className="css-awk01x-StyledSelect e1ynsgsr0"
+                                                              className="css-1ep7pp7-StyledSelect e1ynsgsr0"
                                                               clearAllText="Clear all"
                                                               clearRenderer={[Function]}
                                                               clearValueText="Clear value"
@@ -2414,7 +2414,7 @@ exports[`JsonForm fields prop default 1`] = `
                                                               valueKey="value"
                                                             >
                                                               <div
-                                                                className="Select css-awk01x-StyledSelect e1ynsgsr0 is-searchable Select--single"
+                                                                className="Select css-1ep7pp7-StyledSelect e1ynsgsr0 is-searchable Select--single"
                                                               >
                                                                 <div
                                                                   className="Select-control"
@@ -2735,16 +2735,16 @@ exports[`JsonForm form prop default 1`] = `
           id="Account-Details"
         >
           <Component
-            className="css-1x7ld2l-Panel e119nu470"
+            className="css-yqvj9a-Panel e119nu470"
             id="Account-Details"
           >
             <div
-              className="css-1x7ld2l-Panel e119nu470"
+              className="css-yqvj9a-Panel e119nu470"
               id="Account-Details"
             >
               <PanelHeader>
                 <div
-                  className="css-pi486d-PanelHeader en8g1d30"
+                  className="css-8glma9-PanelHeader en8g1d30"
                 >
                   Account Details
                 </div>
@@ -2907,7 +2907,7 @@ exports[`JsonForm form prop default 1`] = `
                                 inline={true}
                               >
                                 <div
-                                  className="css-zwp5he-FieldWrapper-FieldWrapper e2iyls20"
+                                  className="css-5z0zlt-FieldWrapper-FieldWrapper e2iyls20"
                                 >
                                   <FieldDescription
                                     htmlFor="name"
@@ -2937,7 +2937,7 @@ exports[`JsonForm form prop default 1`] = `
                                         inline={true}
                                       >
                                         <div
-                                          className="css-1ooulq2-FieldHelp e54sr8f0"
+                                          className="css-ty6413-FieldHelp e54sr8f0"
                                         >
                                           Your full name
                                         </div>
@@ -3090,7 +3090,7 @@ exports[`JsonForm form prop default 1`] = `
                                                     }
                                                   >
                                                     <input
-                                                      className="css-1g2jzij-Input e1xej46s0"
+                                                      className="css-1sf3rg0-Input e1xej46s0"
                                                       disabled={false}
                                                       id="name"
                                                       label="Name"

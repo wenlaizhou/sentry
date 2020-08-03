@@ -60,14 +60,14 @@ exports[`ProjectPlugins renders 1`] = `
 >
   <Panel>
     <Component
-      className="css-1x7ld2l-Panel e119nu470"
+      className="css-yqvj9a-Panel e119nu470"
     >
       <div
-        className="css-1x7ld2l-Panel e119nu470"
+        className="css-yqvj9a-Panel e119nu470"
       >
         <PanelHeader>
           <div
-            className="css-pi486d-PanelHeader en8g1d30"
+            className="css-8glma9-PanelHeader en8g1d30"
           >
             <div>
               Legacy Integration
@@ -105,7 +105,7 @@ exports[`ProjectPlugins renders 1`] = `
                     type="warning"
                   >
                     <Component
-                      className="e1cszazt0 css-1vyifcv-Alert-PanelAlert ejthpj82"
+                      className="e1cszazt0 css-1wmpnda-Alert-PanelAlert ejthpj82"
                       icon={
                         <ForwardRef(IconFlag)
                           size="md"
@@ -115,7 +115,7 @@ exports[`ProjectPlugins renders 1`] = `
                       type="warning"
                     >
                       <div
-                        className="ref-warning e1cszazt0 css-1vyifcv-Alert-PanelAlert ejthpj82"
+                        className="ref-warning e1cszazt0 css-1wmpnda-Alert-PanelAlert ejthpj82"
                       >
                         <IconWrapper>
                           <span
@@ -299,7 +299,7 @@ exports[`ProjectPlugins renders 1`] = `
                 p={2}
               >
                 <div
-                  className="css-hd0iky-PanelItem ej5ox20"
+                  className="css-ht8cvo-PanelItem ej5ox20"
                 >
                   <WithOrganizationMockWrapper
                     assets={Array []}
@@ -675,7 +675,7 @@ exports[`ProjectPlugins renders 1`] = `
                                       >
                                         <button
                                           aria-checked={false}
-                                          className="css-18mwse8-SwitchButton ezmyi9u0"
+                                          className="css-6kvq67-SwitchButton ezmyi9u0"
                                           data-test-id="switch"
                                           onClick={[Function]}
                                           role="checkbox"
@@ -688,7 +688,7 @@ exports[`ProjectPlugins renders 1`] = `
                                             size="lg"
                                           >
                                             <span
-                                              className="css-1wbwbmn-Toggle ezmyi9u1"
+                                              className="css-jqzc0q-Toggle ezmyi9u1"
                                               size="lg"
                                             />
                                           </Toggle>
@@ -711,7 +711,7 @@ exports[`ProjectPlugins renders 1`] = `
                 p={2}
               >
                 <div
-                  className="css-hd0iky-PanelItem ej5ox20"
+                  className="css-ht8cvo-PanelItem ej5ox20"
                 >
                   <WithOrganizationMockWrapper
                     assets={Array []}
@@ -1056,7 +1056,7 @@ exports[`ProjectPlugins renders 1`] = `
                                       >
                                         <button
                                           aria-checked={true}
-                                          className="css-9o71x4-SwitchButton ezmyi9u0"
+                                          className="css-10cxml1-SwitchButton ezmyi9u0"
                                           data-test-id="switch"
                                           role="checkbox"
                                           size="lg"

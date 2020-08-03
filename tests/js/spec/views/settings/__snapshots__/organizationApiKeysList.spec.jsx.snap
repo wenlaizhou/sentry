@@ -293,16 +293,16 @@ exports[`OrganizationApiKeysList renders 1`] = `
     </div>
     <Panel>
       <Component
-        className="css-1x7ld2l-Panel e119nu470"
+        className="css-yqvj9a-Panel e119nu470"
       >
         <div
-          className="css-1x7ld2l-Panel e119nu470"
+          className="css-yqvj9a-Panel e119nu470"
         >
           <PanelHeader
             disablePadding={true}
           >
             <div
-              className="css-lv9x73-PanelHeader en8g1d30"
+              className="css-1o9rste-PanelHeader en8g1d30"
             >
               <Styled(div)
                 alignItems="center"
@@ -362,7 +362,7 @@ exports[`OrganizationApiKeysList renders 1`] = `
                   py={1}
                 >
                   <div
-                    className="css-gf486z-PanelItem ej5ox20"
+                    className="css-3hf9b1-PanelItem ej5ox20"
                   >
                     <Styled(div)
                       alignItems="center"

@@ -291,7 +291,7 @@ exports[`ResolveActions with confirmation step renders 1`] = `
                     role="presentation"
                   >
                     <li
-                      className="css-1bgc7al-MenuListItem e80rkhl1"
+                      className="css-2zfm4e-MenuListItem e80rkhl1"
                       role="presentation"
                     >
                       Resolved In
@@ -836,7 +836,7 @@ exports[`ResolveActions without confirmation renders 1`] = `
                     role="presentation"
                   >
                     <li
-                      className="css-1bgc7al-MenuListItem e80rkhl1"
+                      className="css-2zfm4e-MenuListItem e80rkhl1"
                       role="presentation"
                     >
                       Resolved In

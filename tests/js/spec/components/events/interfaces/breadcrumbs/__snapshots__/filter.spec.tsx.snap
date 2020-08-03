@@ -232,7 +232,7 @@ exports[`Filter default render 1`] = `
                         type="button"
                       >
                         <forwardRef<Button>
-                          className="e1sx99c0 css-fa3aic-StyledButton-StyledDropdownButton eenpoef1"
+                          className="e1sx99c0 css-1ysmt16-StyledButton-StyledDropdownButton eenpoef1"
                           hasDarkBorderBottomColor={true}
                           hideBottomBorder={true}
                           isOpen={false}
@@ -251,7 +251,7 @@ exports[`Filter default render 1`] = `
                         >
                           <Button
                             align="center"
-                            className="e1sx99c0 css-fa3aic-StyledButton-StyledDropdownButton eenpoef1"
+                            className="e1sx99c0 css-1ysmt16-StyledButton-StyledDropdownButton eenpoef1"
                             disabled={false}
                             forwardRef={[Function]}
                             hasDarkBorderBottomColor={true}
@@ -272,7 +272,7 @@ exports[`Filter default render 1`] = `
                           >
                             <StyledButton
                               aria-disabled={false}
-                              className="e1sx99c0 css-fa3aic-StyledButton-StyledDropdownButton eenpoef1"
+                              className="e1sx99c0 css-1ysmt16-StyledButton-StyledDropdownButton eenpoef1"
                               disabled={false}
                               forwardRef={[Function]}
                               hasDarkBorderBottomColor={true}
@@ -294,7 +294,7 @@ exports[`Filter default render 1`] = `
                             >
                               <Component
                                 aria-disabled={false}
-                                className="e1sx99c0 eenpoef1 css-1u4jty5-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
+                                className="e1sx99c0 eenpoef1 css-18zn60t-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
                                 forwardRef={[Function]}
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
@@ -311,7 +311,7 @@ exports[`Filter default render 1`] = `
                               >
                                 <button
                                   aria-disabled={false}
-                                  className="e1sx99c0 eenpoef1 css-1u4jty5-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
+                                  className="e1sx99c0 eenpoef1 css-18zn60t-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
                                   onClick={[Function]}
                                   onKeyDown={[Function]}
                                   onMouseEnter={[Function]}
@@ -424,9 +424,9 @@ exports[`Filter default render 1`] = `
                         "iconColor": "#3D74DB",
                       },
                       "muted": Object {
-                        "background": "#C6BECF",
+                        "background": "#776589",
                         "backgroundLight": "#FAF9FB",
-                        "border": "#C6BECF",
+                        "border": "#9386A0",
                         "iconColor": "inherit",
                       },
                       "success": Object {
@@ -463,13 +463,14 @@ exports[`Filter default render 1`] = `
                         "indicatorColor": "#4DC771",
                       },
                     },
+                    "black": "#1D1127",
                     "blue100": "#F5F9FF",
                     "blue200": "#AFC7EE",
                     "blue300": "#7199DD",
                     "blue400": "#3D74DB",
                     "blue500": "#194591",
-                    "borderDark": "#C6BECF",
-                    "borderLight": "#E7E1EC",
+                    "borderDark": "#9386A0",
+                    "borderLight": "#C6BECF",
                     "borderLighter": "#FAF9FB",
                     "borderRadius": "4px",
                     "borderRadiusBottom": "0 0 4px 4px",
@@ -499,15 +500,15 @@ exports[`Filter default render 1`] = `
                         "borderActive": "#c9c0d1",
                         "color": "#2f2936",
                         "colorActive": "#161319",
-                        "focusShadow": "rgba(231, 225, 236, 0.5)",
+                        "focusShadow": "rgba(147, 134, 160, 0.5)",
                       },
                       "disabled": Object {
                         "background": "#FFFFFF",
                         "backgroundActive": "#FFFFFF",
                         "border": "#e3e5e6",
                         "borderActive": "#e3e5e6",
-                        "color": "#C6BECF",
-                        "colorActive": "#C6BECF",
+                        "color": "#776589",
+                        "colorActive": "#776589",
                         "focusShadow": false,
                       },
                       "link": Object {
@@ -560,7 +561,7 @@ exports[`Filter default render 1`] = `
                         "#f2b712",
                       ],
                       "getColorPalette": [Function],
-                      "previousPeriod": "#C6BECF",
+                      "previousPeriod": "#776589",
                       "symbolSize": 6,
                     },
                     "diff": Object {
@@ -569,7 +570,7 @@ exports[`Filter default render 1`] = `
                       "removed": "#f7ceca",
                       "removedRow": "#fcefee",
                     },
-                    "disabled": "#C6BECF",
+                    "disabled": "#776589",
                     "dropShadowHeavy": "0 1px 4px 1px rgba(47,40,55,0.08), 0 4px 16px 0 rgba(47,40,55,0.12)",
                     "dropShadowLight": "0 2px 0 rgba(37, 11, 54, 0.04)",
                     "dropShadowLightest": "0 1px 2px rgba(0, 0, 0, 0.04)",
@@ -581,10 +582,10 @@ exports[`Filter default render 1`] = `
                     "fontSizeRelativeSmall": "0.9em",
                     "fontSizeSmall": "12px",
                     "gray100": "#FAF9FB",
-                    "gray200": "#F2F0F5",
-                    "gray300": "#E7E1EC",
-                    "gray400": "#C6BECF",
-                    "gray500": "#9585A3",
+                    "gray200": "#C6BECF",
+                    "gray300": "#9386A0",
+                    "gray400": "#776589",
+                    "gray500": "#2B1D38",
                     "gray600": "#645574",
                     "gray700": "#4A3E56",
                     "gray800": "#302839",
@@ -716,7 +717,7 @@ exports[`Filter default render 1`] = `
                 width="240px"
               >
                 <div
-                  className="css-1pa22ky-DropdownBubble-Content e1r8p2re2"
+                  className="css-khqa2l-DropdownBubble-Content e1r8p2re2"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -847,7 +848,7 @@ exports[`Filter default render 1`] = `
                     <div>
                       <Header>
                         <div
-                          className="css-19x9s3h-Header e1cujor50"
+                          className="css-vukrsx-Header e1cujor50"
                         >
                           Type
                         </div>
@@ -862,7 +863,7 @@ exports[`Filter default render 1`] = `
                             onClick={[Function]}
                           >
                             <li
-                              className="css-7g0svi-ListItem e1cujor52"
+                              className="css-ikpqkn-ListItem e1cujor52"
                               onClick={[Function]}
                             >
                               <Memo()
@@ -880,7 +881,7 @@ exports[`Filter default render 1`] = `
                                   color="green400"
                                 >
                                   <div
-                                    className="css-m7rno3-IconWrapper e1oljvyu0"
+                                    className="css-1ds2qmt-IconWrapper e1oljvyu0"
                                   >
                                     <IconSwitch
                                       size="xs"
@@ -974,7 +975,7 @@ exports[`Filter default render 1`] = `
                             onClick={[Function]}
                           >
                             <li
-                              className="css-7g0svi-ListItem e1cujor52"
+                              className="css-ikpqkn-ListItem e1cujor52"
                               onClick={[Function]}
                             >
                               <Memo()
@@ -992,7 +993,7 @@ exports[`Filter default render 1`] = `
                                   color="pink400"
                                 >
                                   <div
-                                    className="css-efjb4a-IconWrapper e1oljvyu0"
+                                    className="css-v9hwda-IconWrapper e1oljvyu0"
                                   >
                                     <IconSpan
                                       size="xs"
@@ -1077,7 +1078,7 @@ exports[`Filter default render 1`] = `
                             onClick={[Function]}
                           >
                             <li
-                              className="css-7g0svi-ListItem e1cujor52"
+                              className="css-ikpqkn-ListItem e1cujor52"
                               onClick={[Function]}
                             >
                               <Memo()
@@ -1095,7 +1096,7 @@ exports[`Filter default render 1`] = `
                                   color="purple400"
                                 >
                                   <div
-                                    className="css-12w2aso-IconWrapper e1oljvyu0"
+                                    className="css-1ewyvkj-IconWrapper e1oljvyu0"
                                   >
                                     <IconUser
                                       size="xs"
@@ -1183,7 +1184,7 @@ exports[`Filter default render 1`] = `
                             onClick={[Function]}
                           >
                             <li
-                              className="css-7g0svi-ListItem e1cujor52"
+                              className="css-ikpqkn-ListItem e1cujor52"
                               onClick={[Function]}
                             >
                               <Memo()
@@ -1201,7 +1202,7 @@ exports[`Filter default render 1`] = `
                                   color="green500"
                                 >
                                   <div
-                                    className="css-1o5bgxp-IconWrapper e1oljvyu0"
+                                    className="css-1bapjxi-IconWrapper e1oljvyu0"
                                   >
                                     <IconLocation
                                       size="xs"
@@ -1289,7 +1290,7 @@ exports[`Filter default render 1`] = `
                             onClick={[Function]}
                           >
                             <li
-                              className="css-7g0svi-ListItem e1cujor52"
+                              className="css-ikpqkn-ListItem e1cujor52"
                               onClick={[Function]}
                             >
                               <Memo()
@@ -1307,7 +1308,7 @@ exports[`Filter default render 1`] = `
                                   color="purple500"
                                 >
                                   <div
-                                    className="css-11o98lp-IconWrapper e1oljvyu0"
+                                    className="css-1la42ih-IconWrapper e1oljvyu0"
                                   >
                                     <IconFix
                                       size="xs"
@@ -1392,7 +1393,7 @@ exports[`Filter default render 1`] = `
                             onClick={[Function]}
                           >
                             <li
-                              className="css-7g0svi-ListItem e1cujor52"
+                              className="css-ikpqkn-ListItem e1cujor52"
                               onClick={[Function]}
                             >
                               <Memo()
@@ -1410,7 +1411,7 @@ exports[`Filter default render 1`] = `
                                   color="red400"
                                 >
                                   <div
-                                    className="css-1hei10e-IconWrapper e1oljvyu0"
+                                    className="css-1ucto4u-IconWrapper e1oljvyu0"
                                   >
                                     <IconFire
                                       size="xs"
@@ -1518,7 +1519,7 @@ exports[`Filter default render 1`] = `
                     <div>
                       <Header>
                         <div
-                          className="css-19x9s3h-Header e1cujor50"
+                          className="css-vukrsx-Header e1cujor50"
                         >
                           Level
                         </div>
@@ -1533,7 +1534,7 @@ exports[`Filter default render 1`] = `
                             onClick={[Function]}
                           >
                             <li
-                              className="css-7g0svi-ListItem e1cujor52"
+                              className="css-ikpqkn-ListItem e1cujor52"
                               onClick={[Function]}
                             >
                               <Memo()
@@ -1543,11 +1544,11 @@ exports[`Filter default render 1`] = `
                                   color="blue400"
                                 >
                                   <Component
-                                    className="css-1dx7owx-Tag-StyledTag eio8trv0"
+                                    className="css-18sn3gs-Tag-StyledTag eio8trv0"
                                     color="blue400"
                                   >
                                     <div
-                                      className="css-1dx7owx-Tag-StyledTag eio8trv0"
+                                      className="css-18sn3gs-Tag-StyledTag eio8trv0"
                                       color="blue400"
                                     >
                                       <Highlight
@@ -1624,7 +1625,7 @@ exports[`Filter default render 1`] = `
                             onClick={[Function]}
                           >
                             <li
-                              className="css-7g0svi-ListItem e1cujor52"
+                              className="css-ikpqkn-ListItem e1cujor52"
                               onClick={[Function]}
                             >
                               <Memo()
@@ -1634,11 +1635,11 @@ exports[`Filter default render 1`] = `
                                   color="red400"
                                 >
                                   <Component
-                                    className="css-eius55-Tag-StyledTag eio8trv0"
+                                    className="css-1udd7v9-Tag-StyledTag eio8trv0"
                                     color="red400"
                                   >
                                     <div
-                                      className="css-eius55-Tag-StyledTag eio8trv0"
+                                      className="css-1udd7v9-Tag-StyledTag eio8trv0"
                                       color="red400"
                                     >
                                       <Highlight

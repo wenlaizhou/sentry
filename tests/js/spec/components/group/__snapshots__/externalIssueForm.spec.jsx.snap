@@ -1462,7 +1462,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                 autoload={true}
                                                 backspaceRemoves={false}
                                                 cache={false}
-                                                className="css-awk01x-StyledSelect e1ynsgsr0"
+                                                className="css-1ep7pp7-StyledSelect e1ynsgsr0"
                                                 clearable={false}
                                                 default="scefali/test"
                                                 deleteRemoves={false}
@@ -1650,7 +1650,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                   autoload={true}
                                                   backspaceRemoves={false}
                                                   cache={false}
-                                                  className="css-awk01x-StyledSelect e1ynsgsr0"
+                                                  className="css-1ep7pp7-StyledSelect e1ynsgsr0"
                                                   clearable={false}
                                                   default="scefali/test"
                                                   deleteRemoves={false}
@@ -1843,7 +1843,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                     backspaceRemoves={false}
                                                     backspaceToRemoveMessage="Press backspace to remove {label}"
                                                     cache={false}
-                                                    className="css-awk01x-StyledSelect e1ynsgsr0"
+                                                    className="css-1ep7pp7-StyledSelect e1ynsgsr0"
                                                     clearAllText="Clear all"
                                                     clearRenderer={[Function]}
                                                     clearValueText="Clear value"
@@ -2048,7 +2048,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                     valueKey="value"
                                                   >
                                                     <div
-                                                      className="Select css-awk01x-StyledSelect e1ynsgsr0 is-loading is-searchable Select--single"
+                                                      className="Select css-1ep7pp7-StyledSelect e1ynsgsr0 is-loading is-searchable Select--single"
                                                     >
                                                       <div
                                                         className="Select-control"
@@ -3411,7 +3411,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                 autoload={true}
                                                 backspaceRemoves={false}
                                                 cache={false}
-                                                className="css-awk01x-StyledSelect e1ynsgsr0"
+                                                className="css-1ep7pp7-StyledSelect e1ynsgsr0"
                                                 clearable={false}
                                                 default=""
                                                 deleteRemoves={false}
@@ -3587,7 +3587,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                   autoload={true}
                                                   backspaceRemoves={false}
                                                   cache={false}
-                                                  className="css-awk01x-StyledSelect e1ynsgsr0"
+                                                  className="css-1ep7pp7-StyledSelect e1ynsgsr0"
                                                   clearable={false}
                                                   default=""
                                                   deleteRemoves={false}
@@ -3768,7 +3768,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                     backspaceRemoves={false}
                                                     backspaceToRemoveMessage="Press backspace to remove {label}"
                                                     cache={false}
-                                                    className="css-awk01x-StyledSelect e1ynsgsr0"
+                                                    className="css-1ep7pp7-StyledSelect e1ynsgsr0"
                                                     clearAllText="Clear all"
                                                     clearRenderer={[Function]}
                                                     clearValueText="Clear value"
@@ -3972,7 +3972,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                     valueKey="value"
                                                   >
                                                     <div
-                                                      className="Select css-awk01x-StyledSelect e1ynsgsr0 is-loading is-searchable Select--single"
+                                                      className="Select css-1ep7pp7-StyledSelect e1ynsgsr0 is-loading is-searchable Select--single"
                                                     >
                                                       <div
                                                         className="Select-control"
@@ -4397,7 +4397,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                             stacked={true}
                           >
                             <div
-                              className="css-1i2y8a7-FieldHelp e54sr8f0"
+                              className="css-6xlnc5-FieldHelp e54sr8f0"
                             >
                               Leave blank if you don't want to add a comment to the GitHub issue.
                             </div>
@@ -4726,7 +4726,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                         value="Default Value"
                                       >
                                         <TextAreaControl
-                                          className="css-u4op3m-TextArea edis3zx0"
+                                          className="css-1l942xj-TextArea edis3zx0"
                                           default="Default Value"
                                           disabled={false}
                                           id="comment"
@@ -4739,7 +4739,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                           value="Default Value"
                                         >
                                           <textarea
-                                            className="css-u4op3m-TextArea edis3zx0"
+                                            className="css-1l942xj-TextArea edis3zx0"
                                             default="Default Value"
                                             disabled={false}
                                             id="comment"

@@ -90,13 +90,13 @@ exports[`Sidebar SidebarDropdown can open "Switch Organization" sub-menu 1`] = `
                       >
                         <StyledIconAdd>
                           <IconAdd
-                            className="css-4qjexj-StyledIconAdd ev3suul0"
+                            className="css-q4jktz-StyledIconAdd ev3suul0"
                           >
                             <ForwardRef(SvgIcon)
-                              className="css-4qjexj-StyledIconAdd ev3suul0"
+                              className="css-q4jktz-StyledIconAdd ev3suul0"
                             >
                               <svg
-                                className="css-4qjexj-StyledIconAdd ev3suul0"
+                                className="css-q4jktz-StyledIconAdd ev3suul0"
                                 fill="currentColor"
                                 height="16px"
                                 viewBox="0 0 16 16"
@@ -488,7 +488,7 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
                           Switch organization
                           <SubMenuCaret>
                             <span
-                              className="css-3ur4f5-SubMenuCaret ev3suul2"
+                              className="css-1i600uy-SubMenuCaret ev3suul2"
                             >
                               <IconChevron
                                 direction="right"
@@ -551,7 +551,7 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
     </SidebarMenuItem>
     <Divider>
       <div
-        className="css-j2i7m5-Divider e18ox4wg0"
+        className="css-pz0ru9-Divider e18ox4wg0"
       />
     </Divider>
     <UserSummary
@@ -808,7 +808,7 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
                               </StyledName>
                               <StyledEmail>
                                 <div
-                                  className="css-zdh78r-StyledEmail e31z2f82"
+                                  className="css-214iyu-StyledEmail e31z2f82"
                                 >
                                   foo@example.com
                                 </div>
@@ -1100,7 +1100,7 @@ exports[`Sidebar SidebarPanel can display Broadcasts panel and mark as seen 1`] 
 >
   <SidebarPanelItemRoot>
     <div
-      className="css-17ty546-SidebarPanelItemRoot ekutvbl0"
+      className="css-4ote97-SidebarPanelItemRoot ekutvbl0"
     >
       <Title
         hasSeen={false}
@@ -1151,7 +1151,7 @@ exports[`Sidebar SidebarPanel can show Incidents in Sidebar Panel 1`] = `
       key="1"
     >
       <li
-        className="css-1r559n3-IncidentItem e1467r1t1"
+        className="css-1z0pl26-IncidentItem e1467r1t1"
       >
         <IncidentTitle>
           <div
@@ -1219,7 +1219,7 @@ exports[`Sidebar SidebarPanel can show Incidents in Sidebar Panel 1`] = `
                 <Component
                   aria-disabled={false}
                   aria-label="Learn more"
-                  className="css-8od3q1-StyledButton edwq9my0"
+                  className="css-nl9971-StyledButton edwq9my0"
                   external={true}
                   forwardRef={null}
                   href="https://status.sentry.io"
@@ -1230,7 +1230,7 @@ exports[`Sidebar SidebarPanel can show Incidents in Sidebar Panel 1`] = `
                   <ForwardRef(ExternalLink)
                     aria-disabled={false}
                     aria-label="Learn more"
-                    className="css-8od3q1-StyledButton edwq9my0"
+                    className="css-nl9971-StyledButton edwq9my0"
                     href="https://status.sentry.io"
                     onClick={[Function]}
                     role="button"
@@ -1239,7 +1239,7 @@ exports[`Sidebar SidebarPanel can show Incidents in Sidebar Panel 1`] = `
                     <a
                       aria-disabled={false}
                       aria-label="Learn more"
-                      className="css-8od3q1-StyledButton edwq9my0"
+                      className="css-nl9971-StyledButton edwq9my0"
                       href="https://status.sentry.io"
                       onClick={[Function]}
                       rel="noreferrer noopener"
@@ -1536,7 +1536,7 @@ exports[`Sidebar renders without org and router 1`] = `
                               </StyledName>
                               <StyledEmail>
                                 <div
-                                  className="css-zdh78r-StyledEmail e31z2f82"
+                                  className="css-214iyu-StyledEmail e31z2f82"
                                 >
                                   foo@example.com
                                 </div>
