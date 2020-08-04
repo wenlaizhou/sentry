@@ -7,7 +7,7 @@ from sentry.api.base import DocSection
 from sentry.api.bases.dashboard import OrganizationDashboardEndpoint
 from sentry.api.serializers import serialize
 from sentry.api.serializers.rest_framework import get_next_dashboard_order, WidgetSerializer
-from sentry.models import Widget, WidgetDataSource
+from sentry.models import Widget
 
 
 class OrganizationDashboardWidgetsEndpoint(OrganizationDashboardEndpoint):
@@ -43,17 +43,10 @@ class OrganizationDashboardWidgetsEndpoint(OrganizationDashboardEndpoint):
                     display_type=result["displayType"],
                     display_options=result.get("displayOptions", {}),
                     title=result["title"],
+                    saved_query_id=result.get("saved_query_id"),
                     order=get_next_dashboard_order(dashboard.id),
                     dashboard_id=dashboard.id,
                 )
-                for widget_data in result.get("dataSources", []):
-                    WidgetDataSource.objects.create(
-                        name=widget_data["name"],
-                        data=widget_data["data"],
-                        type=widget_data["type"],
-                        order=widget_data["order"],
-                        widget_id=widget.id,
-                    )
         except IntegrityError:
             return Response("This widget already exists", status=409)
 
