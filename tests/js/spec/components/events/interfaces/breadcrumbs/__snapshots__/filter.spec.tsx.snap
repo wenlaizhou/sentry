@@ -89,7 +89,7 @@ exports[`Filter default render 1`] = `
             "info",
           ],
           "symbol": <UNDEFINED
-            color="purple500"
+            color="purple300"
             icon={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -806,7 +806,7 @@ exports[`Filter default render 1`] = `
                             "info",
                           ],
                           "symbol": <UNDEFINED
-                            color="purple500"
+                            color="purple300"
                             icon={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
@@ -1290,7 +1290,7 @@ exports[`Filter default render 1`] = `
                               onClick={[Function]}
                             >
                               <Memo()
-                                color="purple500"
+                                color="purple300"
                                 icon={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
@@ -1301,10 +1301,10 @@ exports[`Filter default render 1`] = `
                                 size="xs"
                               >
                                 <IconWrapper
-                                  color="purple500"
+                                  color="purple300"
                                 >
                                   <div
-                                    className="css-fnh5dx-IconWrapper e1oljvyu0"
+                                    className="css-1mlcgnx-IconWrapper e1oljvyu0"
                                   >
                                     <IconFix
                                       size="xs"
