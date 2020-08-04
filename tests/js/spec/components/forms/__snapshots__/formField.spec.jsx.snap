@@ -221,7 +221,7 @@ exports[`FormField + model renders with Form 1`] = `
                                     value=""
                                   >
                                     <input
-                                      className="css-1u2pbe1-Input e1xej46s0"
+                                      className="css-1fw7r45-Input e1xej46s0"
                                       disabled={false}
                                       id="fieldName"
                                       name="fieldName"

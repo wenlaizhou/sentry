@@ -449,6 +449,7 @@ exports[`Filter default render 1`] = `
                       },
                     },
                     "background": "#FFFFFF",
+                    "backgroundAccent": "#FAF9FB",
                     "badge": Object {
                       "alpha": Object {
                         "background": "linear-gradient(90deg, #F69C7D, #BA4A23)",
