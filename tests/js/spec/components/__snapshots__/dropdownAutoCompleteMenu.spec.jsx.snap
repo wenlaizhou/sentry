@@ -137,7 +137,7 @@ exports[`DropdownAutoCompleteMenu renders with a group 1`] = `
                 onMouseLeave={[Function]}
               >
                 <div
-                  className="css-a643zz-DropdownBubble-BubbleWithMinWidth ejumqxq11"
+                  className="css-prdiwi-DropdownBubble-BubbleWithMinWidth ejumqxq11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}
@@ -187,7 +187,7 @@ exports[`DropdownAutoCompleteMenu renders with a group 1`] = `
                           key="countries"
                         >
                           <div
-                            className="css-a7re7u-LabelWithBorder ejumqxq5"
+                            className="css-18sb5m7-LabelWithBorder ejumqxq5"
                           >
                             <GroupLabel>
                               <div
@@ -378,7 +378,7 @@ exports[`DropdownAutoCompleteMenu renders without a group 1`] = `
                 onMouseLeave={[Function]}
               >
                 <div
-                  className="css-a643zz-DropdownBubble-BubbleWithMinWidth ejumqxq11"
+                  className="css-prdiwi-DropdownBubble-BubbleWithMinWidth ejumqxq11"
                   onClick={[Function]}
                   onMouseDown={[Function]}
                   onMouseEnter={[Function]}

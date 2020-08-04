@@ -52,12 +52,12 @@ exports[`EventSdkUpdates renders a suggestion to update the sdk and then enable 
               type="info"
             >
               <Component
-                className="css-lisk2z-Alert ejthpj82"
+                className="css-1b5dlbu-Alert ejthpj82"
                 icon={<ForwardRef(IconUpgrade) />}
                 type="info"
               >
                 <div
-                  className="ref-info css-lisk2z-Alert ejthpj82"
+                  className="ref-info css-1b5dlbu-Alert ejthpj82"
                 >
                   <IconWrapper>
                     <span

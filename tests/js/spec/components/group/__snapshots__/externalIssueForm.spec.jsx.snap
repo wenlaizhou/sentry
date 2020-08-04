@@ -533,7 +533,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                             disabled={false}
                           >
                             <div
-                              className="css-14dls06-FieldLabel e16ushrl0"
+                              className="css-1be1g0b-FieldLabel e16ushrl0"
                             >
                               <span>
                                 GitHub Repository
@@ -709,7 +709,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                   alignRight={false}
                                 >
                                   <div
-                                    className="css-fofrx-FieldControlStyled e12jpfuq1"
+                                    className="css-q2zc01-FieldControlStyled e12jpfuq1"
                                   >
                                     <Observer>
                                       <ForwardRef(RefForwardedSelectControl)
@@ -1462,7 +1462,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                 autoload={true}
                                                 backspaceRemoves={false}
                                                 cache={false}
-                                                className="css-1ep7pp7-StyledSelect e1ynsgsr0"
+                                                className="css-awk01x-StyledSelect e1ynsgsr0"
                                                 clearable={false}
                                                 default="scefali/test"
                                                 deleteRemoves={false}
@@ -1650,7 +1650,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                   autoload={true}
                                                   backspaceRemoves={false}
                                                   cache={false}
-                                                  className="css-1ep7pp7-StyledSelect e1ynsgsr0"
+                                                  className="css-awk01x-StyledSelect e1ynsgsr0"
                                                   clearable={false}
                                                   default="scefali/test"
                                                   deleteRemoves={false}
@@ -1843,7 +1843,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                     backspaceRemoves={false}
                                                     backspaceToRemoveMessage="Press backspace to remove {label}"
                                                     cache={false}
-                                                    className="css-1ep7pp7-StyledSelect e1ynsgsr0"
+                                                    className="css-awk01x-StyledSelect e1ynsgsr0"
                                                     clearAllText="Clear all"
                                                     clearRenderer={[Function]}
                                                     clearValueText="Clear value"
@@ -2048,7 +2048,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                     valueKey="value"
                                                   >
                                                     <div
-                                                      className="Select css-1ep7pp7-StyledSelect e1ynsgsr0 is-loading is-searchable Select--single"
+                                                      className="Select css-awk01x-StyledSelect e1ynsgsr0 is-loading is-searchable Select--single"
                                                     >
                                                       <div
                                                         className="Select-control"
@@ -2530,7 +2530,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                             disabled={false}
                           >
                             <div
-                              className="css-14dls06-FieldLabel e16ushrl0"
+                              className="css-1be1g0b-FieldLabel e16ushrl0"
                             >
                               <span>
                                 Issue
@@ -2706,7 +2706,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                   alignRight={false}
                                 >
                                   <div
-                                    className="css-fofrx-FieldControlStyled e12jpfuq1"
+                                    className="css-q2zc01-FieldControlStyled e12jpfuq1"
                                   >
                                     <Observer>
                                       <ForwardRef(RefForwardedSelectControl)
@@ -3411,7 +3411,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                 autoload={true}
                                                 backspaceRemoves={false}
                                                 cache={false}
-                                                className="css-1ep7pp7-StyledSelect e1ynsgsr0"
+                                                className="css-awk01x-StyledSelect e1ynsgsr0"
                                                 clearable={false}
                                                 default=""
                                                 deleteRemoves={false}
@@ -3587,7 +3587,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                   autoload={true}
                                                   backspaceRemoves={false}
                                                   cache={false}
-                                                  className="css-1ep7pp7-StyledSelect e1ynsgsr0"
+                                                  className="css-awk01x-StyledSelect e1ynsgsr0"
                                                   clearable={false}
                                                   default=""
                                                   deleteRemoves={false}
@@ -3768,7 +3768,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                     backspaceRemoves={false}
                                                     backspaceToRemoveMessage="Press backspace to remove {label}"
                                                     cache={false}
-                                                    className="css-1ep7pp7-StyledSelect e1ynsgsr0"
+                                                    className="css-awk01x-StyledSelect e1ynsgsr0"
                                                     clearAllText="Clear all"
                                                     clearRenderer={[Function]}
                                                     clearValueText="Clear value"
@@ -3972,7 +3972,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                     valueKey="value"
                                                   >
                                                     <div
-                                                      className="Select css-1ep7pp7-StyledSelect e1ynsgsr0 is-loading is-searchable Select--single"
+                                                      className="Select css-awk01x-StyledSelect e1ynsgsr0 is-loading is-searchable Select--single"
                                                     >
                                                       <div
                                                         className="Select-control"
@@ -4385,7 +4385,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                             disabled={false}
                           >
                             <div
-                              className="css-14dls06-FieldLabel e16ushrl0"
+                              className="css-1be1g0b-FieldLabel e16ushrl0"
                             >
                               <span>
                                 Comment
@@ -4397,7 +4397,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                             stacked={true}
                           >
                             <div
-                              className="css-6xlnc5-FieldHelp e54sr8f0"
+                              className="css-11ffcix-FieldHelp e54sr8f0"
                             >
                               Leave blank if you don't want to add a comment to the GitHub issue.
                             </div>
@@ -4566,7 +4566,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                   alignRight={false}
                                 >
                                   <div
-                                    className="css-fofrx-FieldControlStyled e12jpfuq1"
+                                    className="css-q2zc01-FieldControlStyled e12jpfuq1"
                                   >
                                     <Observer>
                                       <TextArea

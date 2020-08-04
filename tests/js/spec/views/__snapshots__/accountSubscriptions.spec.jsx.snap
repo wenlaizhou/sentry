@@ -69,7 +69,7 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                     >
                       <HeaderTitle>
                         <h4
-                          className="css-fcvkez-HeaderTitle eqkydle2"
+                          className="css-2st5uz-HeaderTitle eqkydle2"
                         >
                           Subscriptions
                         </h4>
@@ -97,15 +97,15 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
         </TextBlock>
         <Panel>
           <Component
-            className="css-yqvj9a-Panel e119nu470"
+            className="css-1x7ld2l-Panel e119nu470"
           >
             <div
-              className="css-yqvj9a-Panel e119nu470"
+              className="css-1x7ld2l-Panel e119nu470"
             >
               <div>
                 <PanelHeader>
                   <div
-                    className="css-1aykk0y-PanelHeader en8g1d30"
+                    className="css-1hbezsa-PanelHeader en8g1d30"
                   >
                     Subscription
                   </div>
@@ -141,14 +141,14 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                               </SubscriptionName>
                               <Description>
                                 <div
-                                  className="css-7wda47-Description er83abj2"
+                                  className="css-tv96t7-Description er83abj2"
                                 >
                                   Everything you need to know about Sentry features, integrations, partnerships, and launches.
                                 </div>
                               </Description>
                               <SubscribedDescription>
                                 <div
-                                  className="css-glce17-Description-SubscribedDescription er83abj3"
+                                  className="css-1spyj7s-Description-SubscribedDescription er83abj3"
                                 >
                                   <div>
                                     test@sentry.io
@@ -191,7 +191,7 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                                 >
                                   <button
                                     aria-checked={true}
-                                    className="css-1umsowh-SwitchButton ezmyi9u0"
+                                    className="css-1jbgjht-SwitchButton ezmyi9u0"
                                     data-test-id="switch"
                                     onClick={[Function]}
                                     role="checkbox"
@@ -235,14 +235,14 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                               </SubscriptionName>
                               <Description>
                                 <div
-                                  className="css-7wda47-Description er83abj2"
+                                  className="css-tv96t7-Description er83abj2"
                                 >
                                   Our monthly update on what's new with Sentry and the community.
                                 </div>
                               </Description>
                               <SubscribedDescription>
                                 <div
-                                  className="css-glce17-Description-SubscribedDescription er83abj3"
+                                  className="css-1spyj7s-Description-SubscribedDescription er83abj3"
                                 >
                                   Not currently subscribed
                                 </div>
@@ -272,7 +272,7 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                                 >
                                   <button
                                     aria-checked={false}
-                                    className="css-w1c6gb-SwitchButton ezmyi9u0"
+                                    className="css-1buylav-SwitchButton ezmyi9u0"
                                     data-test-id="switch"
                                     onClick={[Function]}
                                     role="checkbox"
@@ -284,7 +284,7 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                                       size="lg"
                                     >
                                       <span
-                                        className="css-jqzc0q-Toggle ezmyi9u1"
+                                        className="css-1wbwbmn-Toggle ezmyi9u1"
                                         size="lg"
                                       />
                                     </Toggle>

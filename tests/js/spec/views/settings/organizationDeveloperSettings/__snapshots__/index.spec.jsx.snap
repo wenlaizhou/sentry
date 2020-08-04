@@ -104,7 +104,7 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
                       >
                         <HeaderTitle>
                           <h4
-                            className="css-fcvkez-HeaderTitle eqkydle2"
+                            className="css-2st5uz-HeaderTitle eqkydle2"
                           >
                             Developer Settings
                           </h4>
@@ -210,16 +210,16 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
           </AlertLink>
           <Panel>
             <Component
-              className="css-yqvj9a-Panel e119nu470"
+              className="css-1x7ld2l-Panel e119nu470"
             >
               <div
-                className="css-yqvj9a-Panel e119nu470"
+                className="css-1x7ld2l-Panel e119nu470"
               >
                 <PanelHeader
                   hasButtons={true}
                 >
                   <div
-                    className="css-agf66e-PanelHeader en8g1d30"
+                    className="css-tnpdpm-PanelHeader en8g1d30"
                   >
                     Public Integrations
                     <forwardRef<Button>
@@ -380,16 +380,16 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
           </Panel>
           <Panel>
             <Component
-              className="css-yqvj9a-Panel e119nu470"
+              className="css-1x7ld2l-Panel e119nu470"
             >
               <div
-                className="css-yqvj9a-Panel e119nu470"
+                className="css-1x7ld2l-Panel e119nu470"
               >
                 <PanelHeader
                   hasButtons={true}
                 >
                   <div
-                    className="css-agf66e-PanelHeader en8g1d30"
+                    className="css-tnpdpm-PanelHeader en8g1d30"
                   >
                     Internal Integrations
                     <forwardRef<Button>

@@ -163,14 +163,14 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
       withMargins={true}
     >
       <h1
-        className="css-sxdccq-PageHeading e1bz0f4q0"
+        className="css-48ipkv-PageHeading e1bz0f4q0"
       >
         Create a new Project
       </h1>
     </PageHeading>
     <HelpText>
       <p
-        className="css-tfg794-HelpText e19kiapg5"
+        className="css-kklz5w-HelpText e19kiapg5"
       >
         Projects allow you to scope events to a specific application in
                your organization. For example, you might have separate projects
@@ -181,7 +181,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
       withMargins={true}
     >
       <h1
-        className="css-sxdccq-PageHeading e1bz0f4q0"
+        className="css-48ipkv-PageHeading e1bz0f4q0"
       >
         Choose a platform
       </h1>
@@ -1303,7 +1303,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
       withMargins={true}
     >
       <h1
-        className="css-sxdccq-PageHeading e1bz0f4q0"
+        className="css-48ipkv-PageHeading e1bz0f4q0"
       >
         Give your project a name
       </h1>
@@ -1406,7 +1406,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
                       <SelectPicker
                         arrowRenderer={[Function]}
                         backspaceRemoves={false}
-                        className="css-1ep7pp7-StyledSelect e1ynsgsr0"
+                        className="css-awk01x-StyledSelect e1ynsgsr0"
                         clearable={false}
                         deleteRemoves={false}
                         forwardedRef={null}
@@ -1423,7 +1423,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
                           autosize={true}
                           backspaceRemoves={false}
                           backspaceToRemoveMessage="Press backspace to remove {label}"
-                          className="css-1ep7pp7-StyledSelect e1ynsgsr0"
+                          className="css-awk01x-StyledSelect e1ynsgsr0"
                           clearAllText="Clear all"
                           clearRenderer={[Function]}
                           clearValueText="Clear value"
@@ -1471,7 +1471,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
                           valueKey="value"
                         >
                           <div
-                            className="Select css-1ep7pp7-StyledSelect e1ynsgsr0 is-searchable Select--single"
+                            className="Select css-awk01x-StyledSelect e1ynsgsr0 is-searchable Select--single"
                           >
                             <div
                               className="Select-control"
@@ -1676,7 +1676,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
                               >
                                 <Component
                                   aria-disabled={false}
-                                  className="css-1k3pca7-StyledButton edwq9my0"
+                                  className="css-1odjgu9-StyledButton edwq9my0"
                                   data-test-id="create-team"
                                   forwardRef={null}
                                   onClick={[Function]}
@@ -1685,7 +1685,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
                                 >
                                   <button
                                     aria-disabled={false}
-                                    className="css-1k3pca7-StyledButton edwq9my0"
+                                    className="css-1odjgu9-StyledButton edwq9my0"
                                     data-test-id="create-team"
                                     onClick={[Function]}
                                     role="button"
@@ -1770,7 +1770,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
                 <Component
                   aria-disabled={true}
                   aria-label="Create Project"
-                  className="css-1u1hjch-StyledButton edwq9my0"
+                  className="css-9j7ei9-StyledButton edwq9my0"
                   data-test-id="create-project"
                   forwardRef={null}
                   onClick={[Function]}
@@ -1779,7 +1779,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
                   <button
                     aria-disabled={true}
                     aria-label="Create Project"
-                    className="css-1u1hjch-StyledButton edwq9my0"
+                    className="css-9j7ei9-StyledButton edwq9my0"
                     data-test-id="create-project"
                     onClick={[Function]}
                     role="button"
@@ -1866,14 +1866,14 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
       withMargins={true}
     >
       <h1
-        className="css-sxdccq-PageHeading e1bz0f4q0"
+        className="css-48ipkv-PageHeading e1bz0f4q0"
       >
         Create a new Project
       </h1>
     </PageHeading>
     <HelpText>
       <p
-        className="css-tfg794-HelpText e19kiapg5"
+        className="css-kklz5w-HelpText e19kiapg5"
       >
         Projects allow you to scope events to a specific application in
                your organization. For example, you might have separate projects
@@ -1884,7 +1884,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
       withMargins={true}
     >
       <h1
-        className="css-sxdccq-PageHeading e1bz0f4q0"
+        className="css-48ipkv-PageHeading e1bz0f4q0"
       >
         Choose a platform
       </h1>
@@ -2297,7 +2297,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                         >
                           <Component
                             aria-disabled={false}
-                            className="exv4dm85 css-1m3ml9q-StyledButton-ClearButton edwq9my0"
+                            className="exv4dm85 css-rea55z-StyledButton-ClearButton edwq9my0"
                             forwardRef={null}
                             onClick={[Function]}
                             role="button"
@@ -2305,7 +2305,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                           >
                             <button
                               aria-disabled={false}
-                              className="exv4dm85 css-1m3ml9q-StyledButton-ClearButton edwq9my0"
+                              className="exv4dm85 css-rea55z-StyledButton-ClearButton edwq9my0"
                               onClick={[Function]}
                               role="button"
                               size="xsmall"
@@ -2417,7 +2417,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
       withMargins={true}
     >
       <h1
-        className="css-sxdccq-PageHeading e1bz0f4q0"
+        className="css-48ipkv-PageHeading e1bz0f4q0"
       >
         Give your project a name
       </h1>
@@ -2520,7 +2520,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                       <SelectPicker
                         arrowRenderer={[Function]}
                         backspaceRemoves={false}
-                        className="css-1ep7pp7-StyledSelect e1ynsgsr0"
+                        className="css-awk01x-StyledSelect e1ynsgsr0"
                         clearable={false}
                         deleteRemoves={false}
                         forwardedRef={null}
@@ -2537,7 +2537,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                           autosize={true}
                           backspaceRemoves={false}
                           backspaceToRemoveMessage="Press backspace to remove {label}"
-                          className="css-1ep7pp7-StyledSelect e1ynsgsr0"
+                          className="css-awk01x-StyledSelect e1ynsgsr0"
                           clearAllText="Clear all"
                           clearRenderer={[Function]}
                           clearValueText="Clear value"
@@ -2585,7 +2585,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                           valueKey="value"
                         >
                           <div
-                            className="Select css-1ep7pp7-StyledSelect e1ynsgsr0 is-searchable Select--single"
+                            className="Select css-awk01x-StyledSelect e1ynsgsr0 is-searchable Select--single"
                           >
                             <div
                               className="Select-control"
@@ -2790,7 +2790,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                               >
                                 <Component
                                   aria-disabled={false}
-                                  className="css-1k3pca7-StyledButton edwq9my0"
+                                  className="css-1odjgu9-StyledButton edwq9my0"
                                   data-test-id="create-team"
                                   forwardRef={null}
                                   onClick={[Function]}
@@ -2799,7 +2799,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                                 >
                                   <button
                                     aria-disabled={false}
-                                    className="css-1k3pca7-StyledButton edwq9my0"
+                                    className="css-1odjgu9-StyledButton edwq9my0"
                                     data-test-id="create-team"
                                     onClick={[Function]}
                                     role="button"
@@ -2884,7 +2884,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                 <Component
                   aria-disabled={true}
                   aria-label="Create Project"
-                  className="css-1u1hjch-StyledButton edwq9my0"
+                  className="css-9j7ei9-StyledButton edwq9my0"
                   data-test-id="create-project"
                   forwardRef={null}
                   onClick={[Function]}
@@ -2893,7 +2893,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                   <button
                     aria-disabled={true}
                     aria-label="Create Project"
-                    className="css-1u1hjch-StyledButton edwq9my0"
+                    className="css-9j7ei9-StyledButton edwq9my0"
                     data-test-id="create-project"
                     onClick={[Function]}
                     role="button"
@@ -2980,14 +2980,14 @@ exports[`CreateProject should fill in project name if its empty when platform is
       withMargins={true}
     >
       <h1
-        className="css-sxdccq-PageHeading e1bz0f4q0"
+        className="css-48ipkv-PageHeading e1bz0f4q0"
       >
         Create a new Project
       </h1>
     </PageHeading>
     <HelpText>
       <p
-        className="css-tfg794-HelpText e19kiapg5"
+        className="css-kklz5w-HelpText e19kiapg5"
       >
         Projects allow you to scope events to a specific application in
                your organization. For example, you might have separate projects
@@ -2998,7 +2998,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
       withMargins={true}
     >
       <h1
-        className="css-sxdccq-PageHeading e1bz0f4q0"
+        className="css-48ipkv-PageHeading e1bz0f4q0"
       >
         Choose a platform
       </h1>
@@ -3311,7 +3311,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                         >
                           <Component
                             aria-disabled={false}
-                            className="exv4dm85 css-1m3ml9q-StyledButton-ClearButton edwq9my0"
+                            className="exv4dm85 css-rea55z-StyledButton-ClearButton edwq9my0"
                             forwardRef={null}
                             onClick={[Function]}
                             role="button"
@@ -3319,7 +3319,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                           >
                             <button
                               aria-disabled={false}
-                              className="exv4dm85 css-1m3ml9q-StyledButton-ClearButton edwq9my0"
+                              className="exv4dm85 css-rea55z-StyledButton-ClearButton edwq9my0"
                               onClick={[Function]}
                               role="button"
                               size="xsmall"
@@ -4231,7 +4231,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
       withMargins={true}
     >
       <h1
-        className="css-sxdccq-PageHeading e1bz0f4q0"
+        className="css-48ipkv-PageHeading e1bz0f4q0"
       >
         Give your project a name
       </h1>
@@ -4334,7 +4334,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                       <SelectPicker
                         arrowRenderer={[Function]}
                         backspaceRemoves={false}
-                        className="css-1ep7pp7-StyledSelect e1ynsgsr0"
+                        className="css-awk01x-StyledSelect e1ynsgsr0"
                         clearable={false}
                         deleteRemoves={false}
                         forwardedRef={null}
@@ -4351,7 +4351,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                           autosize={true}
                           backspaceRemoves={false}
                           backspaceToRemoveMessage="Press backspace to remove {label}"
-                          className="css-1ep7pp7-StyledSelect e1ynsgsr0"
+                          className="css-awk01x-StyledSelect e1ynsgsr0"
                           clearAllText="Clear all"
                           clearRenderer={[Function]}
                           clearValueText="Clear value"
@@ -4399,7 +4399,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                           valueKey="value"
                         >
                           <div
-                            className="Select css-1ep7pp7-StyledSelect e1ynsgsr0 is-searchable Select--single"
+                            className="Select css-awk01x-StyledSelect e1ynsgsr0 is-searchable Select--single"
                           >
                             <div
                               className="Select-control"
@@ -4604,7 +4604,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                               >
                                 <Component
                                   aria-disabled={false}
-                                  className="css-1k3pca7-StyledButton edwq9my0"
+                                  className="css-1odjgu9-StyledButton edwq9my0"
                                   data-test-id="create-team"
                                   forwardRef={null}
                                   onClick={[Function]}
@@ -4613,7 +4613,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                                 >
                                   <button
                                     aria-disabled={false}
-                                    className="css-1k3pca7-StyledButton edwq9my0"
+                                    className="css-1odjgu9-StyledButton edwq9my0"
                                     data-test-id="create-team"
                                     onClick={[Function]}
                                     role="button"
@@ -4698,7 +4698,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                 <Component
                   aria-disabled={true}
                   aria-label="Create Project"
-                  className="css-1u1hjch-StyledButton edwq9my0"
+                  className="css-9j7ei9-StyledButton edwq9my0"
                   data-test-id="create-project"
                   forwardRef={null}
                   onClick={[Function]}
@@ -4707,7 +4707,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                   <button
                     aria-disabled={true}
                     aria-label="Create Project"
-                    className="css-1u1hjch-StyledButton edwq9my0"
+                    className="css-9j7ei9-StyledButton edwq9my0"
                     data-test-id="create-project"
                     onClick={[Function]}
                     role="button"

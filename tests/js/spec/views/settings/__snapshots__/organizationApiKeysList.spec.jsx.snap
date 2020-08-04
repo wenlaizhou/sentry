@@ -95,7 +95,7 @@ exports[`OrganizationApiKeysList renders 1`] = `
                 >
                   <HeaderTitle>
                     <h4
-                      className="css-fcvkez-HeaderTitle eqkydle2"
+                      className="css-2st5uz-HeaderTitle eqkydle2"
                     >
                       API Keys
                     </h4>
@@ -293,16 +293,16 @@ exports[`OrganizationApiKeysList renders 1`] = `
     </div>
     <Panel>
       <Component
-        className="css-yqvj9a-Panel e119nu470"
+        className="css-1x7ld2l-Panel e119nu470"
       >
         <div
-          className="css-yqvj9a-Panel e119nu470"
+          className="css-1x7ld2l-Panel e119nu470"
         >
           <PanelHeader
             disablePadding={true}
           >
             <div
-              className="css-1vyhbbo-PanelHeader en8g1d30"
+              className="css-c7ktwd-PanelHeader en8g1d30"
             >
               <Styled(div)
                 alignItems="center"

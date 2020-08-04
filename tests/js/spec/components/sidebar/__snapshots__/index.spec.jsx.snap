@@ -90,13 +90,13 @@ exports[`Sidebar SidebarDropdown can open "Switch Organization" sub-menu 1`] = `
                       >
                         <StyledIconAdd>
                           <IconAdd
-                            className="css-q4jktz-StyledIconAdd ev3suul0"
+                            className="css-18s5wtv-StyledIconAdd ev3suul0"
                           >
                             <ForwardRef(SvgIcon)
-                              className="css-q4jktz-StyledIconAdd ev3suul0"
+                              className="css-18s5wtv-StyledIconAdd ev3suul0"
                             >
                               <svg
-                                className="css-q4jktz-StyledIconAdd ev3suul0"
+                                className="css-18s5wtv-StyledIconAdd ev3suul0"
                                 fill="currentColor"
                                 height="16px"
                                 viewBox="0 0 16 16"
@@ -488,7 +488,7 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
                           Switch organization
                           <SubMenuCaret>
                             <span
-                              className="css-15bylh1-SubMenuCaret ev3suul2"
+                              className="css-qol7bl-SubMenuCaret ev3suul2"
                             >
                               <IconChevron
                                 direction="right"
@@ -808,7 +808,7 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
                               </StyledName>
                               <StyledEmail>
                                 <div
-                                  className="css-214iyu-StyledEmail e31z2f82"
+                                  className="css-1ahnrtp-StyledEmail e31z2f82"
                                 >
                                   foo@example.com
                                 </div>
@@ -1113,7 +1113,7 @@ exports[`Sidebar SidebarPanel can display Broadcasts panel and mark as seen 1`] 
       </Title>
       <Message>
         <div
-          className="css-tzqncz-Text-Message ekutvbl4"
+          className="css-1ged7au-Text-Message ekutvbl4"
         >
           Source maps are JSON files that contain information on how to map your transpiled source code back to their original source.
         </div>
@@ -1219,7 +1219,7 @@ exports[`Sidebar SidebarPanel can show Incidents in Sidebar Panel 1`] = `
                 <Component
                   aria-disabled={false}
                   aria-label="Learn more"
-                  className="css-nl9971-StyledButton edwq9my0"
+                  className="css-4qehto-StyledButton edwq9my0"
                   external={true}
                   forwardRef={null}
                   href="https://status.sentry.io"
@@ -1230,7 +1230,7 @@ exports[`Sidebar SidebarPanel can show Incidents in Sidebar Panel 1`] = `
                   <ForwardRef(ExternalLink)
                     aria-disabled={false}
                     aria-label="Learn more"
-                    className="css-nl9971-StyledButton edwq9my0"
+                    className="css-4qehto-StyledButton edwq9my0"
                     href="https://status.sentry.io"
                     onClick={[Function]}
                     role="button"
@@ -1239,7 +1239,7 @@ exports[`Sidebar SidebarPanel can show Incidents in Sidebar Panel 1`] = `
                     <a
                       aria-disabled={false}
                       aria-label="Learn more"
-                      className="css-nl9971-StyledButton edwq9my0"
+                      className="css-4qehto-StyledButton edwq9my0"
                       href="https://status.sentry.io"
                       onClick={[Function]}
                       rel="noreferrer noopener"
@@ -1536,7 +1536,7 @@ exports[`Sidebar renders without org and router 1`] = `
                               </StyledName>
                               <StyledEmail>
                                 <div
-                                  className="css-214iyu-StyledEmail e31z2f82"
+                                  className="css-1ahnrtp-StyledEmail e31z2f82"
                                 >
                                   foo@example.com
                                 </div>

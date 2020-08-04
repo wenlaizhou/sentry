@@ -117,7 +117,7 @@ exports[`OrganizationProjects should render the projects in the store 1`] = `
                       >
                         <HeaderTitle>
                           <h4
-                            className="css-fcvkez-HeaderTitle eqkydle2"
+                            className="css-2st5uz-HeaderTitle eqkydle2"
                           >
                             Projects
                           </h4>
@@ -256,16 +256,16 @@ exports[`OrganizationProjects should render the projects in the store 1`] = `
           </StyledSettingsPageHeading>
           <Panel>
             <Component
-              className="css-yqvj9a-Panel e119nu470"
+              className="css-1x7ld2l-Panel e119nu470"
             >
               <div
-                className="css-yqvj9a-Panel e119nu470"
+                className="css-1x7ld2l-Panel e119nu470"
               >
                 <PanelHeader
                   hasButtons={true}
                 >
                   <div
-                    className="css-agf66e-PanelHeader en8g1d30"
+                    className="css-tnpdpm-PanelHeader en8g1d30"
                   >
                     Projects
                     <withRouter(AsyncComponentSearchInput)
@@ -603,16 +603,16 @@ exports[`OrganizationProjects should render the projects in the store 1`] = `
                                               onClick={[Function]}
                                             >
                                               <IconStar
-                                                className="enngb6z1 css-z6v0ts-Star-BookmarkLink ez1a7zv0"
+                                                className="enngb6z1 css-1mzww3x-Star-BookmarkLink ez1a7zv0"
                                                 isSolid={true}
                                                 onClick={[Function]}
                                               >
                                                 <ForwardRef(SvgIcon)
-                                                  className="enngb6z1 css-z6v0ts-Star-BookmarkLink ez1a7zv0"
+                                                  className="enngb6z1 css-1mzww3x-Star-BookmarkLink ez1a7zv0"
                                                   onClick={[Function]}
                                                 >
                                                   <svg
-                                                    className="enngb6z1 css-z6v0ts-Star-BookmarkLink ez1a7zv0"
+                                                    className="enngb6z1 css-1mzww3x-Star-BookmarkLink ez1a7zv0"
                                                     fill="currentColor"
                                                     height="16px"
                                                     onClick={[Function]}

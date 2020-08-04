@@ -5,7 +5,7 @@ exports[`Docs Search Modal can open help search modal and complete a search 1`] 
   className="css-wpfrhi"
 >
   <div
-    className="css-1a7nclh-DropdownBox ed7560h0"
+    className="css-1cw9ua4-DropdownBox ed7560h0"
   >
     <SearchResultWrapper
       highlighted={true}

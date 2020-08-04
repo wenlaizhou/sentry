@@ -102,7 +102,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                 >
                   <HeaderTitle>
                     <h4
-                      className="css-fcvkez-HeaderTitle eqkydle2"
+                      className="css-2st5uz-HeaderTitle eqkydle2"
                     >
                       Add Member to Organization
                     </h4>
@@ -185,14 +185,14 @@ exports[`InviteMember should render roles when available and allowed, and handle
       >
         <Panel>
           <Component
-            className="css-yqvj9a-Panel e119nu470"
+            className="css-1x7ld2l-Panel e119nu470"
           >
             <div
-              className="css-yqvj9a-Panel e119nu470"
+              className="css-1x7ld2l-Panel e119nu470"
             >
               <PanelHeader>
                 <div
-                  className="css-1aykk0y-PanelHeader en8g1d30"
+                  className="css-1hbezsa-PanelHeader en8g1d30"
                 >
                   Role
                 </div>
@@ -270,7 +270,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                               >
                                 <input
                                   checked={false}
-                                  className="css-mkgwx3-Radio e1d7o7s40"
+                                  className="css-1qikb9h-Radio e1d7o7s40"
                                   id="1"
                                   readOnly={true}
                                   type="radio"
@@ -368,7 +368,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                               >
                                 <input
                                   checked={false}
-                                  className="css-mkgwx3-Radio e1d7o7s40"
+                                  className="css-1qikb9h-Radio e1d7o7s40"
                                   id="2"
                                   readOnly={true}
                                   type="radio"
@@ -515,16 +515,16 @@ exports[`InviteMember should render roles when available and allowed, and handle
         >
           <Panel>
             <Component
-              className="css-yqvj9a-Panel e119nu470"
+              className="css-1x7ld2l-Panel e119nu470"
             >
               <div
-                className="css-yqvj9a-Panel e119nu470"
+                className="css-1x7ld2l-Panel e119nu470"
               >
                 <PanelHeader
                   hasButtons={true}
                 >
                   <div
-                    className="css-agf66e-PanelHeader en8g1d30"
+                    className="css-tnpdpm-PanelHeader en8g1d30"
                   >
                     Team
                     <DropdownAutoComplete
@@ -618,7 +618,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                                           >
                                             <forwardRef<Button>
                                               aria-label="Add Team"
-                                              className="css-1cigwux-StyledButton eenpoef1"
+                                              className="css-16vj1dy-StyledButton eenpoef1"
                                               hideBottomBorder={true}
                                               isOpen={false}
                                               size="xsmall"
@@ -627,7 +627,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                                               <Button
                                                 align="center"
                                                 aria-label="Add Team"
-                                                className="css-1cigwux-StyledButton eenpoef1"
+                                                className="css-16vj1dy-StyledButton eenpoef1"
                                                 disabled={false}
                                                 forwardRef={null}
                                                 hideBottomBorder={true}
@@ -638,7 +638,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                                                 <StyledButton
                                                   aria-disabled={false}
                                                   aria-label="Add Team"
-                                                  className="css-1cigwux-StyledButton eenpoef1"
+                                                  className="css-16vj1dy-StyledButton eenpoef1"
                                                   disabled={false}
                                                   forwardRef={null}
                                                   hideBottomBorder={true}
@@ -651,7 +651,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                                                   <Component
                                                     aria-disabled={false}
                                                     aria-label="Add Team"
-                                                    className="eenpoef1 css-1yy5z8o-StyledButton-StyledButton edwq9my0"
+                                                    className="eenpoef1 css-1fy2t3x-StyledButton-StyledButton edwq9my0"
                                                     forwardRef={null}
                                                     onClick={[Function]}
                                                     role="button"
@@ -661,7 +661,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                                                     <button
                                                       aria-disabled={false}
                                                       aria-label="Add Team"
-                                                      className="eenpoef1 css-1yy5z8o-StyledButton-StyledButton edwq9my0"
+                                                      className="eenpoef1 css-1fy2t3x-StyledButton-StyledButton edwq9my0"
                                                       onClick={[Function]}
                                                       role="button"
                                                       size="xsmall"

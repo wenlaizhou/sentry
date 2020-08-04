@@ -432,7 +432,7 @@ exports[`ProjectPluginDetails renders 1`] = `
                               >
                                 <HeaderTitle>
                                   <h4
-                                    className="css-fcvkez-HeaderTitle eqkydle2"
+                                    className="css-2st5uz-HeaderTitle eqkydle2"
                                   >
                                     Amazon SQS
                                   </h4>
@@ -485,7 +485,7 @@ exports[`ProjectPluginDetails renders 1`] = `
                                         <Component
                                           aria-disabled={false}
                                           aria-label="Enable Plugin"
-                                          className="css-nl9971-StyledButton edwq9my0"
+                                          className="css-4qehto-StyledButton edwq9my0"
                                           forwardRef={null}
                                           onClick={[Function]}
                                           role="button"
@@ -499,7 +499,7 @@ exports[`ProjectPluginDetails renders 1`] = `
                                           <button
                                             aria-disabled={false}
                                             aria-label="Enable Plugin"
-                                            className="css-nl9971-StyledButton edwq9my0"
+                                            className="css-4qehto-StyledButton edwq9my0"
                                             onClick={[Function]}
                                             role="button"
                                             size="small"
@@ -547,7 +547,7 @@ exports[`ProjectPluginDetails renders 1`] = `
                                         <Component
                                           aria-disabled={false}
                                           aria-label="Reset Configuration"
-                                          className="css-nl9971-StyledButton edwq9my0"
+                                          className="css-4qehto-StyledButton edwq9my0"
                                           forwardRef={null}
                                           onClick={[Function]}
                                           role="button"
@@ -556,7 +556,7 @@ exports[`ProjectPluginDetails renders 1`] = `
                                           <button
                                             aria-disabled={false}
                                             aria-label="Reset Configuration"
-                                            className="css-nl9971-StyledButton edwq9my0"
+                                            className="css-4qehto-StyledButton edwq9my0"
                                             onClick={[Function]}
                                             role="button"
                                             size="small"
@@ -727,16 +727,16 @@ exports[`ProjectPluginDetails renders 1`] = `
                             className="plugin-config ref-plugin-config-amazon-sqs"
                           >
                             <Component
-                              className="plugin-config ref-plugin-config-amazon-sqs css-yqvj9a-Panel e119nu470"
+                              className="plugin-config ref-plugin-config-amazon-sqs css-1x7ld2l-Panel e119nu470"
                             >
                               <div
-                                className="plugin-config ref-plugin-config-amazon-sqs css-yqvj9a-Panel e119nu470"
+                                className="plugin-config ref-plugin-config-amazon-sqs css-1x7ld2l-Panel e119nu470"
                               >
                                 <PanelHeader
                                   hasButtons={true}
                                 >
                                   <div
-                                    className="css-agf66e-PanelHeader en8g1d30"
+                                    className="css-tnpdpm-PanelHeader en8g1d30"
                                   >
                                     <PluginName>
                                       <div

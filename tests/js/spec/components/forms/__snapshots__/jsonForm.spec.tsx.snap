@@ -59,10 +59,10 @@ exports[`JsonForm fields prop default 1`] = `
       >
         <Panel>
           <Component
-            className="css-yqvj9a-Panel e119nu470"
+            className="css-1x7ld2l-Panel e119nu470"
           >
             <div
-              className="css-yqvj9a-Panel e119nu470"
+              className="css-1x7ld2l-Panel e119nu470"
             >
               <PanelBody
                 flexible={false}
@@ -173,7 +173,7 @@ exports[`JsonForm fields prop default 1`] = `
                                         disabled={false}
                                       >
                                         <div
-                                          className="css-14dls06-FieldLabel e16ushrl0"
+                                          className="css-1be1g0b-FieldLabel e16ushrl0"
                                         >
                                           <span>
                                             Name
@@ -189,7 +189,7 @@ exports[`JsonForm fields prop default 1`] = `
                                         inline={true}
                                       >
                                         <div
-                                          className="css-ty6413-FieldHelp e54sr8f0"
+                                          className="css-1nl771u-FieldHelp e54sr8f0"
                                         >
                                           A unique ID used to identify this project
                                         </div>
@@ -254,7 +254,7 @@ exports[`JsonForm fields prop default 1`] = `
                                               alignRight={false}
                                             >
                                               <div
-                                                className="css-fofrx-FieldControlStyled e12jpfuq1"
+                                                className="css-q2zc01-FieldControlStyled e12jpfuq1"
                                               >
                                                 <Observer>
                                                   <Input
@@ -489,7 +489,7 @@ exports[`JsonForm fields prop default 1`] = `
                                         disabled={false}
                                       >
                                         <div
-                                          className="css-14dls06-FieldLabel e16ushrl0"
+                                          className="css-1be1g0b-FieldLabel e16ushrl0"
                                         >
                                           <span>
                                             Platform
@@ -500,7 +500,7 @@ exports[`JsonForm fields prop default 1`] = `
                                         inline={true}
                                       >
                                         <div
-                                          className="css-ty6413-FieldHelp e54sr8f0"
+                                          className="css-1nl771u-FieldHelp e54sr8f0"
                                         >
                                           The primary platform for this project, used only for aesthetics
                                         </div>
@@ -567,7 +567,7 @@ exports[`JsonForm fields prop default 1`] = `
                                               alignRight={false}
                                             >
                                               <div
-                                                className="css-fofrx-FieldControlStyled e12jpfuq1"
+                                                className="css-q2zc01-FieldControlStyled e12jpfuq1"
                                               >
                                                 <Observer>
                                                   <ForwardRef(RefForwardedSelectControl)
@@ -1292,7 +1292,7 @@ exports[`JsonForm fields prop default 1`] = `
                                                             allowEmpty={false}
                                                             arrowRenderer={[Function]}
                                                             backspaceRemoves={false}
-                                                            className="css-1ep7pp7-StyledSelect e1ynsgsr0"
+                                                            className="css-awk01x-StyledSelect e1ynsgsr0"
                                                             clearable={false}
                                                             deleteRemoves={false}
                                                             disabled={false}
@@ -1839,7 +1839,7 @@ exports[`JsonForm fields prop default 1`] = `
                                                               autosize={true}
                                                               backspaceRemoves={false}
                                                               backspaceToRemoveMessage="Press backspace to remove {label}"
-                                                              className="css-1ep7pp7-StyledSelect e1ynsgsr0"
+                                                              className="css-awk01x-StyledSelect e1ynsgsr0"
                                                               clearAllText="Clear all"
                                                               clearRenderer={[Function]}
                                                               clearValueText="Clear value"
@@ -2414,7 +2414,7 @@ exports[`JsonForm fields prop default 1`] = `
                                                               valueKey="value"
                                                             >
                                                               <div
-                                                                className="Select css-1ep7pp7-StyledSelect e1ynsgsr0 is-searchable Select--single"
+                                                                className="Select css-awk01x-StyledSelect e1ynsgsr0 is-searchable Select--single"
                                                               >
                                                                 <div
                                                                   className="Select-control"
@@ -2735,16 +2735,16 @@ exports[`JsonForm form prop default 1`] = `
           id="Account-Details"
         >
           <Component
-            className="css-yqvj9a-Panel e119nu470"
+            className="css-1x7ld2l-Panel e119nu470"
             id="Account-Details"
           >
             <div
-              className="css-yqvj9a-Panel e119nu470"
+              className="css-1x7ld2l-Panel e119nu470"
               id="Account-Details"
             >
               <PanelHeader>
                 <div
-                  className="css-1aykk0y-PanelHeader en8g1d30"
+                  className="css-1hbezsa-PanelHeader en8g1d30"
                 >
                   Account Details
                 </div>
@@ -2921,7 +2921,7 @@ exports[`JsonForm form prop default 1`] = `
                                         disabled={false}
                                       >
                                         <div
-                                          className="css-14dls06-FieldLabel e16ushrl0"
+                                          className="css-1be1g0b-FieldLabel e16ushrl0"
                                         >
                                           <span>
                                             Name
@@ -2937,7 +2937,7 @@ exports[`JsonForm form prop default 1`] = `
                                         inline={true}
                                       >
                                         <div
-                                          className="css-ty6413-FieldHelp e54sr8f0"
+                                          className="css-1nl771u-FieldHelp e54sr8f0"
                                         >
                                           Your full name
                                         </div>
@@ -3012,7 +3012,7 @@ exports[`JsonForm form prop default 1`] = `
                                               alignRight={false}
                                             >
                                               <div
-                                                className="css-fofrx-FieldControlStyled e12jpfuq1"
+                                                className="css-q2zc01-FieldControlStyled e12jpfuq1"
                                               >
                                                 <Observer>
                                                   <Input
