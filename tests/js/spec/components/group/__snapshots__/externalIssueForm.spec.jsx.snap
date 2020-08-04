@@ -4726,7 +4726,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                         value="Default Value"
                                       >
                                         <TextAreaControl
-                                          className="css-1745k5i-TextArea edis3zx0"
+                                          className="css-oa902y-TextArea edis3zx0"
                                           default="Default Value"
                                           disabled={false}
                                           id="comment"
@@ -4739,7 +4739,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                           value="Default Value"
                                         >
                                           <textarea
-                                            className="css-1745k5i-TextArea edis3zx0"
+                                            className="css-oa902y-TextArea edis3zx0"
                                             default="Default Value"
                                             disabled={false}
                                             id="comment"
