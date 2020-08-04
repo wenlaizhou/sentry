@@ -186,7 +186,11 @@ export async function openInviteMembersModal(options = {}) {
   openModal(deps => <Modal {...deps} {...options} />, {modalCss});
 }
 
-export async function openCreateDashboardModal(options = {}) {
+type DashboardModalOptions = {
+  organization: Organization;
+};
+
+export async function openCreateDashboardModal(options: DashboardModalOptions) {
   const mod = await import(
     /* webpackChunkName: "CreateDashboardModal" */ 'app/components/modals/createDashboardModal'
   );

@@ -539,12 +539,13 @@ export const DebugSourceType = PropTypes.oneOf(['http', 's3', 'gcs']);
 export const DebugSourceConfig = PropTypes.object;
 
 export const Widget = PropTypes.shape({
-  queries: PropTypes.shape({
-    discover: PropTypes.arrayOf(DiscoverQuery),
+  savedQuery: PropTypes.arrayOf(DiscoverQuery),
+  displayType: PropTypes.string,
+  displayOptions: PropTypes.shape({
+    yAxis: PropTypes.arrayOf(PropTypes.string),
+    width: PropTypes.number,
   }),
   title: PropTypes.node,
-  fieldLabelMap: PropTypes.object,
-  yAxisMapping: PropTypes.array,
 });
 
 export const EChartsData = PropTypes.arrayOf(

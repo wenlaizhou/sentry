@@ -9,7 +9,6 @@ import TextField from 'app/views/settings/components/forms/textField';
 import {ModalRenderProps} from 'app/actionCreators/modal';
 
 type Props = ModalRenderProps & {
-  location: Location;
   organization: Organization;
 };
 

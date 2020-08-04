@@ -1358,6 +1358,7 @@ export type DashboardWidget = {
   displayOptions: {
     width?: number;
     yAxis?: string[];
+    includeReleases?: boolean;
   };
   dateCreated: string;
   savedQuery: SavedQuery;

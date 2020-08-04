@@ -1,140 +1,316 @@
-import {ClassNames} from '@emotion/core';
-import isEqual from 'lodash/isEqual';
-import PropTypes from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import ChartZoom from 'app/components/charts/chartZoom';
-import ReleaseSeries from 'app/components/charts/releaseSeries';
 import SentryTypes from 'app/sentryTypes';
+import ErrorPanel from 'app/components/charts/errorPanel';
+import EventsRequest from 'app/components/charts/eventsRequest';
+import ChartZoom from 'app/components/charts/chartZoom';
+import AreaChart from 'app/components/charts/areaChart';
+import BarChart from 'app/components/charts/barChart';
+import LineChart from 'app/components/charts/lineChart';
+import MarkLine from 'app/components/charts/components/markLine';
+import {getInterval} from 'app/components/charts/utils';
+import TransparentLoadingMask from 'app/components/charts/transparentLoadingMask';
+import {IconWarning} from 'app/icons';
+import TransitionChart from 'app/components/charts/transitionChart';
+import {tooltipFormatter, axisLabelFormatter} from 'app/utils/discover/charts';
+import {aggregateMultiPlotType} from 'app/utils/discover/fields';
+import {t} from 'app/locale';
+import {getUtcToLocalDateObject, getFormattedDate} from 'app/utils/dates';
+import {escape} from 'app/utils';
+import {formatVersion} from 'app/utils/formatters';
 import theme from 'app/utils/theme';
+import withApi from 'app/utils/withApi';
 
-import {WIDGET_DISPLAY} from './constants';
-import {getChartComponent} from './utils/getChartComponent';
-import {getData} from './utils/getData';
-import {getEventsUrlFromDiscoverQueryWithConditions} from './utils/getEventsUrlFromDiscoverQueryWithConditions';
-
-/**
- * Component that decides what Chart to render
- * Extracted into another component so that we can use shouldComponentUpdate
- */
 class WidgetChart extends React.Component {
   static propTypes = {
-    router: PropTypes.object,
-    results: SentryTypes.DiscoverResults,
-    releases: PropTypes.arrayOf(SentryTypes.Release),
-    widget: SentryTypes.Widget,
+    api: PropTypes.object,
     organization: SentryTypes.Organization,
+    widget: SentryTypes.Widget,
+    router: PropTypes.object,
+    releases: PropTypes.arrayOf(SentryTypes.Release),
     selection: SentryTypes.GlobalSelection,
-    reloading: PropTypes.bool,
   };
 
-  shouldComponentUpdate(nextProps) {
-    if (nextProps.reloading) {
-      return false;
-    }
+  generateReleaseSeries() {
+    const {organization, releases, router} = this.props;
 
-    // It's not a big deal to re-render if this.prop.results === nextProps.results === []
-    const isDataEqual =
-      this.props.results.length &&
-      nextProps.results.length &&
-      this.props.results.length === nextProps.results.length;
-
-    if (!isDataEqual) {
-      return true;
-    }
-
-    for (let i = 0; i < this.props.results.length; i++) {
-      if (!isEqual(this.props.results[i].data, nextProps.results[i].data)) {
-        return true;
-      }
-    }
-
-    return false;
+    return {
+      seriesName: 'Releases',
+      data: [],
+      markLine: MarkLine({
+        lineStyle: {
+          normal: {
+            color: theme.purple400,
+            opacity: 0.3,
+            type: 'solid',
+          },
+        },
+        tooltip: {
+          formatter: ({data}) => {
+            // XXX using this.props here as this function does not get re-run
+            // unless projects are changed. Using a closure variable would result
+            // in stale values.
+            const time = getFormattedDate(data.value, 'MMM D, YYYY LT', {
+              local: !this.props.selection.datetime.utc,
+            });
+            const version = escape(formatVersion(data.name, true));
+            return [
+              '<div class="tooltip-series">',
+              `<div><span class="tooltip-label"><strong>${t(
+                'Release'
+              )}</strong></span> ${version}</div>`,
+              '</div>',
+              '<div class="tooltip-date">',
+              time,
+              '</div>',
+              '</div>',
+              '<div class="tooltip-arrow"></div>',
+            ].join('');
+          },
+        },
+        label: {
+          show: false,
+        },
+        data: releases.map(release => ({
+          xAxis: +new Date(release.dateCreated),
+          name: formatVersion(release.version, true),
+          value: formatVersion(release.version, true),
+          onClick: () => {
+            router.push({
+              pathname: `/organizations/${organization.slug}/releases/${release.version}/`,
+              query: new Set(organization.features).has('global-views')
+                ? undefined
+                : {project: router.location.query.project},
+            });
+          },
+          label: {
+            formatter: () => formatVersion(release.version, true),
+          },
+        })),
+      }),
+    };
   }
 
-  renderZoomableChart(ChartComponent, props) {
-    const {router, selection} = this.props;
+  render() {
+    const {api, router, widget, selection} = this.props;
+
+    const start = selection.datetime.start
+      ? getUtcToLocalDateObject(selection.datetime.start)
+      : null;
+
+    const end = selection.datetime.end
+      ? getUtcToLocalDateObject(selection.datetime.end)
+      : null;
+
+    const yAxis = widget.displayOptions.yAxis || widget.savedQuery.yAxis;
+
+    // TODO Add top5 modes and fancy stuff like that.
+    // Include previous only on relative dates (defaults to relative if no start and end)
+    // const includePrevious = !disablePrevious && !start && !end;
+    const includePrevious = false;
+
+    // TODO add daily modes
+    // const intervalVal = showDaily ? '1d' : interval || getInterval(selection, true);
+    const intervalVal = getInterval(selection, true);
+
+    // TODO make this work.
+    const utc = false;
+    const topEvents = false;
+    const showDaily = false;
+
+    // TODO consider moving this higher up the component tree.
+    const releaseSeries = this.generateReleaseSeries();
+
     return (
-      <ChartZoom router={router} useShortDate {...selection.datetime}>
+      <ChartZoom
+        router={router}
+        period={selection.datetime.period}
+        utc={utc}
+        projects={selection.projects}
+        environments={selection.environments}
+      >
         {zoomRenderProps => (
-          <ClassNames>
-            {({css}) => (
-              <ChartComponent
-                rowClassName={css`
-                  color: ${theme.textColor};
-                `}
-                {...props}
-                {...zoomRenderProps}
-              />
-            )}
-          </ClassNames>
+          <EventsRequest
+            api={api}
+            period={selection.datetime.period}
+            project={selection.projects}
+            environment={selection.environments}
+            start={start}
+            end={end}
+            interval={intervalVal}
+            query={widget.savedQuery.query}
+            includePrevious={includePrevious}
+            yAxis={yAxis}
+            field={widget.savedQuery.field}
+            orderby={widget.savedQuery.orderby}
+            topEvents={topEvents}
+            confirmedQuery
+          >
+            {({errored, loading, reloading, results, timeseriesData}) => {
+              if (errored) {
+                return (
+                  <ErrorPanel>
+                    <IconWarning color="gray500" size="lg" />
+                  </ErrorPanel>
+                );
+              }
+              const seriesData = results ? results : timeseriesData;
+
+              return (
+                <TransitionChart loading={loading} reloading={reloading}>
+                  <TransparentLoadingMask visible={reloading} />
+                  <Chart
+                    {...zoomRenderProps}
+                    loading={loading}
+                    reloading={reloading}
+                    utc={utc}
+                    showLegend
+                    releaseSeries={releaseSeries || []}
+                    timeseriesData={seriesData}
+                    stacked={typeof topEvents === 'number' && topEvents > 0}
+                    yAxis={yAxis}
+                    showDaily={showDaily}
+                  />
+                </TransitionChart>
+              );
+            }}
+          </EventsRequest>
         )}
       </ChartZoom>
     );
   }
+}
+
+class Chart extends React.Component {
+  static propTypes = {
+    loading: PropTypes.bool,
+    reloading: PropTypes.bool,
+    releaseSeries: PropTypes.array,
+    zoomRenderProps: PropTypes.object,
+    timeseriesData: PropTypes.array,
+    showLegend: PropTypes.bool,
+    previousTimeseriesData: PropTypes.object,
+    currentSeriesName: PropTypes.string,
+    previousSeriesName: PropTypes.string,
+    showDaily: PropTypes.bool,
+    yAxis: PropTypes.string,
+  };
+
+  state = {
+    forceUpdate: false,
+  };
+
+  shouldComponentUpdate(nextProps, nextState) {
+    if (nextProps.reloading || !nextProps.timeseriesData) {
+      return false;
+    }
+
+    if (
+      isEqual(this.props.timeseriesData, nextProps.timeseriesData) &&
+      isEqual(this.props.releaseSeries, nextProps.releaseSeries) &&
+      isEqual(this.props.previousTimeseriesData, nextProps.previousTimeseriesData)
+    ) {
+      return false;
+    }
+
+    return true;
+  }
+
+  getChartComponent() {
+    const {showDaily, timeseriesData, yAxis} = this.props;
+    if (showDaily) {
+      return BarChart;
+    }
+    if (timeseriesData.length > 1) {
+      switch (aggregateMultiPlotType(yAxis)) {
+        case 'line':
+          return LineChart;
+        case 'area':
+          return AreaChart;
+        default:
+          throw new Error(`Unknown multi plot type for ${yAxis}`);
+      }
+    }
+    return AreaChart;
+  }
 
   render() {
-    const {organization, results, releases, selection, widget} = this.props;
-    const isTable = widget.type === WIDGET_DISPLAY.TABLE;
+    const {
+      loading: _loading,
+      reloading: _reloading,
+      yAxis,
+      releaseSeries,
+      zoomRenderProps,
+      timeseriesData,
+      previousTimeseriesData,
+      showLegend,
+      currentSeriesName,
+      previousSeriesName,
+      ...props
+    } = this.props;
 
-    // get visualization based on widget data
-    const ChartComponent = getChartComponent(widget);
+    const data = [currentSeriesName ?? t('Current'), previousSeriesName ?? t('Previous')];
+    if (Array.isArray(releaseSeries)) {
+      data.push(t('Releases'));
+    }
 
-    // get data func based on query
-    const chartData = getData(results, widget);
-
-    const extra = {
-      ...(isTable && {
-        getRowLink: rowObject => {
-          // Table Charts don't support multiple queries
-          const [query] = widget.queries.discover;
-
-          return getEventsUrlFromDiscoverQueryWithConditions({
-            values: rowObject.fieldValues,
-            query,
-            organization,
-            selection,
-          });
-        },
-      }),
+    const legend = showLegend && {
+      right: 16,
+      top: 12,
+      icon: 'circle',
+      itemHeight: 8,
+      itemWidth: 8,
+      itemGap: 12,
+      align: 'left',
+      textStyle: {
+        verticalAlign: 'top',
+        fontSize: 11,
+        fontFamily: 'Rubik',
+      },
+      data,
     };
 
-    // Releases can only be added to time charts
-    if (widget.includeReleases) {
-      return (
-        <ReleaseSeries utc={selection.utc} releases={releases}>
-          {({releaseSeries}) =>
-            this.renderZoomableChart(ChartComponent, {
-              ...extra,
-              ...chartData,
-              series: [...chartData.series, ...releaseSeries],
-            })
-          }
-        </ReleaseSeries>
-      );
-    }
+    const chartOptions = {
+      colors: theme.charts.getColorPalette(timeseriesData.length - 2),
+      grid: {
+        left: '24px',
+        right: '24px',
+        top: '32px',
+        bottom: '12px',
+      },
+      seriesOptions: {
+        showSymbol: false,
+      },
+      tooltip: {
+        truncate: 80,
+        valueFormatter: value => tooltipFormatter(value, yAxis),
+      },
+      yAxis: {
+        axisLabel: {
+          color: theme.gray400,
+          formatter: value => axisLabelFormatter(value, yAxis),
+        },
+      },
+    };
 
-    if (chartData.isGroupedByDate) {
-      return this.renderZoomableChart(ChartComponent, {
-        ...extra,
-        ...chartData,
-      });
-    }
+    const Component = this.getChartComponent();
+    const series = Array.isArray(releaseSeries)
+      ? [...timeseriesData, ...releaseSeries]
+      : timeseriesData;
 
     return (
-      <ClassNames>
-        {({css}) => (
-          <ChartComponent
-            rowClassName={css`
-              color: ${theme.textColor};
-            `}
-            {...extra}
-            {...chartData}
-          />
-        )}
-      </ClassNames>
+      <Component
+        {...props}
+        {...zoomRenderProps}
+        {...chartOptions}
+        legend={legend}
+        onLegendSelectChanged={this.handleLegendSelectChanged}
+        series={series}
+        previousPeriod={previousTimeseriesData ? [previousTimeseriesData] : null}
+      />
     );
   }
 }
 
-export default WidgetChart;
+export default withApi(WidgetChart);

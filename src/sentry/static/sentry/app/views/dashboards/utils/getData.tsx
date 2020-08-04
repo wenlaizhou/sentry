@@ -27,6 +27,7 @@ export function getData(results: SnubaResult[], widget: Widget) {
     };
   }
 
+  // TODO not sure any of this is going to work. Might need to
   let series = results
     .map((result, i) =>
       chartDataFunc(result.data, queries.discover[i], {

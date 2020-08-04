@@ -11,12 +11,12 @@ import space from 'app/styles/space';
 import withGlobalSelection from 'app/utils/withGlobalSelection';
 import withOrganization from 'app/utils/withOrganization';
 
-import DiscoverQuery from './discoverQuery';
 import ExploreWidget from './exploreWidget';
 import WidgetChart from './widgetChart';
 
 class Widget extends React.Component {
   static propTypes = {
+    api: PropTypes.object,
     releasesLoading: PropTypes.bool,
     releases: PropTypes.arrayOf(SentryTypes.Release),
     widget: SentryTypes.Widget,
@@ -26,60 +26,29 @@ class Widget extends React.Component {
   };
 
   render() {
-    const {
-      organization,
-      releasesLoading,
-      router,
-      widget,
-      releases,
-      selection,
-    } = this.props;
-    const {title, includePreviousPeriod, compareToPeriod} = widget;
+    const {organization, router, widget, releases, selection} = this.props;
+    const {title, savedQuery} = widget;
 
     return (
       <ErrorBoundary customComponent={<ErrorCard>{t('Error loading widget')}</ErrorCard>}>
-        <DiscoverQuery
-          releasesLoading={releasesLoading}
-          releases={releases}
-          organization={organization}
-          selection={selection}
-          queries={widget.queries.discover}
-          includePreviousPeriod={includePreviousPeriod}
-          compareToPeriod={compareToPeriod}
-        >
-          {({queries, results, reloading}) => {
-            // Show a placeholder "square" during initial load
-            if (results === null) {
-              return <Placeholder />;
-            }
-
-            const widgetChartProps = {
-              releases,
-              selection,
-              results,
-              widget,
-              reloading,
-              router,
-              organization,
-            };
-
-            return (
-              <WidgetWrapperForMask>
-                {reloading && <ReloadingMask />}
-                <StyledPanel>
-                  <WidgetHeader>{title}</WidgetHeader>
-                  <StyledPanelBody>
-                    <WidgetChart {...widgetChartProps} />
-                  </StyledPanelBody>
-                  <WidgetFooter>
-                    <div />
-                    <ExploreWidget {...{widget, queries, router, selection}} />
-                  </WidgetFooter>
-                </StyledPanel>
-              </WidgetWrapperForMask>
-            );
-          }}
-        </DiscoverQuery>
+        <WidgetWrapperForMask>
+          <StyledPanel>
+            <WidgetHeader>{title}</WidgetHeader>
+            <StyledPanelBody>
+              <WidgetChart
+                widget={widget}
+                router={router}
+                releases={releases}
+                organization={organization}
+                selection={selection}
+              />
+            </StyledPanelBody>
+            <WidgetFooter>
+              <div />
+              <ExploreWidget {...{widget, savedQuery, router, selection}} />
+            </WidgetFooter>
+          </StyledPanel>
+        </WidgetWrapperForMask>
       </ErrorBoundary>
     );
   }
@@ -103,11 +72,6 @@ const Placeholder = styled('div')`
 
 const WidgetWrapperForMask = styled('div')`
   position: relative;
-`;
-
-const ReloadingMask = styled(LoadingMask)`
-  z-index: 1;
-  opacity: 0.6;
 `;
 
 const ErrorCard = styled(Placeholder)`

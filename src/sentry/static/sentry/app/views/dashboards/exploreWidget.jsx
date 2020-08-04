@@ -22,11 +22,9 @@ class ExploreWidget extends React.Component {
     selection: SentryTypes.GlobalSelection,
   };
 
-  getExportToDiscover = (query, isDiscover2 = false) => {
+  getExportToDiscover = query => {
     const {selection, organization} = this.props;
-    return isDiscover2
-      ? getDiscover2UrlPathFromDiscoverQuery({organization, selection, query})
-      : getDiscoverUrlPathFromDiscoverQuery({organization, selection, query});
+    return getDiscover2UrlPathFromDiscoverQuery({organization, selection, query});
   };
 
   getExportToEvents = query => {
@@ -87,83 +85,20 @@ class ExploreWidget extends React.Component {
     return flags;
   }
 
-  renderActionToDiscover1(query, flags) {
-    // Hide if preference is Discover2
-    if (flags.discover2) {
-      return null;
-    }
-
-    if (!flags.discover1) {
-      return null;
-    }
-
+  renderActionToDiscover(query) {
     return (
       <ExploreAction
         to={this.getExportToDiscover(query)}
-        title={
-          flags.discover1
-            ? t('Explore data in Discover')
-            : t('You do not have access to Discover')
-        }
+        title={t('Explore data in Discover')}
       >
         <IconTelescope size="xs" />
-      </ExploreAction>
-    );
-  }
-
-  renderActionToDiscover2(query, flags) {
-    // If Discover1 is the preference, do not show
-    if (flags.discover1 && flags.events && !flags.discover2) {
-      return null;
-    }
-
-    return (
-      <ExploreAction
-        to={flags.discover2 ? this.getExportToDiscover(query, true) : ''}
-        href={
-          !flags.discover2
-            ? 'https://docs.sentry.io/performance-monitoring/discover-queries/'
-            : ''
-        }
-        target={!flags.discover2 ? '_blank' : ''}
-        title={
-          flags.discover2
-            ? t('Explore data in Discover')
-            : t('You do not have access to Discover. Click to learn more.')
-        }
-      >
-        <IconTelescope size="xs" />
-      </ExploreAction>
-    );
-  }
-
-  renderActionToEvent(query, flags) {
-    // Hide if preference is Discover2
-    if (flags.discover2) {
-      return null;
-    }
-
-    if (!flags.events) {
-      return null;
-    }
-
-    return (
-      <ExploreAction
-        to={this.getExportToEvents(query)}
-        title={
-          flags.events
-            ? t('Explore data in Events')
-            : t('You do not have access to Events')
-        }
-      >
-        <IconStack />
       </ExploreAction>
     );
   }
 
   render() {
     const {organization, widget} = this.props;
-    const discoverQueries = widget.queries.discover;
+    const savedQuery = widget.savedQuery;
     const flags = this.getDiscoverFlags(organization);
 
     return (
@@ -181,15 +116,10 @@ class ExploreWidget extends React.Component {
               </ExploreButton>
             </div>
             <ExploreMenu {...getMenuProps({isOpen})}>
-              {discoverQueries.map(query => (
-                <ExploreRow key={query.name}>
-                  <QueryName>{query.name}</QueryName>
-
-                  {this.renderActionToDiscover1(query, flags)}
-                  {this.renderActionToDiscover2(query, flags)}
-                  {this.renderActionToEvent(query, flags)}
-                </ExploreRow>
-              ))}
+              <ExploreRow key={savedQuery.name}>
+                <QueryName>{savedQuery.name}</QueryName>
+                {this.renderActionToDiscover(savedQuery, flags)}
+              </ExploreRow>
             </ExploreMenu>
           </ExploreRoot>
         )}
