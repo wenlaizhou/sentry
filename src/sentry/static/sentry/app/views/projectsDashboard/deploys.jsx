@@ -84,7 +84,7 @@ class Deploy extends React.Component {
 const DeployRow = styled('div')`
   display: flex;
   justify-content: space-between;
-  color: ${p => p.theme.gray500};
+  color: ${p => p.theme.gray300};
   font-size: 12px;
 
   &:not(:last-of-type) {
