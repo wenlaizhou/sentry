@@ -16,7 +16,7 @@ exports[`InstallWizard renders 1`] = `
         >
           <Pattern>
             <div
-              className="css-1nqt2zj-Pattern-fixedStyle-fixedStyle e1c7mu5x1"
+              className="css-1k4wanx-Pattern-fixedStyle-fixedStyle e1c7mu5x1"
             />
           </Pattern>
           <SetupWizard>

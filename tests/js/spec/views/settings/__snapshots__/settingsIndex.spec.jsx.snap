@@ -254,7 +254,7 @@ exports[`SettingsIndex renders 1`] = `
             to="/settings/org-slug/support"
           >
             <HomeIcon
-              color="purple400"
+              color="purple300"
             >
               <IconSupport
                 size="lg"

@@ -1406,7 +1406,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
                       <SelectPicker
                         arrowRenderer={[Function]}
                         backspaceRemoves={false}
-                        className="css-wtd3uw-StyledSelect e1ynsgsr0"
+                        className="css-awk01x-StyledSelect e1ynsgsr0"
                         clearable={false}
                         deleteRemoves={false}
                         forwardedRef={null}
@@ -1423,7 +1423,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
                           autosize={true}
                           backspaceRemoves={false}
                           backspaceToRemoveMessage="Press backspace to remove {label}"
-                          className="css-wtd3uw-StyledSelect e1ynsgsr0"
+                          className="css-awk01x-StyledSelect e1ynsgsr0"
                           clearAllText="Clear all"
                           clearRenderer={[Function]}
                           clearValueText="Clear value"
@@ -1471,7 +1471,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
                           valueKey="value"
                         >
                           <div
-                            className="Select css-wtd3uw-StyledSelect e1ynsgsr0 is-searchable Select--single"
+                            className="Select css-awk01x-StyledSelect e1ynsgsr0 is-searchable Select--single"
                           >
                             <div
                               className="Select-control"
@@ -2520,7 +2520,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                       <SelectPicker
                         arrowRenderer={[Function]}
                         backspaceRemoves={false}
-                        className="css-wtd3uw-StyledSelect e1ynsgsr0"
+                        className="css-awk01x-StyledSelect e1ynsgsr0"
                         clearable={false}
                         deleteRemoves={false}
                         forwardedRef={null}
@@ -2537,7 +2537,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                           autosize={true}
                           backspaceRemoves={false}
                           backspaceToRemoveMessage="Press backspace to remove {label}"
-                          className="css-wtd3uw-StyledSelect e1ynsgsr0"
+                          className="css-awk01x-StyledSelect e1ynsgsr0"
                           clearAllText="Clear all"
                           clearRenderer={[Function]}
                           clearValueText="Clear value"
@@ -2585,7 +2585,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                           valueKey="value"
                         >
                           <div
-                            className="Select css-wtd3uw-StyledSelect e1ynsgsr0 is-searchable Select--single"
+                            className="Select css-awk01x-StyledSelect e1ynsgsr0 is-searchable Select--single"
                           >
                             <div
                               className="Select-control"
@@ -4334,7 +4334,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                       <SelectPicker
                         arrowRenderer={[Function]}
                         backspaceRemoves={false}
-                        className="css-wtd3uw-StyledSelect e1ynsgsr0"
+                        className="css-awk01x-StyledSelect e1ynsgsr0"
                         clearable={false}
                         deleteRemoves={false}
                         forwardedRef={null}
@@ -4351,7 +4351,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                           autosize={true}
                           backspaceRemoves={false}
                           backspaceToRemoveMessage="Press backspace to remove {label}"
-                          className="css-wtd3uw-StyledSelect e1ynsgsr0"
+                          className="css-awk01x-StyledSelect e1ynsgsr0"
                           clearAllText="Clear all"
                           clearRenderer={[Function]}
                           clearValueText="Clear value"
@@ -4399,7 +4399,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                           valueKey="value"
                         >
                           <div
-                            className="Select css-wtd3uw-StyledSelect e1ynsgsr0 is-searchable Select--single"
+                            className="Select css-awk01x-StyledSelect e1ynsgsr0 is-searchable Select--single"
                           >
                             <div
                               className="Select-control"

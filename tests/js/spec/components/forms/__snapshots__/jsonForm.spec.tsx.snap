@@ -1292,7 +1292,7 @@ exports[`JsonForm fields prop default 1`] = `
                                                             allowEmpty={false}
                                                             arrowRenderer={[Function]}
                                                             backspaceRemoves={false}
-                                                            className="css-wtd3uw-StyledSelect e1ynsgsr0"
+                                                            className="css-awk01x-StyledSelect e1ynsgsr0"
                                                             clearable={false}
                                                             deleteRemoves={false}
                                                             disabled={false}
@@ -1839,7 +1839,7 @@ exports[`JsonForm fields prop default 1`] = `
                                                               autosize={true}
                                                               backspaceRemoves={false}
                                                               backspaceToRemoveMessage="Press backspace to remove {label}"
-                                                              className="css-wtd3uw-StyledSelect e1ynsgsr0"
+                                                              className="css-awk01x-StyledSelect e1ynsgsr0"
                                                               clearAllText="Clear all"
                                                               clearRenderer={[Function]}
                                                               clearValueText="Clear value"
@@ -2414,7 +2414,7 @@ exports[`JsonForm fields prop default 1`] = `
                                                               valueKey="value"
                                                             >
                                                               <div
-                                                                className="Select css-wtd3uw-StyledSelect e1ynsgsr0 is-searchable Select--single"
+                                                                className="Select css-awk01x-StyledSelect e1ynsgsr0 is-searchable Select--single"
                                                               >
                                                                 <div
                                                                   className="Select-control"

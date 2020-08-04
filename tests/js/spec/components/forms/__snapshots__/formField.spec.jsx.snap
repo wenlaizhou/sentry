@@ -347,7 +347,7 @@ exports[`FormField + model renders with Form 1`] = `
                     <Component
                       aria-disabled={false}
                       aria-label="Save Changes"
-                      className="css-176koc4-StyledButton edwq9my0"
+                      className="css-1e05jtd-StyledButton edwq9my0"
                       data-test-id="form-submit"
                       forwardRef={null}
                       onClick={[Function]}
@@ -357,7 +357,7 @@ exports[`FormField + model renders with Form 1`] = `
                       <button
                         aria-disabled={false}
                         aria-label="Save Changes"
-                        className="css-176koc4-StyledButton edwq9my0"
+                        className="css-1e05jtd-StyledButton edwq9my0"
                         data-test-id="form-submit"
                         onClick={[Function]}
                         role="button"
