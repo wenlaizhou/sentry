@@ -2255,12 +2255,12 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                   onClick={[Function]}
                 >
                   <Component
-                    className="css-1x62u9j-ClearButton exv4dm85"
+                    className="css-15i5imk-ClearButton exv4dm85"
                     onClick={[Function]}
                   >
                     <forwardRef<Button>
                       borderless={true}
-                      className="css-1x62u9j-ClearButton exv4dm85"
+                      className="css-15i5imk-ClearButton exv4dm85"
                       icon={
                         <ForwardRef(IconClose)
                           isCircled={true}
@@ -2273,7 +2273,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                       <Button
                         align="center"
                         borderless={true}
-                        className="css-1x62u9j-ClearButton exv4dm85"
+                        className="css-15i5imk-ClearButton exv4dm85"
                         disabled={false}
                         forwardRef={null}
                         icon={
@@ -2288,7 +2288,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                         <StyledButton
                           aria-disabled={false}
                           borderless={true}
-                          className="css-1x62u9j-ClearButton exv4dm85"
+                          className="css-15i5imk-ClearButton exv4dm85"
                           disabled={false}
                           forwardRef={null}
                           onClick={[Function]}
@@ -2297,7 +2297,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                         >
                           <Component
                             aria-disabled={false}
-                            className="exv4dm85 css-rea55z-StyledButton-ClearButton edwq9my0"
+                            className="exv4dm85 css-2xyirk-StyledButton-ClearButton edwq9my0"
                             forwardRef={null}
                             onClick={[Function]}
                             role="button"
@@ -2305,7 +2305,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                           >
                             <button
                               aria-disabled={false}
-                              className="exv4dm85 css-rea55z-StyledButton-ClearButton edwq9my0"
+                              className="exv4dm85 css-2xyirk-StyledButton-ClearButton edwq9my0"
                               onClick={[Function]}
                               role="button"
                               size="xsmall"
@@ -2439,7 +2439,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
           </FormLabel>
           <ProjectNameInput>
             <div
-              className="css-1wsio8c-ProjectNameInput e19kiapg3"
+              className="css-d0dxib-ProjectNameInput e19kiapg3"
             >
               <ProjectPlatformIcon
                 monoTone={true}
@@ -3180,7 +3180,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
           </CategoryNav>
           <SearchBar>
             <div
-              className="css-1grlnw9-SearchBar exv4dm81"
+              className="css-mj1wuo-SearchBar exv4dm81"
             >
               <IconSearch
                 size="xs"
@@ -3269,12 +3269,12 @@ exports[`CreateProject should fill in project name if its empty when platform is
                   onClick={[Function]}
                 >
                   <Component
-                    className="css-1x62u9j-ClearButton exv4dm85"
+                    className="css-15i5imk-ClearButton exv4dm85"
                     onClick={[Function]}
                   >
                     <forwardRef<Button>
                       borderless={true}
-                      className="css-1x62u9j-ClearButton exv4dm85"
+                      className="css-15i5imk-ClearButton exv4dm85"
                       icon={
                         <ForwardRef(IconClose)
                           isCircled={true}
@@ -3287,7 +3287,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                       <Button
                         align="center"
                         borderless={true}
-                        className="css-1x62u9j-ClearButton exv4dm85"
+                        className="css-15i5imk-ClearButton exv4dm85"
                         disabled={false}
                         forwardRef={null}
                         icon={
@@ -3302,7 +3302,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                         <StyledButton
                           aria-disabled={false}
                           borderless={true}
-                          className="css-1x62u9j-ClearButton exv4dm85"
+                          className="css-15i5imk-ClearButton exv4dm85"
                           disabled={false}
                           forwardRef={null}
                           onClick={[Function]}
@@ -3311,7 +3311,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                         >
                           <Component
                             aria-disabled={false}
-                            className="exv4dm85 css-rea55z-StyledButton-ClearButton edwq9my0"
+                            className="exv4dm85 css-2xyirk-StyledButton-ClearButton edwq9my0"
                             forwardRef={null}
                             onClick={[Function]}
                             role="button"
@@ -3319,7 +3319,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                           >
                             <button
                               aria-disabled={false}
-                              className="exv4dm85 css-rea55z-StyledButton-ClearButton edwq9my0"
+                              className="exv4dm85 css-2xyirk-StyledButton-ClearButton edwq9my0"
                               onClick={[Function]}
                               role="button"
                               size="xsmall"
@@ -4253,7 +4253,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
           </FormLabel>
           <ProjectNameInput>
             <div
-              className="css-1wsio8c-ProjectNameInput e19kiapg3"
+              className="css-d0dxib-ProjectNameInput e19kiapg3"
             >
               <ProjectPlatformIcon
                 monoTone={true}

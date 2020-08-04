@@ -879,7 +879,7 @@ exports[`Filter default render 1`] = `
                                   color="green400"
                                 >
                                   <div
-                                    className="css-aydffn-IconWrapper e1oljvyu0"
+                                    className="css-1i4jl0w-IconWrapper e1oljvyu0"
                                   >
                                     <IconSwitch
                                       size="xs"
@@ -991,7 +991,7 @@ exports[`Filter default render 1`] = `
                                   color="pink400"
                                 >
                                   <div
-                                    className="css-boc895-IconWrapper e1oljvyu0"
+                                    className="css-189y24l-IconWrapper e1oljvyu0"
                                   >
                                     <IconSpan
                                       size="xs"
@@ -1094,7 +1094,7 @@ exports[`Filter default render 1`] = `
                                   color="purple400"
                                 >
                                   <div
-                                    className="css-1ev1gh8-IconWrapper e1oljvyu0"
+                                    className="css-1mlcgnx-IconWrapper e1oljvyu0"
                                   >
                                     <IconUser
                                       size="xs"
@@ -1200,7 +1200,7 @@ exports[`Filter default render 1`] = `
                                   color="green500"
                                 >
                                   <div
-                                    className="css-msfkbj-IconWrapper e1oljvyu0"
+                                    className="css-1wgik3n-IconWrapper e1oljvyu0"
                                   >
                                     <IconLocation
                                       size="xs"
@@ -1306,7 +1306,7 @@ exports[`Filter default render 1`] = `
                                   color="purple500"
                                 >
                                   <div
-                                    className="css-1u04otr-IconWrapper e1oljvyu0"
+                                    className="css-1wwehb1-IconWrapper e1oljvyu0"
                                   >
                                     <IconFix
                                       size="xs"
@@ -1409,7 +1409,7 @@ exports[`Filter default render 1`] = `
                                   color="red400"
                                 >
                                   <div
-                                    className="css-12qsvx6-IconWrapper e1oljvyu0"
+                                    className="css-1r54ggw-IconWrapper e1oljvyu0"
                                   >
                                     <IconFire
                                       size="xs"
@@ -1542,18 +1542,18 @@ exports[`Filter default render 1`] = `
                                   color="blue400"
                                 >
                                   <Component
-                                    className="css-pl48mu-Tag-StyledTag eio8trv0"
+                                    className="css-1egwhai-Tag-StyledTag eio8trv0"
                                     color="blue400"
                                   >
                                     <div
-                                      className="css-pl48mu-Tag-StyledTag eio8trv0"
+                                      className="css-1egwhai-Tag-StyledTag eio8trv0"
                                       color="blue400"
                                     >
                                       <Highlight
                                         text=""
                                       >
                                         <HighlightComponent
-                                          className="css-69k451-Highlight em9eqvp0"
+                                          className="css-hywrkr-Highlight em9eqvp0"
                                           text=""
                                         >
                                           info
@@ -1633,18 +1633,18 @@ exports[`Filter default render 1`] = `
                                   color="red400"
                                 >
                                   <Component
-                                    className="css-f59gmk-Tag-StyledTag eio8trv0"
+                                    className="css-gqhnot-Tag-StyledTag eio8trv0"
                                     color="red400"
                                   >
                                     <div
-                                      className="css-f59gmk-Tag-StyledTag eio8trv0"
+                                      className="css-gqhnot-Tag-StyledTag eio8trv0"
                                       color="red400"
                                     >
                                       <Highlight
                                         text=""
                                       >
                                         <HighlightComponent
-                                          className="css-69k451-Highlight em9eqvp0"
+                                          className="css-hywrkr-Highlight em9eqvp0"
                                           text=""
                                         >
                                           error
