@@ -6,6 +6,7 @@ from rest_framework import serializers
 from sentry.api.base import DocSection
 from sentry.api.bases.organization import OrganizationEndpoint
 from sentry.api.paginator import OffsetPaginator
+from sentry.api.serializers.models.organization_dashboard import DashboardIndexSerializer
 from sentry.api.serializers import serialize
 from sentry.models import Dashboard
 from rest_framework.response import Response
@@ -33,12 +34,13 @@ class OrganizationDashboardsEndpoint(OrganizationEndpoint):
         if query:
             dashboards = dashboards.filter(title__icontains=query)
 
+        serializer = DashboardIndexSerializer()
         return self.paginate(
             request=request,
             queryset=dashboards,
             order_by="title",
             paginator_cls=OffsetPaginator,
-            on_results=lambda x: serialize(x, request.user),
+            on_results=lambda x: serialize(x, request.user, serializer=serializer),
         )
 
     def post(self, request, organization):
@@ -65,4 +67,5 @@ class OrganizationDashboardsEndpoint(OrganizationEndpoint):
         except IntegrityError:
             return Response("This dashboard already exists", status=409)
 
-        return Response(serialize(dashboard, request.user), status=201)
+        serializer = DashboardIndexSerializer()
+        return Response(serialize(dashboard, request.user, serializer=serializer), status=201)

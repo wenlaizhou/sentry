@@ -3,22 +3,22 @@ from __future__ import absolute_import
 import six
 
 from sentry.api.serializers import Serializer, register, serialize
-from sentry.models import Dashboard, Widget, WidgetDataSource, WidgetDisplayTypes
+from sentry.api.serializers.models.user import UserSerializer
+from sentry.models import Dashboard, Widget, WidgetDisplayTypes
+from sentry.discover.models import DiscoverSavedQuery
 
 
 @register(Widget)
 class WidgetSerializer(Serializer):
     def get_attrs(self, item_list, user):
         result = {}
-        data_sources = serialize(
-            list(WidgetDataSource.objects.filter(widget_id__in=[i.id for i in item_list]))
+        queries = serialize(
+            list(DiscoverSavedQuery.objects.filter(id__in=[i.saved_query_id for i in item_list]))
         )
+        query_map = {query['id']: query for query in queries}
 
         for widget in item_list:
-            widget_data_sources = [
-                d for d in data_sources if d["widgetId"] == six.text_type(widget.id)
-            ]
-            result[widget] = {"dataSources": widget_data_sources}
+            result[widget] = {"savedQuery": query_map[widget.id]}
 
         return result
 
@@ -31,28 +31,14 @@ class WidgetSerializer(Serializer):
             "displayOptions": obj.display_options,
             "dateCreated": obj.date_added,
             "dashboardId": six.text_type(obj.dashboard_id),
-            "dataSources": attrs["dataSources"],
-        }
-
-
-@register(WidgetDataSource)
-class WidgetDataSourceSerializer(Serializer):
-    def serialize(self, obj, attrs, user, **kwargs):
-        return {
-            "id": six.text_type(obj.id),
-            "type": obj.type,
-            "name": obj.name,
-            "data": obj.data,
-            "order": six.text_type(obj.order),
-            "widgetId": six.text_type(obj.widget_id),
+            "savedQuery": attrs["savedQuery"],
         }
 
 
 @register(Dashboard)
-class DashboardWithWidgetsSerializer(Serializer):
+class DashboardSerializer(Serializer):
     def get_attrs(self, item_list, user):
         result = {}
-
         widgets = serialize(list(Widget.objects.filter(dashboard_id__in=[i.id for i in item_list])))
 
         for dashboard in item_list:
@@ -67,9 +53,19 @@ class DashboardWithWidgetsSerializer(Serializer):
         data = {
             "id": six.text_type(obj.id),
             "title": obj.title,
-            "organization": six.text_type(obj.organization.id),
             "dateCreated": obj.date_added,
-            "createdBy": six.text_type(obj.created_by.id),
+            "createdBy": serialize(obj.created_by, serializer=UserSerializer()),
             "widgets": attrs["widgets"],
+        }
+        return data
+
+
+class DashboardIndexSerializer(Serializer):
+    def serialize(self, obj, attrs, user, **kwargs):
+        data = {
+            "id": six.text_type(obj.id),
+            "title": obj.title,
+            "dateCreated": obj.date_added,
+            "createdBy": serialize(obj.created_by, serializer=UserSerializer()),
         }
         return data

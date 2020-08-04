@@ -26,10 +26,6 @@ class Dashboards extends React.Component {
         <GlobalSelectionHeader showEnvironmentSelector={false}>
           <PageContent>
             <LightWeightNoProjectMessage organization={organization}>
-              <PageHeader>
-                <PageHeading withMargins>{t('Dashboards')}</PageHeading>
-              </PageHeader>
-
               {children}
             </LightWeightNoProjectMessage>
           </PageContent>

@@ -65,7 +65,7 @@ class Widget(Model):
     order = BoundedPositiveIntegerField()
     title = models.CharField(max_length=255)
     display_type = BoundedPositiveIntegerField(choices=WidgetDisplayTypes.as_choices())
-    saved_query = FlexibleForeignKey("sentry.discover.models.DiscoverSavedQuery")
+    saved_query = FlexibleForeignKey("sentry.DiscoverSavedQuery")
     # Contains yAxis list, and width attributes.
     display_options = JSONField(default={})
     date_added = models.DateTimeField(default=timezone.now)

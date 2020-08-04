@@ -185,3 +185,12 @@ export async function openInviteMembersModal(options = {}) {
 
   openModal(deps => <Modal {...deps} {...options} />, {modalCss});
 }
+
+export async function openCreateDashboardModal(options = {}) {
+  const mod = await import(
+    /* webpackChunkName: "CreateDashboardModal" */ 'app/components/modals/createDashboardModal'
+  );
+  const {default: Modal} = mod;
+
+  openModal(deps => <Modal {...deps} {...options} />, {});
+}

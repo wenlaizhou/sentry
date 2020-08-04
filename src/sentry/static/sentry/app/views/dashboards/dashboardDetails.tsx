@@ -1,13 +1,24 @@
 import React from 'react';
+import {WithRouterProps} from 'react-router';
 
 import {t} from 'app/locale';
+import {Organization, Release} from 'app/types';
+import withOrganization from 'app/utils/withOrganization';
 import AsyncView from 'app/views/asyncView';
 
 import Dashboard from './dashboard';
 import overviewDashboard from './data/dashboards/overviewDashboard';
 
-class OverviewDashboard extends AsyncView {
-  getEndpoints() {
+type Props = WithRouterProps<{orgId: string; id: string}, {}> & {
+  organization: Organization;
+};
+
+type State = AsyncView['state'] & {
+  releases: Release[];
+};
+
+class DashboardDetails extends AsyncView<Props, State> {
+  getEndpoints(): Array<[string, string, any?, any?]> {
     return [['releases', `/organizations/${this.props.params.orgId}/releases/`]];
   }
 
@@ -35,4 +46,5 @@ class OverviewDashboard extends AsyncView {
     );
   }
 }
-export default OverviewDashboard;
+
+export default withOrganization(DashboardDetails);
