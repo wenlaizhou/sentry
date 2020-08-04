@@ -153,7 +153,7 @@ exports[`ExternalIssueForm create renders 1`] = `
                       <Component
                         aria-disabled={false}
                         aria-label="Create Issue"
-                        className="css-1e05jtd-StyledButton edwq9my0"
+                        className="css-176koc4-StyledButton edwq9my0"
                         data-test-id="form-submit"
                         forwardRef={null}
                         onClick={[Function]}
@@ -163,7 +163,7 @@ exports[`ExternalIssueForm create renders 1`] = `
                         <button
                           aria-disabled={false}
                           aria-label="Create Issue"
-                          className="css-1e05jtd-StyledButton edwq9my0"
+                          className="css-176koc4-StyledButton edwq9my0"
                           data-test-id="form-submit"
                           onClick={[Function]}
                           role="button"
@@ -1462,7 +1462,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                 autoload={true}
                                                 backspaceRemoves={false}
                                                 cache={false}
-                                                className="css-awk01x-StyledSelect e1ynsgsr0"
+                                                className="css-wtd3uw-StyledSelect e1ynsgsr0"
                                                 clearable={false}
                                                 default="scefali/test"
                                                 deleteRemoves={false}
@@ -1650,7 +1650,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                   autoload={true}
                                                   backspaceRemoves={false}
                                                   cache={false}
-                                                  className="css-awk01x-StyledSelect e1ynsgsr0"
+                                                  className="css-wtd3uw-StyledSelect e1ynsgsr0"
                                                   clearable={false}
                                                   default="scefali/test"
                                                   deleteRemoves={false}
@@ -1843,7 +1843,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                     backspaceRemoves={false}
                                                     backspaceToRemoveMessage="Press backspace to remove {label}"
                                                     cache={false}
-                                                    className="css-awk01x-StyledSelect e1ynsgsr0"
+                                                    className="css-wtd3uw-StyledSelect e1ynsgsr0"
                                                     clearAllText="Clear all"
                                                     clearRenderer={[Function]}
                                                     clearValueText="Clear value"
@@ -2048,7 +2048,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                     valueKey="value"
                                                   >
                                                     <div
-                                                      className="Select css-awk01x-StyledSelect e1ynsgsr0 is-loading is-searchable Select--single"
+                                                      className="Select css-wtd3uw-StyledSelect e1ynsgsr0 is-loading is-searchable Select--single"
                                                     >
                                                       <div
                                                         className="Select-control"
@@ -3411,7 +3411,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                 autoload={true}
                                                 backspaceRemoves={false}
                                                 cache={false}
-                                                className="css-awk01x-StyledSelect e1ynsgsr0"
+                                                className="css-wtd3uw-StyledSelect e1ynsgsr0"
                                                 clearable={false}
                                                 default=""
                                                 deleteRemoves={false}
@@ -3587,7 +3587,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                   autoload={true}
                                                   backspaceRemoves={false}
                                                   cache={false}
-                                                  className="css-awk01x-StyledSelect e1ynsgsr0"
+                                                  className="css-wtd3uw-StyledSelect e1ynsgsr0"
                                                   clearable={false}
                                                   default=""
                                                   deleteRemoves={false}
@@ -3768,7 +3768,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                     backspaceRemoves={false}
                                                     backspaceToRemoveMessage="Press backspace to remove {label}"
                                                     cache={false}
-                                                    className="css-awk01x-StyledSelect e1ynsgsr0"
+                                                    className="css-wtd3uw-StyledSelect e1ynsgsr0"
                                                     clearAllText="Clear all"
                                                     clearRenderer={[Function]}
                                                     clearValueText="Clear value"
@@ -3972,7 +3972,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                                     valueKey="value"
                                                   >
                                                     <div
-                                                      className="Select css-awk01x-StyledSelect e1ynsgsr0 is-loading is-searchable Select--single"
+                                                      className="Select css-wtd3uw-StyledSelect e1ynsgsr0 is-loading is-searchable Select--single"
                                                     >
                                                       <div
                                                         className="Select-control"
@@ -4961,7 +4961,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                       <Component
                         aria-disabled={false}
                         aria-label="Link Issue"
-                        className="css-1e05jtd-StyledButton edwq9my0"
+                        className="css-176koc4-StyledButton edwq9my0"
                         data-test-id="form-submit"
                         forwardRef={null}
                         onClick={[Function]}
@@ -4971,7 +4971,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                         <button
                           aria-disabled={false}
                           aria-label="Link Issue"
-                          className="css-1e05jtd-StyledButton edwq9my0"
+                          className="css-176koc4-StyledButton edwq9my0"
                           data-test-id="form-submit"
                           onClick={[Function]}
                           role="button"

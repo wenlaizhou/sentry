@@ -13,12 +13,12 @@ exports[`Docs Search Modal can open help search modal and complete a search 1`] 
       onClick={[Function]}
     >
       <Component
-        className="css-1gtxy6f-SearchResultWrapper-SearchResultWrapper e12rx3zt0"
+        className="css-16x61nn-SearchResultWrapper-SearchResultWrapper e12rx3zt0"
         highlighted={true}
         onClick={[Function]}
       >
         <div
-          className="css-1gtxy6f-SearchResultWrapper-SearchResultWrapper e12rx3zt0"
+          className="css-16x61nn-SearchResultWrapper-SearchResultWrapper e12rx3zt0"
           onClick={[Function]}
         >
           <withRouter(SearchResult)
