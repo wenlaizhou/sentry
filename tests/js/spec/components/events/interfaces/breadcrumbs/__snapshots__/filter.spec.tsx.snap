@@ -32,7 +32,7 @@ exports[`Filter default render 1`] = `
             "error",
           ],
           "symbol": <UNDEFINED
-            color="pink400"
+            color="pink300"
             icon={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -294,7 +294,7 @@ exports[`Filter default render 1`] = `
                             >
                               <Component
                                 aria-disabled={false}
-                                className="e1sx99c0 eenpoef1 css-1u4jty5-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
+                                className="e1sx99c0 eenpoef1 css-r44mop-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
                                 forwardRef={[Function]}
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
@@ -311,7 +311,7 @@ exports[`Filter default render 1`] = `
                               >
                                 <button
                                   aria-disabled={false}
-                                  className="e1sx99c0 eenpoef1 css-1u4jty5-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
+                                  className="e1sx99c0 eenpoef1 css-r44mop-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
                                   onClick={[Function]}
                                   onKeyDown={[Function]}
                                   onMouseEnter={[Function]}
@@ -409,6 +409,7 @@ exports[`Filter default render 1`] = `
                 onMouseLeave={[Function]}
                 theme={
                   Object {
+                    "active": "#F05781",
                     "alert": Object {
                       "error": Object {
                         "background": "#FA4747",
@@ -456,8 +457,8 @@ exports[`Filter default render 1`] = `
                         "indicatorColor": "#FF7738",
                       },
                       "beta": Object {
-                        "background": "linear-gradient(90deg, #E1567C, #6C5FC7)",
-                        "indicatorColor": "#6C5FC7",
+                        "background": "linear-gradient(90deg, #F05781, undefined)",
+                        "indicatorColor": undefined,
                       },
                       "new": Object {
                         "background": "linear-gradient(90deg, #4DC771, #1C8952)",
@@ -518,18 +519,18 @@ exports[`Filter default render 1`] = `
                         "backgroundActive": "transparent",
                         "border": false,
                         "borderActive": false,
-                        "color": "#B9A2FD",
-                        "colorActive": "#B9A2FD",
+                        "color": "#6C5FC7",
+                        "colorActive": "#6C5FC7",
                         "focusShadow": false,
                       },
                       "primary": Object {
-                        "background": "#6C5FC7",
+                        "background": undefined,
                         "backgroundActive": "#4e3fb4",
                         "border": "#3d328e",
                         "borderActive": "#352b7b",
                         "color": "#FFFFFF",
                         "colorActive": "#FFFFFF",
-                        "focusShadow": "rgba(108, 95, 199, 0.4)",
+                        "focusShadow": "rgba(0, 0, 0, 0.4)",
                       },
                       "success": Object {
                         "background": "#3fa372",
@@ -616,16 +617,12 @@ exports[`Filter default render 1`] = `
                     "orange300": "#F69C7D",
                     "orange400": "#FF7738",
                     "orange500": "#BA4A23",
-                    "pink100": "#FFF5F9",
-                    "pink200": "#FFCEE4",
-                    "pink300": "#FF99BC",
-                    "pink400": "#E1567C",
-                    "pink500": "#902D4C",
-                    "purple100": "#FAF5FF",
-                    "purple200": "#E7D3FF",
-                    "purple300": "#B9A2FD",
-                    "purple400": "#6C5FC7",
-                    "purple500": "#3E2C73",
+                    "pink100": "#FDC9D7",
+                    "pink200": "#FA93AB",
+                    "pink300": "#F05781",
+                    "purple100": "#D4D1EC",
+                    "purple200": "#A396DA",
+                    "purple300": "#6C5FC7",
                     "red100": "#FFF5F7",
                     "red200": "#F4B1BB",
                     "red300": "#EA7282",
@@ -752,7 +749,7 @@ exports[`Filter default render 1`] = `
                             "error",
                           ],
                           "symbol": <UNDEFINED
-                            color="pink400"
+                            color="pink300"
                             icon={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
@@ -925,14 +922,14 @@ exports[`Filter default render 1`] = `
                                 size="16px"
                               >
                                 <Component
-                                  className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                  className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                   isChecked={true}
                                   isIndeterminate={false}
                                   size="16px"
                                 >
                                   <div
                                     aria-checked={true}
-                                    className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                    className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                     data-test-id="checkbox-fancy"
                                     role="checkbox"
                                   >
@@ -978,7 +975,7 @@ exports[`Filter default render 1`] = `
                               onClick={[Function]}
                             >
                               <Memo()
-                                color="pink400"
+                                color="pink300"
                                 icon={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
@@ -989,10 +986,10 @@ exports[`Filter default render 1`] = `
                                 size="xs"
                               >
                                 <IconWrapper
-                                  color="pink400"
+                                  color="pink300"
                                 >
                                   <div
-                                    className="css-189y24l-IconWrapper e1oljvyu0"
+                                    className="css-1lm1wj9-IconWrapper e1oljvyu0"
                                   >
                                     <IconSpan
                                       size="xs"
@@ -1028,14 +1025,14 @@ exports[`Filter default render 1`] = `
                                 size="16px"
                               >
                                 <Component
-                                  className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                  className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                   isChecked={true}
                                   isIndeterminate={false}
                                   size="16px"
                                 >
                                   <div
                                     aria-checked={true}
-                                    className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                    className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                     data-test-id="checkbox-fancy"
                                     role="checkbox"
                                   >
@@ -1095,7 +1092,7 @@ exports[`Filter default render 1`] = `
                                   color="purple400"
                                 >
                                   <div
-                                    className="css-1mlcgnx-IconWrapper e1oljvyu0"
+                                    className="css-1duqq42-IconWrapper e1oljvyu0"
                                   >
                                     <IconUser
                                       size="xs"
@@ -1134,14 +1131,14 @@ exports[`Filter default render 1`] = `
                                 size="16px"
                               >
                                 <Component
-                                  className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                  className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                   isChecked={true}
                                   isIndeterminate={false}
                                   size="16px"
                                 >
                                   <div
                                     aria-checked={true}
-                                    className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                    className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                     data-test-id="checkbox-fancy"
                                     role="checkbox"
                                   >
@@ -1240,14 +1237,14 @@ exports[`Filter default render 1`] = `
                                 size="16px"
                               >
                                 <Component
-                                  className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                  className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                   isChecked={true}
                                   isIndeterminate={false}
                                   size="16px"
                                 >
                                   <div
                                     aria-checked={true}
-                                    className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                    className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                     data-test-id="checkbox-fancy"
                                     role="checkbox"
                                   >
@@ -1307,7 +1304,7 @@ exports[`Filter default render 1`] = `
                                   color="purple500"
                                 >
                                   <div
-                                    className="css-1wwehb1-IconWrapper e1oljvyu0"
+                                    className="css-fnh5dx-IconWrapper e1oljvyu0"
                                   >
                                     <IconFix
                                       size="xs"
@@ -1343,14 +1340,14 @@ exports[`Filter default render 1`] = `
                                 size="16px"
                               >
                                 <Component
-                                  className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                  className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                   isChecked={true}
                                   isIndeterminate={false}
                                   size="16px"
                                 >
                                   <div
                                     aria-checked={true}
-                                    className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                    className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                     data-test-id="checkbox-fancy"
                                     role="checkbox"
                                   >
@@ -1446,14 +1443,14 @@ exports[`Filter default render 1`] = `
                                 size="16px"
                               >
                                 <Component
-                                  className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                  className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                   isChecked={true}
                                   isIndeterminate={false}
                                   size="16px"
                                 >
                                   <div
                                     aria-checked={true}
-                                    className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                    className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                     data-test-id="checkbox-fancy"
                                     role="checkbox"
                                   >
@@ -1575,14 +1572,14 @@ exports[`Filter default render 1`] = `
                                 size="16px"
                               >
                                 <Component
-                                  className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                  className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                   isChecked={true}
                                   isIndeterminate={false}
                                   size="16px"
                                 >
                                   <div
                                     aria-checked={true}
-                                    className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                    className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                     data-test-id="checkbox-fancy"
                                     role="checkbox"
                                   >
@@ -1666,14 +1663,14 @@ exports[`Filter default render 1`] = `
                                 size="16px"
                               >
                                 <Component
-                                  className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                  className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                   isChecked={true}
                                   isIndeterminate={false}
                                   size="16px"
                                 >
                                   <div
                                     aria-checked={true}
-                                    className="css-wyd0n8-CheckboxFancy e1i89tzt0"
+                                    className="css-17obv6l-CheckboxFancy e1i89tzt0"
                                     data-test-id="checkbox-fancy"
                                     role="checkbox"
                                   >
