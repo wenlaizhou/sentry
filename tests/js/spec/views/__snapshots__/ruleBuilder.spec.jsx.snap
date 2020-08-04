@@ -579,7 +579,7 @@ exports[`RuleBuilder renders 1`] = `
         value=""
       >
         <input
-          className="css-1jvh1ad-Input-BuilderInput e1hyuoc77"
+          className="css-1y5ze6x-Input-BuilderInput e1hyuoc77"
           onChange={[Function]}
           placeholder="src/example/*"
           value=""
@@ -2113,7 +2113,7 @@ exports[`RuleBuilder renders with suggestions 1`] = `
         value="a/bar"
       >
         <input
-          className="css-1jvh1ad-Input-BuilderInput e1hyuoc77"
+          className="css-1y5ze6x-Input-BuilderInput e1hyuoc77"
           onChange={[Function]}
           placeholder="src/example/*"
           value="a/bar"

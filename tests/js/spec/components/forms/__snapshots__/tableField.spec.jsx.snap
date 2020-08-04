@@ -161,7 +161,7 @@ exports[`TableField renders renders with form context 1`] = `
                   inline={true}
                 >
                   <div
-                    className="css-5z0zlt-FieldWrapper-FieldWrapper e2iyls20"
+                    className="css-180lrvb-FieldWrapper-FieldWrapper e2iyls20"
                   >
                     <FieldControl
                       alignRight={false}
@@ -245,7 +245,7 @@ exports[`TableField renders renders with form context 1`] = `
                                 alignRight={false}
                               >
                                 <div
-                                  className="css-ld1e0a-FieldControlStyled e12jpfuq1"
+                                  className="css-fofrx-FieldControlStyled e12jpfuq1"
                                 >
                                   <Observer>
                                     <div>
@@ -610,7 +610,7 @@ exports[`TableField renders renders without form context 1`] = `
             inline={true}
           >
             <div
-              className="css-5z0zlt-FieldWrapper-FieldWrapper e2iyls20"
+              className="css-180lrvb-FieldWrapper-FieldWrapper e2iyls20"
             >
               <FieldControl
                 alignRight={false}
@@ -669,7 +669,7 @@ exports[`TableField renders renders without form context 1`] = `
                           alignRight={false}
                         >
                           <div
-                            className="css-ld1e0a-FieldControlStyled e12jpfuq1"
+                            className="css-fofrx-FieldControlStyled e12jpfuq1"
                           >
                             <Observer>
                               <div>

@@ -159,7 +159,7 @@ exports[`JsonForm fields prop default 1`] = `
                                 inline={true}
                               >
                                 <div
-                                  className="css-5z0zlt-FieldWrapper-FieldWrapper e2iyls20"
+                                  className="css-180lrvb-FieldWrapper-FieldWrapper e2iyls20"
                                 >
                                   <FieldDescription
                                     htmlFor="slug"
@@ -173,7 +173,7 @@ exports[`JsonForm fields prop default 1`] = `
                                         disabled={false}
                                       >
                                         <div
-                                          className="css-wufuns-FieldLabel e16ushrl0"
+                                          className="css-14dls06-FieldLabel e16ushrl0"
                                         >
                                           <span>
                                             Name
@@ -254,7 +254,7 @@ exports[`JsonForm fields prop default 1`] = `
                                               alignRight={false}
                                             >
                                               <div
-                                                className="css-ld1e0a-FieldControlStyled e12jpfuq1"
+                                                className="css-fofrx-FieldControlStyled e12jpfuq1"
                                               >
                                                 <Observer>
                                                   <Input
@@ -307,7 +307,7 @@ exports[`JsonForm fields prop default 1`] = `
                                                     type="text"
                                                   >
                                                     <input
-                                                      className="css-1sf3rg0-Input e1xej46s0"
+                                                      className="css-1u2pbe1-Input e1xej46s0"
                                                       disabled={false}
                                                       id="slug"
                                                       label="Name"
@@ -475,7 +475,7 @@ exports[`JsonForm fields prop default 1`] = `
                                 inline={true}
                               >
                                 <div
-                                  className="css-5z0zlt-FieldWrapper-FieldWrapper e2iyls20"
+                                  className="css-180lrvb-FieldWrapper-FieldWrapper e2iyls20"
                                 >
                                   <FieldDescription
                                     htmlFor="platform"
@@ -489,7 +489,7 @@ exports[`JsonForm fields prop default 1`] = `
                                         disabled={false}
                                       >
                                         <div
-                                          className="css-wufuns-FieldLabel e16ushrl0"
+                                          className="css-14dls06-FieldLabel e16ushrl0"
                                         >
                                           <span>
                                             Platform
@@ -567,7 +567,7 @@ exports[`JsonForm fields prop default 1`] = `
                                               alignRight={false}
                                             >
                                               <div
-                                                className="css-ld1e0a-FieldControlStyled e12jpfuq1"
+                                                className="css-fofrx-FieldControlStyled e12jpfuq1"
                                               >
                                                 <Observer>
                                                   <ForwardRef(RefForwardedSelectControl)
@@ -2744,7 +2744,7 @@ exports[`JsonForm form prop default 1`] = `
             >
               <PanelHeader>
                 <div
-                  className="css-8glma9-PanelHeader en8g1d30"
+                  className="css-1aykk0y-PanelHeader en8g1d30"
                 >
                   Account Details
                 </div>
@@ -2907,7 +2907,7 @@ exports[`JsonForm form prop default 1`] = `
                                 inline={true}
                               >
                                 <div
-                                  className="css-5z0zlt-FieldWrapper-FieldWrapper e2iyls20"
+                                  className="css-180lrvb-FieldWrapper-FieldWrapper e2iyls20"
                                 >
                                   <FieldDescription
                                     htmlFor="name"
@@ -2921,7 +2921,7 @@ exports[`JsonForm form prop default 1`] = `
                                         disabled={false}
                                       >
                                         <div
-                                          className="css-wufuns-FieldLabel e16ushrl0"
+                                          className="css-14dls06-FieldLabel e16ushrl0"
                                         >
                                           <span>
                                             Name
@@ -3012,7 +3012,7 @@ exports[`JsonForm form prop default 1`] = `
                                               alignRight={false}
                                             >
                                               <div
-                                                className="css-ld1e0a-FieldControlStyled e12jpfuq1"
+                                                className="css-fofrx-FieldControlStyled e12jpfuq1"
                                               >
                                                 <Observer>
                                                   <Input
@@ -3090,7 +3090,7 @@ exports[`JsonForm form prop default 1`] = `
                                                     }
                                                   >
                                                     <input
-                                                      className="css-1sf3rg0-Input e1xej46s0"
+                                                      className="css-1u2pbe1-Input e1xej46s0"
                                                       disabled={false}
                                                       id="name"
                                                       label="Name"

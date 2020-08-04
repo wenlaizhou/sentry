@@ -306,7 +306,7 @@ exports[`ResolveActions with confirmation step renders 1`] = `
                     role="presentation"
                   >
                     <li
-                      className="css-1mw8rpx-MenuListItem e80rkhl1"
+                      className="css-yjqsny-MenuListItem e80rkhl1"
                       role="presentation"
                     >
                       <Tooltip
@@ -851,7 +851,7 @@ exports[`ResolveActions without confirmation renders 1`] = `
                     role="presentation"
                   >
                     <li
-                      className="css-1mw8rpx-MenuListItem e80rkhl1"
+                      className="css-yjqsny-MenuListItem e80rkhl1"
                       role="presentation"
                     >
                       <Tooltip

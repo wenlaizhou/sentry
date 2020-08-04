@@ -8,7 +8,7 @@ exports[`Sidebar SidebarDropdown can open "Switch Organization" sub-menu 1`] = `
   onMouseLeave={[Function]}
 >
   <div
-    className="css-pm8679-SwitchOrganizationMenu-SidebarDropdownMenu ev3suul4"
+    className="css-4g6mwe-SwitchOrganizationMenu-SidebarDropdownMenu ev3suul4"
     data-test-id="sidebar-switch-org-menu"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -38,7 +38,7 @@ exports[`Sidebar SidebarDropdown can open "Switch Organization" sub-menu 1`] = `
         to="/organizations/new/"
       >
         <SidebarMenuItemLink
-          className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+          className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
           data-test-id="sidebar-create-org"
           style={
             Object {
@@ -48,7 +48,7 @@ exports[`Sidebar SidebarDropdown can open "Switch Organization" sub-menu 1`] = `
           to="/organizations/new/"
         >
           <Link
-            className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+            className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
             data-test-id="sidebar-create-org"
             style={
               Object {
@@ -58,7 +58,7 @@ exports[`Sidebar SidebarDropdown can open "Switch Organization" sub-menu 1`] = `
             to="/organizations/new/"
           >
             <Link
-              className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+              className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
               data-test-id="sidebar-create-org"
               onlyActiveOnIndex={false}
               style={
@@ -69,7 +69,7 @@ exports[`Sidebar SidebarDropdown can open "Switch Organization" sub-menu 1`] = `
               to="/organizations/new/"
             >
               <a
-                className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+                className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
                 data-test-id="sidebar-create-org"
                 onClick={[Function]}
                 style={
@@ -133,7 +133,7 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
   onMouseLeave={[Function]}
 >
   <div
-    className="css-4razvn-OrgAndUserMenu-SidebarDropdownMenu e10773n39"
+    className="css-1mvocjl-OrgAndUserMenu-SidebarDropdownMenu e10773n39"
     onClick={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
@@ -308,7 +308,7 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
             >
               <SummaryOrgName>
                 <div
-                  className="css-1o68u16-SummaryOrgName e1h7qc9l1"
+                  className="css-qyvsg-SummaryOrgName e1h7qc9l1"
                 >
                   Organization Name
                 </div>
@@ -325,21 +325,21 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
         to="/settings/org-slug/"
       >
         <SidebarMenuItemLink
-          className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+          className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
           to="/settings/org-slug/"
         >
           <Link
-            className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+            className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
             to="/settings/org-slug/"
           >
             <Link
-              className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+              className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
               onlyActiveOnIndex={false}
               style={Object {}}
               to="/settings/org-slug/"
             >
               <a
-                className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+                className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
                 onClick={[Function]}
                 style={Object {}}
               >
@@ -365,21 +365,21 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
         to="/settings/org-slug/teams/"
       >
         <SidebarMenuItemLink
-          className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+          className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
           to="/settings/org-slug/teams/"
         >
           <Link
-            className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+            className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
             to="/settings/org-slug/teams/"
           >
             <Link
-              className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+              className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
               onlyActiveOnIndex={false}
               style={Object {}}
               to="/settings/org-slug/teams/"
             >
               <a
-                className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+                className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
                 onClick={[Function]}
                 style={Object {}}
               >
@@ -435,10 +435,10 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
     <SidebarMenuItem>
       <StyledSidebarMenuItemLink>
         <SidebarMenuItemLink
-          className="css-1sehl9l-StyledSidebarMenuItemLink eev51g21"
+          className="css-6rfncn-StyledSidebarMenuItemLink eev51g21"
         >
           <div
-            className="css-1sehl9l-StyledSidebarMenuItemLink eev51g21"
+            className="css-6rfncn-StyledSidebarMenuItemLink eev51g21"
             tabIndex={0}
           >
             <MenuItemLabel
@@ -488,7 +488,7 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
                           Switch organization
                           <SubMenuCaret>
                             <span
-                              className="css-1i600uy-SubMenuCaret ev3suul2"
+                              className="css-15bylh1-SubMenuCaret ev3suul2"
                             >
                               <IconChevron
                                 direction="right"
@@ -551,24 +551,24 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
     </SidebarMenuItem>
     <Divider>
       <div
-        className="css-pz0ru9-Divider e18ox4wg0"
+        className="css-1lz8yf6-Divider e18ox4wg0"
       />
     </Divider>
     <UserSummary
       to="/settings/account/details/"
     >
       <Link
-        className="css-j625pk-UserSummary e10773n31"
+        className="css-1ag0jhe-UserSummary e10773n31"
         to="/settings/account/details/"
       >
         <Link
-          className="css-j625pk-UserSummary e10773n31"
+          className="css-1ag0jhe-UserSummary e10773n31"
           onlyActiveOnIndex={false}
           style={Object {}}
           to="/settings/account/details/"
         >
           <a
-            className="css-j625pk-UserSummary e10773n31"
+            className="css-1ag0jhe-UserSummary e10773n31"
             onClick={[Function]}
             style={Object {}}
           >
@@ -834,21 +834,21 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
           to="/settings/account/"
         >
           <SidebarMenuItemLink
-            className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+            className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
             to="/settings/account/"
           >
             <Link
-              className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+              className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
               to="/settings/account/"
             >
               <Link
-                className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+                className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
                 onlyActiveOnIndex={false}
                 style={Object {}}
                 to="/settings/account/"
               >
                 <a
-                  className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+                  className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
                   onClick={[Function]}
                   style={Object {}}
                 >
@@ -874,21 +874,21 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
           to="/settings/account/api/"
         >
           <SidebarMenuItemLink
-            className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+            className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
             to="/settings/account/api/"
           >
             <Link
-              className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+              className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
               to="/settings/account/api/"
             >
               <Link
-                className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+                className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
                 onlyActiveOnIndex={false}
                 style={Object {}}
                 to="/settings/account/api/"
               >
                 <a
-                  className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+                  className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
                   onClick={[Function]}
                   style={Object {}}
                 >
@@ -916,12 +916,12 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
           onClick={[Function]}
         >
           <SidebarMenuItemLink
-            className="css-1sehl9l-StyledSidebarMenuItemLink eev51g21"
+            className="css-6rfncn-StyledSidebarMenuItemLink eev51g21"
             data-test-id="sidebarSignout"
             onClick={[Function]}
           >
             <div
-              className="css-1sehl9l-StyledSidebarMenuItemLink eev51g21"
+              className="css-6rfncn-StyledSidebarMenuItemLink eev51g21"
               data-test-id="sidebarSignout"
               onClick={[Function]}
               tabIndex={0}
@@ -951,7 +951,7 @@ exports[`Sidebar SidebarHelp can toggle help menu 1`] = `
   onMouseLeave={[Function]}
 >
   <div
-    className="css-jlq0c6-HelpMenu-SidebarDropdownMenu e6tkw732"
+    className="css-1qp91u5-HelpMenu-SidebarDropdownMenu e6tkw732"
     onClick={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
@@ -997,11 +997,11 @@ exports[`Sidebar SidebarHelp can toggle help menu 1`] = `
         onClick={[Function]}
       >
         <SidebarMenuItemLink
-          className="css-1sehl9l-StyledSidebarMenuItemLink eev51g21"
+          className="css-6rfncn-StyledSidebarMenuItemLink eev51g21"
           onClick={[Function]}
         >
           <div
-            className="css-1sehl9l-StyledSidebarMenuItemLink eev51g21"
+            className="css-6rfncn-StyledSidebarMenuItemLink eev51g21"
             onClick={[Function]}
             tabIndex={0}
           >
@@ -1025,15 +1025,15 @@ exports[`Sidebar SidebarHelp can toggle help menu 1`] = `
         href="https://forum.sentry.io/"
       >
         <SidebarMenuItemLink
-          className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+          className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
           href="https://forum.sentry.io/"
         >
           <ForwardRef(ExternalLink)
-            className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+            className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
             href="https://forum.sentry.io/"
           >
             <a
-              className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+              className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
               href="https://forum.sentry.io/"
               rel="noreferrer noopener"
               target="_blank"
@@ -1059,15 +1059,15 @@ exports[`Sidebar SidebarHelp can toggle help menu 1`] = `
         href="https://status.sentry.io/"
       >
         <SidebarMenuItemLink
-          className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+          className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
           href="https://status.sentry.io/"
         >
           <ForwardRef(ExternalLink)
-            className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+            className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
             href="https://status.sentry.io/"
           >
             <a
-              className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+              className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
               href="https://status.sentry.io/"
               rel="noreferrer noopener"
               target="_blank"
@@ -1100,20 +1100,20 @@ exports[`Sidebar SidebarPanel can display Broadcasts panel and mark as seen 1`] 
 >
   <SidebarPanelItemRoot>
     <div
-      className="css-4ote97-SidebarPanelItemRoot ekutvbl0"
+      className="css-126flnh-SidebarPanelItemRoot ekutvbl0"
     >
       <Title
         hasSeen={false}
       >
         <div
-          className="css-1fgxw89-Title ekutvbl2"
+          className="css-1t23cwj-Title ekutvbl2"
         >
           Learn about Source Maps
         </div>
       </Title>
       <Message>
         <div
-          className="css-kuchfm-Text-Message ekutvbl4"
+          className="css-tzqncz-Text-Message ekutvbl4"
         >
           Source maps are JSON files that contain information on how to map your transpiled source code back to their original source.
         </div>
@@ -1151,7 +1151,7 @@ exports[`Sidebar SidebarPanel can show Incidents in Sidebar Panel 1`] = `
       key="1"
     >
       <li
-        className="css-1z0pl26-IncidentItem e1467r1t1"
+        className="css-1g5df6z-IncidentItem e1467r1t1"
       >
         <IncidentTitle>
           <div
@@ -1277,7 +1277,7 @@ exports[`Sidebar renders without org and router 1`] = `
   onMouseLeave={[Function]}
 >
   <div
-    className="css-4razvn-OrgAndUserMenu-SidebarDropdownMenu e10773n39"
+    className="css-1mvocjl-OrgAndUserMenu-SidebarDropdownMenu e10773n39"
     onClick={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
@@ -1286,17 +1286,17 @@ exports[`Sidebar renders without org and router 1`] = `
       to="/settings/account/details/"
     >
       <Link
-        className="css-j625pk-UserSummary e10773n31"
+        className="css-1ag0jhe-UserSummary e10773n31"
         to="/settings/account/details/"
       >
         <Link
-          className="css-j625pk-UserSummary e10773n31"
+          className="css-1ag0jhe-UserSummary e10773n31"
           onlyActiveOnIndex={false}
           style={Object {}}
           to="/settings/account/details/"
         >
           <a
-            className="css-j625pk-UserSummary e10773n31"
+            className="css-1ag0jhe-UserSummary e10773n31"
             onClick={[Function]}
             style={Object {}}
           >
@@ -1562,21 +1562,21 @@ exports[`Sidebar renders without org and router 1`] = `
           to="/settings/account/"
         >
           <SidebarMenuItemLink
-            className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+            className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
             to="/settings/account/"
           >
             <Link
-              className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+              className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
               to="/settings/account/"
             >
               <Link
-                className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+                className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
                 onlyActiveOnIndex={false}
                 style={Object {}}
                 to="/settings/account/"
               >
                 <a
-                  className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+                  className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
                   onClick={[Function]}
                   style={Object {}}
                 >
@@ -1602,21 +1602,21 @@ exports[`Sidebar renders without org and router 1`] = `
           to="/settings/account/api/"
         >
           <SidebarMenuItemLink
-            className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+            className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
             to="/settings/account/api/"
           >
             <Link
-              className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+              className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
               to="/settings/account/api/"
             >
               <Link
-                className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+                className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
                 onlyActiveOnIndex={false}
                 style={Object {}}
                 to="/settings/account/api/"
               >
                 <a
-                  className="css-1eunyni-StyledSidebarMenuItemLink eev51g21"
+                  className="css-sozi7l-StyledSidebarMenuItemLink eev51g21"
                   onClick={[Function]}
                   style={Object {}}
                 >
@@ -1644,12 +1644,12 @@ exports[`Sidebar renders without org and router 1`] = `
           onClick={[Function]}
         >
           <SidebarMenuItemLink
-            className="css-1sehl9l-StyledSidebarMenuItemLink eev51g21"
+            className="css-6rfncn-StyledSidebarMenuItemLink eev51g21"
             data-test-id="sidebarSignout"
             onClick={[Function]}
           >
             <div
-              className="css-1sehl9l-StyledSidebarMenuItemLink eev51g21"
+              className="css-6rfncn-StyledSidebarMenuItemLink eev51g21"
               data-test-id="sidebarSignout"
               onClick={[Function]}
               tabIndex={0}

@@ -117,7 +117,7 @@ exports[`OrganizationProjects should render the projects in the store 1`] = `
                       >
                         <HeaderTitle>
                           <h4
-                            className="css-1bosio6-HeaderTitle eqkydle2"
+                            className="css-fcvkez-HeaderTitle eqkydle2"
                           >
                             Projects
                           </h4>
@@ -265,7 +265,7 @@ exports[`OrganizationProjects should render the projects in the store 1`] = `
                   hasButtons={true}
                 >
                   <div
-                    className="css-147t89e-PanelHeader en8g1d30"
+                    className="css-agf66e-PanelHeader en8g1d30"
                   >
                     Projects
                     <withRouter(AsyncComponentSearchInput)
@@ -357,7 +357,7 @@ exports[`OrganizationProjects should render the projects in the store 1`] = `
                               value=""
                             >
                               <input
-                                className="search css-1sf3rg0-Input e1xej46s0"
+                                className="search css-1u2pbe1-Input e1xej46s0"
                                 onChange={[Function]}
                                 placeholder="Search Projects"
                                 value=""
@@ -395,7 +395,7 @@ exports[`OrganizationProjects should render the projects in the store 1`] = `
                           p={2}
                         >
                           <div
-                            className="css-15wi55k-PanelItem-GridPanelItem ew99cs00"
+                            className="css-vxv7m8-PanelItem-GridPanelItem ew99cs00"
                           >
                             <ProjectListItemWrapper>
                               <div

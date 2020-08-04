@@ -2,10 +2,10 @@
 
 exports[`Docs Search Modal can open help search modal and complete a search 1`] = `
 <DropdownBox
-  className="css-1jtity6"
+  className="css-wpfrhi"
 >
   <div
-    className="css-1ut659k-DropdownBox ed7560h0"
+    className="css-1a7nclh-DropdownBox ed7560h0"
   >
     <SearchResultWrapper
       highlighted={true}
@@ -13,12 +13,12 @@ exports[`Docs Search Modal can open help search modal and complete a search 1`] 
       onClick={[Function]}
     >
       <Component
-        className="css-letav2-SearchResultWrapper-SearchResultWrapper e12rx3zt0"
+        className="css-1cfh9ln-SearchResultWrapper-SearchResultWrapper e12rx3zt0"
         highlighted={true}
         onClick={[Function]}
       >
         <div
-          className="css-letav2-SearchResultWrapper-SearchResultWrapper e12rx3zt0"
+          className="css-1cfh9ln-SearchResultWrapper-SearchResultWrapper e12rx3zt0"
           onClick={[Function]}
         >
           <withRouter(SearchResult)
@@ -172,12 +172,12 @@ exports[`Docs Search Modal can open help search modal and complete a search 1`] 
       onClick={[Function]}
     >
       <Component
-        className="css-10mcotl-SearchResultWrapper e12rx3zt0"
+        className="css-eudbfx-SearchResultWrapper e12rx3zt0"
         highlighted={false}
         onClick={[Function]}
       >
         <div
-          className="css-10mcotl-SearchResultWrapper e12rx3zt0"
+          className="css-eudbfx-SearchResultWrapper e12rx3zt0"
           onClick={[Function]}
         >
           <withRouter(SearchResult)

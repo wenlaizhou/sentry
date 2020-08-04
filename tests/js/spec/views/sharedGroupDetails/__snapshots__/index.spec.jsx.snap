@@ -162,7 +162,7 @@ exports[`SharedGroupDetails renders 1`] = `
                 >
                   <Wrapper>
                     <div
-                      className="css-1cddvkw-Wrapper ew9ysh20"
+                      className="css-i8wk8s-Wrapper ew9ysh20"
                     >
                       <Details>
                         <div
@@ -581,14 +581,14 @@ exports[`SharedGroupDetails renders 1`] = `
                                 className=""
                               >
                                 <div
-                                  className=" css-1w81sab-DataSection e1z0bih40"
+                                  className=" css-d5tdic-DataSection e1z0bih40"
                                 >
                                   <SectionHeader
                                     id="message"
                                     isCentered={false}
                                   >
                                     <div
-                                      className="css-1vve2o0-SectionHeader e1fbjd862"
+                                      className="css-6zkp2y-SectionHeader e1fbjd862"
                                       id="message"
                                     >
                                       <Permalink

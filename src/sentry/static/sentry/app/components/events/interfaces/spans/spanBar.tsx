@@ -877,7 +877,7 @@ const SpanRowCellContainer = styled('div')<SpanRowCellProps>`
   user-select: none;
 
   &:hover > div[data-type='span-row-cell'] {
-    background-color: ${p => (p.showDetail ? p.theme.gray800 : p.theme.gray200)};
+    background-color: ${p => (p.showDetail ? p.theme.gray800 : p.theme.gray100)};
   }
 `;
 

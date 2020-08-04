@@ -127,7 +127,7 @@ exports[`ProjectEnvironments render active renders empty message 1`] = `
                 >
                   <HeaderTitle>
                     <h4
-                      className="css-1bosio6-HeaderTitle eqkydle2"
+                      className="css-fcvkez-HeaderTitle eqkydle2"
                     >
                       Manage Environments
                     </h4>
@@ -312,7 +312,7 @@ exports[`ProjectEnvironments render active renders empty message 1`] = `
         >
           <PanelHeader>
             <div
-              className="css-8glma9-PanelHeader en8g1d30"
+              className="css-1aykk0y-PanelHeader en8g1d30"
             >
               Active Environments
             </div>
@@ -329,10 +329,10 @@ exports[`ProjectEnvironments render active renders empty message 1`] = `
               >
                 <EmptyMessage>
                   <Component
-                    className="css-1qddu1g-EmptyMessage-EmptyMessage e1h3yfdx0"
+                    className="css-1worwd1-EmptyMessage-EmptyMessage e1h3yfdx0"
                   >
                     <div
-                      className="css-1qddu1g-EmptyMessage-EmptyMessage e1h3yfdx0"
+                      className="css-1worwd1-EmptyMessage-EmptyMessage e1h3yfdx0"
                       data-test-id="empty-message"
                     >
                       <Description
@@ -484,7 +484,7 @@ exports[`ProjectEnvironments render hidden renders empty message 1`] = `
                 >
                   <HeaderTitle>
                     <h4
-                      className="css-1bosio6-HeaderTitle eqkydle2"
+                      className="css-fcvkez-HeaderTitle eqkydle2"
                     >
                       Manage Environments
                     </h4>
@@ -669,7 +669,7 @@ exports[`ProjectEnvironments render hidden renders empty message 1`] = `
         >
           <PanelHeader>
             <div
-              className="css-8glma9-PanelHeader en8g1d30"
+              className="css-1aykk0y-PanelHeader en8g1d30"
             >
               Hidden
             </div>
@@ -686,10 +686,10 @@ exports[`ProjectEnvironments render hidden renders empty message 1`] = `
               >
                 <EmptyMessage>
                   <Component
-                    className="css-1qddu1g-EmptyMessage-EmptyMessage e1h3yfdx0"
+                    className="css-1worwd1-EmptyMessage-EmptyMessage e1h3yfdx0"
                   >
                     <div
-                      className="css-1qddu1g-EmptyMessage-EmptyMessage e1h3yfdx0"
+                      className="css-1worwd1-EmptyMessage-EmptyMessage e1h3yfdx0"
                       data-test-id="empty-message"
                     >
                       <Description
@@ -841,7 +841,7 @@ exports[`ProjectEnvironments render hidden renders environment list 1`] = `
                 >
                   <HeaderTitle>
                     <h4
-                      className="css-1bosio6-HeaderTitle eqkydle2"
+                      className="css-fcvkez-HeaderTitle eqkydle2"
                     >
                       Manage Environments
                     </h4>
@@ -1026,7 +1026,7 @@ exports[`ProjectEnvironments render hidden renders environment list 1`] = `
         >
           <PanelHeader>
             <div
-              className="css-8glma9-PanelHeader en8g1d30"
+              className="css-1aykk0y-PanelHeader en8g1d30"
             >
               Hidden
             </div>
@@ -1060,7 +1060,7 @@ exports[`ProjectEnvironments render hidden renders environment list 1`] = `
                     p={2}
                   >
                     <div
-                      className="css-1jxjn8g-PanelItem-EnvironmentItem e1pnz46f0"
+                      className="css-zq2coz-PanelItem-EnvironmentItem e1pnz46f0"
                     >
                       <Name>
                         <div

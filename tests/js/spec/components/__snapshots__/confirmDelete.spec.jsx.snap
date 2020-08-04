@@ -34,11 +34,11 @@ exports[`ConfirmDelete renders 1`] = `
             type="error"
           >
             <Component
-              className="css-127g5xc-Alert ejthpj82"
+              className="css-v0ekpa-Alert ejthpj82"
               type="error"
             >
               <div
-                className="ref-error css-127g5xc-Alert ejthpj82"
+                className="ref-error css-v0ekpa-Alert ejthpj82"
               >
                 <StyledTextBlock>
                   <span
@@ -73,7 +73,7 @@ exports[`ConfirmDelete renders 1`] = `
               inline={false}
             >
               <div
-                className="css-18ze7iz-FieldWrapper-FieldWrapper-FieldWrapper e2iyls20"
+                className="css-fj9fee-FieldWrapper-FieldWrapper-FieldWrapper e2iyls20"
               >
                 <FieldDescription
                   inline={false}
@@ -85,7 +85,7 @@ exports[`ConfirmDelete renders 1`] = `
                       disabled={false}
                     >
                       <div
-                        className="css-wufuns-FieldLabel e16ushrl0"
+                        className="css-14dls06-FieldLabel e16ushrl0"
                       >
                         <span>
                           Please enter 
@@ -122,7 +122,7 @@ exports[`ConfirmDelete renders 1`] = `
                             alignRight={false}
                           >
                             <div
-                              className="css-ld1e0a-FieldControlStyled e12jpfuq1"
+                              className="css-fofrx-FieldControlStyled e12jpfuq1"
                             >
                               <Input
                                 onChange={[Function]}
@@ -131,7 +131,7 @@ exports[`ConfirmDelete renders 1`] = `
                                 value=""
                               >
                                 <input
-                                  className="css-1sf3rg0-Input e1xej46s0"
+                                  className="css-1u2pbe1-Input e1xej46s0"
                                   onChange={[Function]}
                                   placeholder="CoolOrg"
                                   type="text"

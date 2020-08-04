@@ -281,7 +281,7 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
         >
           <StyledToolbar>
             <div
-              className="css-1xqpq1w-Toolbar-StyledToolbar e1seayw31"
+              className="css-de479t-Toolbar-StyledToolbar e1seayw31"
             >
               <SpreadLayout>
                 <div
@@ -507,7 +507,7 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
         </MergedToolbar>
         <MergedItems>
           <div
-            className="css-1ocr30a-MergedItems e16p6prb0"
+            className="css-1w66wg7-MergedItems e16p6prb0"
           >
             <MergedItem
               disabled={false}
@@ -623,7 +623,7 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
                     expanded={true}
                   >
                     <div
-                      className="css-1cqqvdr-Controls e9r3vga2"
+                      className="css-1r3xwur-Controls e9r3vga2"
                     >
                       <FlowLayout
                         onClick={[Function]}
@@ -1036,7 +1036,7 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
                                       size="normal"
                                     >
                                       <div
-                                        className="css-xfcjv1-Title-truncateStyles eex8od0"
+                                        className="css-vbnlak-Title-truncateStyles eex8od0"
                                         size="normal"
                                       >
                                         <GlobalSelectionLink
@@ -1415,7 +1415,7 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
                     expanded={true}
                   >
                     <div
-                      className="css-1cqqvdr-Controls e9r3vga2"
+                      className="css-1r3xwur-Controls e9r3vga2"
                     >
                       <FlowLayout
                         onClick={[Function]}
@@ -1828,7 +1828,7 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
                                       size="normal"
                                     >
                                       <div
-                                        className="css-xfcjv1-Title-truncateStyles eex8od0"
+                                        className="css-vbnlak-Title-truncateStyles eex8od0"
                                         size="normal"
                                       >
                                         <GlobalSelectionLink

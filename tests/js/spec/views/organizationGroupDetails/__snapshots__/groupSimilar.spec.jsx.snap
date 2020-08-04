@@ -395,7 +395,7 @@ exports[`Issues Similar View renders with mocked data 1`] = `
             className="similar-toolbar"
           >
             <div
-              className="similar-toolbar css-gw2rhp-Toolbar e1pdx9kr0"
+              className="similar-toolbar css-y0jn3z-Toolbar e1pdx9kr0"
             >
               <SpreadLayout
                 responsive={true}
@@ -525,7 +525,7 @@ exports[`Issues Similar View renders with mocked data 1`] = `
                       className="similar-score-column event-count-header"
                     >
                       <div
-                        className="similar-score-column event-count-header css-1rwwmm2-ToolbarHeader e8n6jt30"
+                        className="similar-score-column event-count-header css-h52bv1-ToolbarHeader e8n6jt30"
                       >
                         Events
                       </div>
@@ -534,7 +534,7 @@ exports[`Issues Similar View renders with mocked data 1`] = `
                       className="similar-score-column event-similar-header"
                     >
                       <div
-                        className="similar-score-column event-similar-header css-1rwwmm2-ToolbarHeader e8n6jt30"
+                        className="similar-score-column event-similar-header css-h52bv1-ToolbarHeader e8n6jt30"
                       >
                         Exception
                       </div>
@@ -543,7 +543,7 @@ exports[`Issues Similar View renders with mocked data 1`] = `
                       className="similar-score-column event-similar-header"
                     >
                       <div
-                        className="similar-score-column event-similar-header css-1rwwmm2-ToolbarHeader e8n6jt30"
+                        className="similar-score-column event-similar-header css-h52bv1-ToolbarHeader e8n6jt30"
                       >
                         Message
                       </div>
@@ -841,7 +841,7 @@ exports[`Issues Similar View renders with mocked data 1`] = `
                                   size="normal"
                                 >
                                   <div
-                                    className="css-xfcjv1-Title-truncateStyles eex8od0"
+                                    className="css-vbnlak-Title-truncateStyles eex8od0"
                                     size="normal"
                                   >
                                     <GlobalSelectionLink
@@ -1272,7 +1272,7 @@ exports[`Issues Similar View renders with mocked data 1`] = `
                             >
                               <GroupExtra>
                                 <div
-                                  className="css-q0ziu0-GroupExtra eec9orn0"
+                                  className="css-v0o434-GroupExtra eec9orn0"
                                 >
                                   <GroupShortId
                                     avatar={
@@ -1304,7 +1304,7 @@ exports[`Issues Similar View renders with mocked data 1`] = `
                                           }
                                         />
                                       }
-                                      className="css-1fj2cf7-GroupShortId eec9orn3"
+                                      className="css-rn7hp0-GroupShortId eec9orn3"
                                       shortId="INTERNAL-4G"
                                     >
                                       <StyledShortId
@@ -1321,12 +1321,12 @@ exports[`Issues Similar View renders with mocked data 1`] = `
                                             }
                                           />
                                         }
-                                        className="css-1fj2cf7-GroupShortId eec9orn3"
+                                        className="css-rn7hp0-GroupShortId eec9orn3"
                                         onClick={[Function]}
                                         shortId="INTERNAL-4G"
                                       >
                                         <div
-                                          className="eec9orn3 css-dcccbj-StyledShortId-GroupShortId e10rcxf30"
+                                          className="eec9orn3 css-ytdssg-StyledShortId-GroupShortId e10rcxf30"
                                           onClick={[Function]}
                                         >
                                           <ProjectBadge
@@ -1580,7 +1580,7 @@ exports[`Issues Similar View renders with mocked data 1`] = `
                                   </StyledTimes>
                                   <LoggerAnnotation>
                                     <span
-                                      className="css-mqnyes-EventAnnotation-AnnotationNoMargin-LoggerAnnotation eec9orn5"
+                                      className="css-d2uq31-EventAnnotation-AnnotationNoMargin-LoggerAnnotation eec9orn5"
                                     >
                                       <Link
                                         onlyActiveOnIndex={false}

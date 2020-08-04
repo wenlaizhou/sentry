@@ -104,7 +104,7 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
                       >
                         <HeaderTitle>
                           <h4
-                            className="css-1bosio6-HeaderTitle eqkydle2"
+                            className="css-fcvkez-HeaderTitle eqkydle2"
                           >
                             Developer Settings
                           </h4>
@@ -131,7 +131,7 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
               withoutMarginBottom={false}
             >
               <Component
-                className="css-1bza080-StyledLink e1ylhppg0"
+                className="css-1mb5gfr-StyledLink e1ylhppg0"
                 href="https://docs.sentry.io/workflow/integrations/integration-platform/"
                 openInNewTab={false}
                 priority="warning"
@@ -139,12 +139,12 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
                 withoutMarginBottom={false}
               >
                 <ForwardRef(ExternalLink)
-                  className="css-1bza080-StyledLink e1ylhppg0"
+                  className="css-1mb5gfr-StyledLink e1ylhppg0"
                   href="https://docs.sentry.io/workflow/integrations/integration-platform/"
                   openInNewTab={false}
                 >
                   <a
-                    className="css-1bza080-StyledLink e1ylhppg0"
+                    className="css-1mb5gfr-StyledLink e1ylhppg0"
                     href="https://docs.sentry.io/workflow/integrations/integration-platform/"
                   >
                     <AlertLinkText>
@@ -219,7 +219,7 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
                   hasButtons={true}
                 >
                   <div
-                    className="css-147t89e-PanelHeader en8g1d30"
+                    className="css-agf66e-PanelHeader en8g1d30"
                   >
                     Public Integrations
                     <forwardRef<Button>
@@ -354,10 +354,10 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
                     >
                       <EmptyMessage>
                         <Component
-                          className="css-1qddu1g-EmptyMessage-EmptyMessage e1h3yfdx0"
+                          className="css-1worwd1-EmptyMessage-EmptyMessage e1h3yfdx0"
                         >
                           <div
-                            className="css-1qddu1g-EmptyMessage-EmptyMessage e1h3yfdx0"
+                            className="css-1worwd1-EmptyMessage-EmptyMessage e1h3yfdx0"
                             data-test-id="empty-message"
                           >
                             <Description
@@ -389,7 +389,7 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
                   hasButtons={true}
                 >
                   <div
-                    className="css-147t89e-PanelHeader en8g1d30"
+                    className="css-agf66e-PanelHeader en8g1d30"
                   >
                     Internal Integrations
                     <forwardRef<Button>
@@ -524,10 +524,10 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
                     >
                       <EmptyMessage>
                         <Component
-                          className="css-1qddu1g-EmptyMessage-EmptyMessage e1h3yfdx0"
+                          className="css-1worwd1-EmptyMessage-EmptyMessage e1h3yfdx0"
                         >
                           <div
-                            className="css-1qddu1g-EmptyMessage-EmptyMessage e1h3yfdx0"
+                            className="css-1worwd1-EmptyMessage-EmptyMessage e1h3yfdx0"
                             data-test-id="empty-message"
                           >
                             <Description

@@ -163,14 +163,14 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
       withMargins={true}
     >
       <h1
-        className="css-uisydj-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Create a new Project
       </h1>
     </PageHeading>
     <HelpText>
       <p
-        className="css-zphuw0-HelpText e19kiapg5"
+        className="css-tfg794-HelpText e19kiapg5"
       >
         Projects allow you to scope events to a specific application in
                your organization. For example, you might have separate projects
@@ -181,7 +181,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
       withMargins={true}
     >
       <h1
-        className="css-uisydj-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Choose a platform
       </h1>
@@ -193,7 +193,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
     >
       <NavContainer>
         <div
-          className="css-d0nzis-NavContainer exv4dm80"
+          className="css-75hrn4-NavContainer exv4dm80"
         >
           <CategoryNav>
             <NavTabs
@@ -363,7 +363,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
           </CategoryNav>
           <SearchBar>
             <div
-              className="css-11le5kq-SearchBar exv4dm81"
+              className="css-jeupz-SearchBar exv4dm81"
             >
               <IconSearch
                 size="xs"
@@ -1303,7 +1303,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
       withMargins={true}
     >
       <h1
-        className="css-uisydj-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Give your project a name
       </h1>
@@ -1325,7 +1325,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
           </FormLabel>
           <ProjectNameInput>
             <div
-              className="css-ds8s4f-ProjectNameInput e19kiapg3"
+              className="css-4pcqcn-ProjectNameInput e19kiapg3"
             >
               <ProjectPlatformIcon
                 monoTone={true}
@@ -1866,14 +1866,14 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
       withMargins={true}
     >
       <h1
-        className="css-uisydj-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Create a new Project
       </h1>
     </PageHeading>
     <HelpText>
       <p
-        className="css-zphuw0-HelpText e19kiapg5"
+        className="css-tfg794-HelpText e19kiapg5"
       >
         Projects allow you to scope events to a specific application in
                your organization. For example, you might have separate projects
@@ -1884,7 +1884,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
       withMargins={true}
     >
       <h1
-        className="css-uisydj-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Choose a platform
       </h1>
@@ -1896,7 +1896,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
     >
       <NavContainer>
         <div
-          className="css-d0nzis-NavContainer exv4dm80"
+          className="css-75hrn4-NavContainer exv4dm80"
         >
           <CategoryNav>
             <NavTabs
@@ -2066,7 +2066,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
           </CategoryNav>
           <SearchBar>
             <div
-              className="css-11le5kq-SearchBar exv4dm81"
+              className="css-jeupz-SearchBar exv4dm81"
             >
               <IconSearch
                 size="xs"
@@ -2255,12 +2255,12 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                   onClick={[Function]}
                 >
                   <Component
-                    className="css-rqv9pd-ClearButton exv4dm85"
+                    className="css-1x62u9j-ClearButton exv4dm85"
                     onClick={[Function]}
                   >
                     <forwardRef<Button>
                       borderless={true}
-                      className="css-rqv9pd-ClearButton exv4dm85"
+                      className="css-1x62u9j-ClearButton exv4dm85"
                       icon={
                         <ForwardRef(IconClose)
                           isCircled={true}
@@ -2273,7 +2273,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                       <Button
                         align="center"
                         borderless={true}
-                        className="css-rqv9pd-ClearButton exv4dm85"
+                        className="css-1x62u9j-ClearButton exv4dm85"
                         disabled={false}
                         forwardRef={null}
                         icon={
@@ -2288,7 +2288,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                         <StyledButton
                           aria-disabled={false}
                           borderless={true}
-                          className="css-rqv9pd-ClearButton exv4dm85"
+                          className="css-1x62u9j-ClearButton exv4dm85"
                           disabled={false}
                           forwardRef={null}
                           onClick={[Function]}
@@ -2297,7 +2297,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                         >
                           <Component
                             aria-disabled={false}
-                            className="exv4dm85 css-4wo8as-StyledButton-ClearButton edwq9my0"
+                            className="exv4dm85 css-1m3ml9q-StyledButton-ClearButton edwq9my0"
                             forwardRef={null}
                             onClick={[Function]}
                             role="button"
@@ -2305,7 +2305,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                           >
                             <button
                               aria-disabled={false}
-                              className="exv4dm85 css-4wo8as-StyledButton-ClearButton edwq9my0"
+                              className="exv4dm85 css-1m3ml9q-StyledButton-ClearButton edwq9my0"
                               onClick={[Function]}
                               role="button"
                               size="xsmall"
@@ -2417,7 +2417,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
       withMargins={true}
     >
       <h1
-        className="css-uisydj-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Give your project a name
       </h1>
@@ -2439,7 +2439,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
           </FormLabel>
           <ProjectNameInput>
             <div
-              className="css-ds8s4f-ProjectNameInput e19kiapg3"
+              className="css-4pcqcn-ProjectNameInput e19kiapg3"
             >
               <ProjectPlatformIcon
                 monoTone={true}
@@ -2980,14 +2980,14 @@ exports[`CreateProject should fill in project name if its empty when platform is
       withMargins={true}
     >
       <h1
-        className="css-uisydj-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Create a new Project
       </h1>
     </PageHeading>
     <HelpText>
       <p
-        className="css-zphuw0-HelpText e19kiapg5"
+        className="css-tfg794-HelpText e19kiapg5"
       >
         Projects allow you to scope events to a specific application in
                your organization. For example, you might have separate projects
@@ -2998,7 +2998,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
       withMargins={true}
     >
       <h1
-        className="css-uisydj-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Choose a platform
       </h1>
@@ -3010,7 +3010,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
     >
       <NavContainer>
         <div
-          className="css-d0nzis-NavContainer exv4dm80"
+          className="css-75hrn4-NavContainer exv4dm80"
         >
           <CategoryNav>
             <NavTabs
@@ -3180,7 +3180,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
           </CategoryNav>
           <SearchBar>
             <div
-              className="css-11le5kq-SearchBar exv4dm81"
+              className="css-jeupz-SearchBar exv4dm81"
             >
               <IconSearch
                 size="xs"
@@ -3269,12 +3269,12 @@ exports[`CreateProject should fill in project name if its empty when platform is
                   onClick={[Function]}
                 >
                   <Component
-                    className="css-rqv9pd-ClearButton exv4dm85"
+                    className="css-1x62u9j-ClearButton exv4dm85"
                     onClick={[Function]}
                   >
                     <forwardRef<Button>
                       borderless={true}
-                      className="css-rqv9pd-ClearButton exv4dm85"
+                      className="css-1x62u9j-ClearButton exv4dm85"
                       icon={
                         <ForwardRef(IconClose)
                           isCircled={true}
@@ -3287,7 +3287,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                       <Button
                         align="center"
                         borderless={true}
-                        className="css-rqv9pd-ClearButton exv4dm85"
+                        className="css-1x62u9j-ClearButton exv4dm85"
                         disabled={false}
                         forwardRef={null}
                         icon={
@@ -3302,7 +3302,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                         <StyledButton
                           aria-disabled={false}
                           borderless={true}
-                          className="css-rqv9pd-ClearButton exv4dm85"
+                          className="css-1x62u9j-ClearButton exv4dm85"
                           disabled={false}
                           forwardRef={null}
                           onClick={[Function]}
@@ -3311,7 +3311,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                         >
                           <Component
                             aria-disabled={false}
-                            className="exv4dm85 css-4wo8as-StyledButton-ClearButton edwq9my0"
+                            className="exv4dm85 css-1m3ml9q-StyledButton-ClearButton edwq9my0"
                             forwardRef={null}
                             onClick={[Function]}
                             role="button"
@@ -3319,7 +3319,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                           >
                             <button
                               aria-disabled={false}
-                              className="exv4dm85 css-4wo8as-StyledButton-ClearButton edwq9my0"
+                              className="exv4dm85 css-1m3ml9q-StyledButton-ClearButton edwq9my0"
                               onClick={[Function]}
                               role="button"
                               size="xsmall"
@@ -4231,7 +4231,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
       withMargins={true}
     >
       <h1
-        className="css-uisydj-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Give your project a name
       </h1>
@@ -4253,7 +4253,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
           </FormLabel>
           <ProjectNameInput>
             <div
-              className="css-ds8s4f-ProjectNameInput e19kiapg3"
+              className="css-4pcqcn-ProjectNameInput e19kiapg3"
             >
               <ProjectPlatformIcon
                 monoTone={true}

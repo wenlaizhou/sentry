@@ -102,7 +102,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                 >
                   <HeaderTitle>
                     <h4
-                      className="css-1bosio6-HeaderTitle eqkydle2"
+                      className="css-fcvkez-HeaderTitle eqkydle2"
                     >
                       Add Member to Organization
                     </h4>
@@ -192,7 +192,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
             >
               <PanelHeader>
                 <div
-                  className="css-8glma9-PanelHeader en8g1d30"
+                  className="css-1aykk0y-PanelHeader en8g1d30"
                 >
                   Role
                 </div>
@@ -254,7 +254,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                         p={2}
                       >
                         <div
-                          className="css-ht8cvo-PanelItem ej5ox20"
+                          className="css-ikcim8-PanelItem ej5ox20"
                           onClick={[Function]}
                         >
                           <Label>
@@ -270,7 +270,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                               >
                                 <input
                                   checked={false}
-                                  className="css-1wcjadm-Radio e1d7o7s40"
+                                  className="css-mkgwx3-Radio e1d7o7s40"
                                   id="1"
                                   readOnly={true}
                                   type="radio"
@@ -352,7 +352,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                         p={2}
                       >
                         <div
-                          className="css-ht8cvo-PanelItem ej5ox20"
+                          className="css-ikcim8-PanelItem ej5ox20"
                           onClick={[Function]}
                         >
                           <Label>
@@ -368,7 +368,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                               >
                                 <input
                                   checked={false}
-                                  className="css-1wcjadm-Radio e1d7o7s40"
+                                  className="css-mkgwx3-Radio e1d7o7s40"
                                   id="2"
                                   readOnly={true}
                                   type="radio"
@@ -524,7 +524,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                   hasButtons={true}
                 >
                   <div
-                    className="css-147t89e-PanelHeader en8g1d30"
+                    className="css-agf66e-PanelHeader en8g1d30"
                   >
                     Team
                     <DropdownAutoComplete
@@ -761,10 +761,10 @@ exports[`InviteMember should render roles when available and allowed, and handle
                     >
                       <EmptyMessage>
                         <Component
-                          className="css-1qddu1g-EmptyMessage-EmptyMessage e1h3yfdx0"
+                          className="css-1worwd1-EmptyMessage-EmptyMessage e1h3yfdx0"
                         >
                           <div
-                            className="css-1qddu1g-EmptyMessage-EmptyMessage e1h3yfdx0"
+                            className="css-1worwd1-EmptyMessage-EmptyMessage e1h3yfdx0"
                             data-test-id="empty-message"
                           >
                             <Description

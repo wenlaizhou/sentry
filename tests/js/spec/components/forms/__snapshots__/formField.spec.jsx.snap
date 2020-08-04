@@ -90,7 +90,7 @@ exports[`FormField + model renders with Form 1`] = `
                 inline={true}
               >
                 <div
-                  className="css-5z0zlt-FieldWrapper-FieldWrapper e2iyls20"
+                  className="css-180lrvb-FieldWrapper-FieldWrapper e2iyls20"
                 >
                   <FieldControl
                     alignRight={false}
@@ -163,7 +163,7 @@ exports[`FormField + model renders with Form 1`] = `
                               alignRight={false}
                             >
                               <div
-                                className="css-ld1e0a-FieldControlStyled e12jpfuq1"
+                                className="css-fofrx-FieldControlStyled e12jpfuq1"
                               >
                                 <Observer>
                                   <Input
@@ -221,7 +221,7 @@ exports[`FormField + model renders with Form 1`] = `
                                     value=""
                                   >
                                     <input
-                                      className="css-1sf3rg0-Input e1xej46s0"
+                                      className="css-1u2pbe1-Input e1xej46s0"
                                       disabled={false}
                                       id="fieldName"
                                       name="fieldName"
