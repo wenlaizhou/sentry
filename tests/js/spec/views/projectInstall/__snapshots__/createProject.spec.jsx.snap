@@ -163,7 +163,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
       withMargins={true}
     >
       <h1
-        className="css-48ipkv-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Create a new Project
       </h1>
@@ -181,7 +181,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
       withMargins={true}
     >
       <h1
-        className="css-48ipkv-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Choose a platform
       </h1>
@@ -1303,7 +1303,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
       withMargins={true}
     >
       <h1
-        className="css-48ipkv-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Give your project a name
       </h1>
@@ -1866,7 +1866,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
       withMargins={true}
     >
       <h1
-        className="css-48ipkv-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Create a new Project
       </h1>
@@ -1884,7 +1884,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
       withMargins={true}
     >
       <h1
-        className="css-48ipkv-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Choose a platform
       </h1>
@@ -2417,7 +2417,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
       withMargins={true}
     >
       <h1
-        className="css-48ipkv-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Give your project a name
       </h1>
@@ -2980,7 +2980,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
       withMargins={true}
     >
       <h1
-        className="css-48ipkv-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Create a new Project
       </h1>
@@ -2998,7 +2998,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
       withMargins={true}
     >
       <h1
-        className="css-48ipkv-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Choose a platform
       </h1>
@@ -4231,7 +4231,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
       withMargins={true}
     >
       <h1
-        className="css-48ipkv-PageHeading e1bz0f4q0"
+        className="css-sxdccq-PageHeading e1bz0f4q0"
       >
         Give your project a name
       </h1>

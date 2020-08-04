@@ -102,7 +102,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                 >
                   <HeaderTitle>
                     <h4
-                      className="css-2st5uz-HeaderTitle eqkydle2"
+                      className="css-fcvkez-HeaderTitle eqkydle2"
                     >
                       Add Member to Organization
                     </h4>

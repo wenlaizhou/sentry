@@ -432,7 +432,7 @@ exports[`ProjectPluginDetails renders 1`] = `
                               >
                                 <HeaderTitle>
                                   <h4
-                                    className="css-2st5uz-HeaderTitle eqkydle2"
+                                    className="css-fcvkez-HeaderTitle eqkydle2"
                                   >
                                     Amazon SQS
                                   </h4>

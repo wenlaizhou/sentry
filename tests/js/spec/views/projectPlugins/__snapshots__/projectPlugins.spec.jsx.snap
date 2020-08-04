@@ -105,7 +105,7 @@ exports[`ProjectPlugins renders 1`] = `
                     type="warning"
                   >
                     <Component
-                      className="e1cszazt0 css-o99s7g-Alert-PanelAlert ejthpj82"
+                      className="e1cszazt0 css-jmjunw-Alert-PanelAlert ejthpj82"
                       icon={
                         <ForwardRef(IconFlag)
                           size="md"
@@ -115,7 +115,7 @@ exports[`ProjectPlugins renders 1`] = `
                       type="warning"
                     >
                       <div
-                        className="ref-warning e1cszazt0 css-o99s7g-Alert-PanelAlert ejthpj82"
+                        className="ref-warning e1cszazt0 css-jmjunw-Alert-PanelAlert ejthpj82"
                       >
                         <IconWrapper>
                           <span

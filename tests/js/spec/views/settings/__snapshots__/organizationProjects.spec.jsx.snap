@@ -117,7 +117,7 @@ exports[`OrganizationProjects should render the projects in the store 1`] = `
                       >
                         <HeaderTitle>
                           <h4
-                            className="css-2st5uz-HeaderTitle eqkydle2"
+                            className="css-fcvkez-HeaderTitle eqkydle2"
                           >
                             Projects
                           </h4>

@@ -104,7 +104,7 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
                       >
                         <HeaderTitle>
                           <h4
-                            className="css-2st5uz-HeaderTitle eqkydle2"
+                            className="css-fcvkez-HeaderTitle eqkydle2"
                           >
                             Developer Settings
                           </h4>

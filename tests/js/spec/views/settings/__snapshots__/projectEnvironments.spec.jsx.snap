@@ -127,7 +127,7 @@ exports[`ProjectEnvironments render active renders empty message 1`] = `
                 >
                   <HeaderTitle>
                     <h4
-                      className="css-2st5uz-HeaderTitle eqkydle2"
+                      className="css-fcvkez-HeaderTitle eqkydle2"
                     >
                       Manage Environments
                     </h4>
@@ -484,7 +484,7 @@ exports[`ProjectEnvironments render hidden renders empty message 1`] = `
                 >
                   <HeaderTitle>
                     <h4
-                      className="css-2st5uz-HeaderTitle eqkydle2"
+                      className="css-fcvkez-HeaderTitle eqkydle2"
                     >
                       Manage Environments
                     </h4>
@@ -841,7 +841,7 @@ exports[`ProjectEnvironments render hidden renders environment list 1`] = `
                 >
                   <HeaderTitle>
                     <h4
-                      className="css-2st5uz-HeaderTitle eqkydle2"
+                      className="css-fcvkez-HeaderTitle eqkydle2"
                     >
                       Manage Environments
                     </h4>

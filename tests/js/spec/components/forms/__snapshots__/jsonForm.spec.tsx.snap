@@ -173,7 +173,7 @@ exports[`JsonForm fields prop default 1`] = `
                                         disabled={false}
                                       >
                                         <div
-                                          className="css-1be1g0b-FieldLabel e16ushrl0"
+                                          className="css-14dls06-FieldLabel e16ushrl0"
                                         >
                                           <span>
                                             Name
@@ -189,7 +189,7 @@ exports[`JsonForm fields prop default 1`] = `
                                         inline={true}
                                       >
                                         <div
-                                          className="css-1nl771u-FieldHelp e54sr8f0"
+                                          className="css-ty6413-FieldHelp e54sr8f0"
                                         >
                                           A unique ID used to identify this project
                                         </div>
@@ -489,7 +489,7 @@ exports[`JsonForm fields prop default 1`] = `
                                         disabled={false}
                                       >
                                         <div
-                                          className="css-1be1g0b-FieldLabel e16ushrl0"
+                                          className="css-14dls06-FieldLabel e16ushrl0"
                                         >
                                           <span>
                                             Platform
@@ -500,7 +500,7 @@ exports[`JsonForm fields prop default 1`] = `
                                         inline={true}
                                       >
                                         <div
-                                          className="css-1nl771u-FieldHelp e54sr8f0"
+                                          className="css-ty6413-FieldHelp e54sr8f0"
                                         >
                                           The primary platform for this project, used only for aesthetics
                                         </div>
@@ -2921,7 +2921,7 @@ exports[`JsonForm form prop default 1`] = `
                                         disabled={false}
                                       >
                                         <div
-                                          className="css-1be1g0b-FieldLabel e16ushrl0"
+                                          className="css-14dls06-FieldLabel e16ushrl0"
                                         >
                                           <span>
                                             Name
@@ -2937,7 +2937,7 @@ exports[`JsonForm form prop default 1`] = `
                                         inline={true}
                                       >
                                         <div
-                                          className="css-1nl771u-FieldHelp e54sr8f0"
+                                          className="css-ty6413-FieldHelp e54sr8f0"
                                         >
                                           Your full name
                                         </div>

@@ -34,11 +34,11 @@ exports[`ConfirmDelete renders 1`] = `
             type="error"
           >
             <Component
-              className="css-wa0bj6-Alert ejthpj82"
+              className="css-10u5rob-Alert ejthpj82"
               type="error"
             >
               <div
-                className="ref-error css-wa0bj6-Alert ejthpj82"
+                className="ref-error css-10u5rob-Alert ejthpj82"
               >
                 <StyledTextBlock>
                   <span
@@ -85,7 +85,7 @@ exports[`ConfirmDelete renders 1`] = `
                       disabled={false}
                     >
                       <div
-                        className="css-1be1g0b-FieldLabel e16ushrl0"
+                        className="css-14dls06-FieldLabel e16ushrl0"
                       >
                         <span>
                           Please enter 

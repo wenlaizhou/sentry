@@ -533,7 +533,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                             disabled={false}
                           >
                             <div
-                              className="css-1be1g0b-FieldLabel e16ushrl0"
+                              className="css-14dls06-FieldLabel e16ushrl0"
                             >
                               <span>
                                 GitHub Repository
@@ -2530,7 +2530,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                             disabled={false}
                           >
                             <div
-                              className="css-1be1g0b-FieldLabel e16ushrl0"
+                              className="css-14dls06-FieldLabel e16ushrl0"
                             >
                               <span>
                                 Issue
@@ -4385,7 +4385,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                             disabled={false}
                           >
                             <div
-                              className="css-1be1g0b-FieldLabel e16ushrl0"
+                              className="css-14dls06-FieldLabel e16ushrl0"
                             >
                               <span>
                                 Comment
@@ -4397,7 +4397,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                             stacked={true}
                           >
                             <div
-                              className="css-11ffcix-FieldHelp e54sr8f0"
+                              className="css-6xlnc5-FieldHelp e54sr8f0"
                             >
                               Leave blank if you don't want to add a comment to the GitHub issue.
                             </div>
