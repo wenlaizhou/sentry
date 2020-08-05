@@ -30,7 +30,7 @@ exports[`ResolutionBox render() handles inCommit 1`] = `
         <span
           key="0"
         >
-          This issue has been marked as resolved by
+          This issue has been marked as resolved by 
         </span>
         <CommitLink
           commitId="f7f395d14b2fe29a4e253bf1d3094d61e6ad4434"
@@ -133,7 +133,7 @@ exports[`ResolutionBox render() handles inRelease 1`] = `
         <span
           key="0"
         >
-          This issue has been marked as resolved in version
+          This issue has been marked as resolved in version 
         </span>
         <WithOrganizationMockWrapper
           key="1"
@@ -192,7 +192,7 @@ exports[`ResolutionBox render() handles inRelease with actor 1`] = `
         <span
           key="1"
         >
-           marked this issue as resolved in version
+           marked this issue as resolved in version 
         </span>
         <WithOrganizationMockWrapper
           key="2"
