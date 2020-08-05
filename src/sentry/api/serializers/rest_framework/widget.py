@@ -20,7 +20,7 @@ class WidgetSerializer(serializers.Serializer):
     displayType = serializers.CharField(required=True)
     displayOptions = JSONField(required=False)
     title = serializers.CharField(required=True)
-    saved_query_id = serializers.IntegerField(required=True)
+    savedQuery = serializers.IntegerField(required=True)
 
     def validate_displayType(self, display_type):
         if display_type not in WidgetDisplayTypes.TYPE_NAMES:
@@ -28,12 +28,9 @@ class WidgetSerializer(serializers.Serializer):
 
         return WidgetDisplayTypes.get_id_for_type_name(display_type)
 
-    def validate_saved_query_id(self, query_id):
-        organization = self.context['organization']
-        saved_query = DiscoverSavedQuery.objects.filter(
-            organization=organization,
-            id=query_id
-        )
+    def validate_savedQuery(self, query_id):
+        organization = self.context["organization"]
+        saved_query = DiscoverSavedQuery.objects.filter(organization=organization, id=query_id)
         if not saved_query.exists():
             raise ValidationError("Invalid saved query.")
         return query_id

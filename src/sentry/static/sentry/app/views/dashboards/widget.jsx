@@ -5,14 +5,15 @@ import styled from '@emotion/styled';
 import {Panel, PanelBody} from 'app/components/panels';
 import {t} from 'app/locale';
 import ErrorBoundary from 'app/components/errorBoundary';
-import LoadingMask from 'app/components/loadingMask';
 import SentryTypes from 'app/sentryTypes';
 import space from 'app/styles/space';
 import withGlobalSelection from 'app/utils/withGlobalSelection';
 import withOrganization from 'app/utils/withOrganization';
 
+import {WIDGET_DISPLAY} from './constants';
 import ExploreWidget from './exploreWidget';
 import WidgetChart from './widgetChart';
+import WidgetTable from './widgetTable';
 
 class Widget extends React.Component {
   static propTypes = {
@@ -25,9 +26,22 @@ class Widget extends React.Component {
     router: PropTypes.object,
   };
 
+  getVisualizationComponent() {
+    const {widget} = this.props;
+    switch (widget.displayType) {
+      case WIDGET_DISPLAY.TABLE:
+        return WidgetTable;
+      case WIDGET_DISPLAY.AREA_CHART:
+      case WIDGET_DISPLAY.LINE_CHART:
+      default:
+        return WidgetChart;
+    }
+  }
+
   render() {
     const {organization, router, widget, releases, selection} = this.props;
     const {title, savedQuery} = widget;
+    const Visualization = this.getVisualizationComponent();
 
     return (
       <ErrorBoundary customComponent={<ErrorCard>{t('Error loading widget')}</ErrorCard>}>
@@ -35,7 +49,7 @@ class Widget extends React.Component {
           <StyledPanel>
             <WidgetHeader>{title}</WidgetHeader>
             <StyledPanelBody>
-              <WidgetChart
+              <Visualization
                 widget={widget}
                 router={router}
                 releases={releases}

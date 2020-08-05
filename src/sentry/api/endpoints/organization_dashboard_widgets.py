@@ -43,11 +43,11 @@ class OrganizationDashboardWidgetsEndpoint(OrganizationDashboardEndpoint):
                     display_type=result["displayType"],
                     display_options=result.get("displayOptions", {}),
                     title=result["title"],
-                    saved_query_id=result.get("saved_query_id"),
+                    saved_query_id=result.get("savedQuery"),
                     order=get_next_dashboard_order(dashboard.id),
                     dashboard_id=dashboard.id,
                 )
-        except IntegrityError:
-            return Response("This widget already exists", status=409)
+        except IntegrityError as e:
+            return Response("This widget already exists. %s" % (e,), status=409)
 
         return Response(serialize(widget, request.user), status=201)

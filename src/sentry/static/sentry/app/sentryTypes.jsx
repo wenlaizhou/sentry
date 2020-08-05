@@ -539,7 +539,7 @@ export const DebugSourceType = PropTypes.oneOf(['http', 's3', 'gcs']);
 export const DebugSourceConfig = PropTypes.object;
 
 export const Widget = PropTypes.shape({
-  savedQuery: PropTypes.arrayOf(DiscoverQuery),
+  savedQuery: DiscoverQuery.isRequired,
   displayType: PropTypes.string,
   displayOptions: PropTypes.shape({
     yAxis: PropTypes.arrayOf(PropTypes.string),

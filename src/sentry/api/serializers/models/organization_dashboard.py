@@ -15,10 +15,10 @@ class WidgetSerializer(Serializer):
         queries = serialize(
             list(DiscoverSavedQuery.objects.filter(id__in=[i.saved_query_id for i in item_list]))
         )
-        query_map = {query['id']: query for query in queries}
+        query_map = {query["id"]: query for query in queries}
 
         for widget in item_list:
-            result[widget] = {"savedQuery": query_map[widget.id]}
+            result[widget] = {"savedQuery": query_map[six.text_type(widget.saved_query_id)]}
 
         return result
 
