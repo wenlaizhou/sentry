@@ -232,7 +232,7 @@ exports[`Filter default render 1`] = `
                         type="button"
                       >
                         <forwardRef<Button>
-                          className="e1sx99c0 css-1mpbjsa-StyledButton-StyledDropdownButton eenpoef1"
+                          className="e1sx99c0 css-1br8n6y-StyledButton-StyledDropdownButton eenpoef1"
                           hasDarkBorderBottomColor={true}
                           hideBottomBorder={true}
                           isOpen={false}
@@ -251,7 +251,7 @@ exports[`Filter default render 1`] = `
                         >
                           <Button
                             align="center"
-                            className="e1sx99c0 css-1mpbjsa-StyledButton-StyledDropdownButton eenpoef1"
+                            className="e1sx99c0 css-1br8n6y-StyledButton-StyledDropdownButton eenpoef1"
                             disabled={false}
                             forwardRef={[Function]}
                             hasDarkBorderBottomColor={true}
@@ -272,7 +272,7 @@ exports[`Filter default render 1`] = `
                           >
                             <StyledButton
                               aria-disabled={false}
-                              className="e1sx99c0 css-1mpbjsa-StyledButton-StyledDropdownButton eenpoef1"
+                              className="e1sx99c0 css-1br8n6y-StyledButton-StyledDropdownButton eenpoef1"
                               disabled={false}
                               forwardRef={[Function]}
                               hasDarkBorderBottomColor={true}
@@ -294,7 +294,7 @@ exports[`Filter default render 1`] = `
                             >
                               <Component
                                 aria-disabled={false}
-                                className="e1sx99c0 eenpoef1 css-ubsfzm-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
+                                className="e1sx99c0 eenpoef1 css-1hpln5-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
                                 forwardRef={[Function]}
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
@@ -311,7 +311,7 @@ exports[`Filter default render 1`] = `
                               >
                                 <button
                                   aria-disabled={false}
-                                  className="e1sx99c0 eenpoef1 css-ubsfzm-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
+                                  className="e1sx99c0 eenpoef1 css-1hpln5-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
                                   onClick={[Function]}
                                   onKeyDown={[Function]}
                                   onMouseEnter={[Function]}
@@ -515,8 +515,8 @@ exports[`Filter default render 1`] = `
                         "backgroundActive": "transparent",
                         "border": false,
                         "borderActive": false,
-                        "color": "#F05781",
-                        "colorActive": "#F05781",
+                        "color": "#6C5FC7",
+                        "colorActive": "#6C5FC7",
                         "focusShadow": false,
                       },
                       "primary": Object {
@@ -609,7 +609,7 @@ exports[`Filter default render 1`] = `
                       "xs": "12px",
                       "xxl": "72px",
                     },
-                    "linkColor": "#F05781",
+                    "linkColor": "#6C5FC7",
                     "pink100": "#FDC9D7",
                     "pink200": "#FA93AB",
                     "pink300": "#F05781",
@@ -706,7 +706,7 @@ exports[`Filter default render 1`] = `
                 width="240px"
               >
                 <div
-                  className="css-1829wgf-DropdownBubble-Content e1r8p2re2"
+                  className="css-1pa22ky-DropdownBubble-Content e1r8p2re2"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
