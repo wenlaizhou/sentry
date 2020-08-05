@@ -189,7 +189,7 @@ exports[`JsonForm fields prop default 1`] = `
                                         inline={true}
                                       >
                                         <div
-                                          className="css-ty6413-FieldHelp e54sr8f0"
+                                          className="css-2z0zt4-FieldHelp e54sr8f0"
                                         >
                                           A unique ID used to identify this project
                                         </div>
@@ -500,7 +500,7 @@ exports[`JsonForm fields prop default 1`] = `
                                         inline={true}
                                       >
                                         <div
-                                          className="css-ty6413-FieldHelp e54sr8f0"
+                                          className="css-2z0zt4-FieldHelp e54sr8f0"
                                         >
                                           The primary platform for this project, used only for aesthetics
                                         </div>
@@ -2744,7 +2744,7 @@ exports[`JsonForm form prop default 1`] = `
             >
               <PanelHeader>
                 <div
-                  className="css-1frruf4-PanelHeader en8g1d30"
+                  className="css-1hbezsa-PanelHeader en8g1d30"
                 >
                   Account Details
                 </div>
@@ -2937,7 +2937,7 @@ exports[`JsonForm form prop default 1`] = `
                                         inline={true}
                                       >
                                         <div
-                                          className="css-ty6413-FieldHelp e54sr8f0"
+                                          className="css-2z0zt4-FieldHelp e54sr8f0"
                                         >
                                           Your full name
                                         </div>

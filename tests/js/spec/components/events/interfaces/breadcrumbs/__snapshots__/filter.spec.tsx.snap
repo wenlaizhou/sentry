@@ -469,6 +469,7 @@ exports[`Filter default render 1`] = `
                     "blue100": "#D2DFF7",
                     "blue200": "#92A8EA",
                     "blue300": "#3D74DB",
+                    "bodyBackground": "#FAF9FB",
                     "border": "#C6BECF",
                     "borderRadius": "4px",
                     "borderRadiusBottom": "0 0 4px 4px",
@@ -648,6 +649,7 @@ exports[`Filter default render 1`] = `
                       20,
                       30,
                     ],
+                    "subText": "#776589",
                     "success": "#33BF9E",
                     "text": Object {
                       "family": "\\"Rubik\\", \\"Avenir Next\\", sans-serif",

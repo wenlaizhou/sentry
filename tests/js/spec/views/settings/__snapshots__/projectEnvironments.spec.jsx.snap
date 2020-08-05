@@ -312,7 +312,7 @@ exports[`ProjectEnvironments render active renders empty message 1`] = `
         >
           <PanelHeader>
             <div
-              className="css-1frruf4-PanelHeader en8g1d30"
+              className="css-1hbezsa-PanelHeader en8g1d30"
             >
               Active Environments
             </div>
@@ -669,7 +669,7 @@ exports[`ProjectEnvironments render hidden renders empty message 1`] = `
         >
           <PanelHeader>
             <div
-              className="css-1frruf4-PanelHeader en8g1d30"
+              className="css-1hbezsa-PanelHeader en8g1d30"
             >
               Hidden
             </div>
@@ -1026,7 +1026,7 @@ exports[`ProjectEnvironments render hidden renders environment list 1`] = `
         >
           <PanelHeader>
             <div
-              className="css-1frruf4-PanelHeader en8g1d30"
+              className="css-1hbezsa-PanelHeader en8g1d30"
             >
               Hidden
             </div>

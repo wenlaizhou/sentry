@@ -4397,7 +4397,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                             stacked={true}
                           >
                             <div
-                              className="css-6xlnc5-FieldHelp e54sr8f0"
+                              className="css-1fefzf7-FieldHelp e54sr8f0"
                             >
                               Leave blank if you don't want to add a comment to the GitHub issue.
                             </div>

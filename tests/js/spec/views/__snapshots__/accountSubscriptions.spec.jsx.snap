@@ -105,7 +105,7 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
               <div>
                 <PanelHeader>
                   <div
-                    className="css-1frruf4-PanelHeader en8g1d30"
+                    className="css-1hbezsa-PanelHeader en8g1d30"
                   >
                     Subscription
                   </div>
