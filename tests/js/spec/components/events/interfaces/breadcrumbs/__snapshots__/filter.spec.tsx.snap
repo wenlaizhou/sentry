@@ -232,7 +232,7 @@ exports[`Filter default render 1`] = `
                         type="button"
                       >
                         <forwardRef<Button>
-                          className="e1sx99c0 css-fa3aic-StyledButton-StyledDropdownButton eenpoef1"
+                          className="e1sx99c0 css-15ya2d6-StyledButton-StyledDropdownButton eenpoef1"
                           hasDarkBorderBottomColor={true}
                           hideBottomBorder={true}
                           isOpen={false}
@@ -251,7 +251,7 @@ exports[`Filter default render 1`] = `
                         >
                           <Button
                             align="center"
-                            className="e1sx99c0 css-fa3aic-StyledButton-StyledDropdownButton eenpoef1"
+                            className="e1sx99c0 css-15ya2d6-StyledButton-StyledDropdownButton eenpoef1"
                             disabled={false}
                             forwardRef={[Function]}
                             hasDarkBorderBottomColor={true}
@@ -272,7 +272,7 @@ exports[`Filter default render 1`] = `
                           >
                             <StyledButton
                               aria-disabled={false}
-                              className="e1sx99c0 css-fa3aic-StyledButton-StyledDropdownButton eenpoef1"
+                              className="e1sx99c0 css-15ya2d6-StyledButton-StyledDropdownButton eenpoef1"
                               disabled={false}
                               forwardRef={[Function]}
                               hasDarkBorderBottomColor={true}
@@ -294,7 +294,7 @@ exports[`Filter default render 1`] = `
                             >
                               <Component
                                 aria-disabled={false}
-                                className="e1sx99c0 eenpoef1 css-1u4jty5-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
+                                className="e1sx99c0 eenpoef1 css-1qsjq1x-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
                                 forwardRef={[Function]}
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
@@ -311,7 +311,7 @@ exports[`Filter default render 1`] = `
                               >
                                 <button
                                   aria-disabled={false}
-                                  className="e1sx99c0 eenpoef1 css-1u4jty5-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
+                                  className="e1sx99c0 eenpoef1 css-1qsjq1x-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
                                   onClick={[Function]}
                                   onKeyDown={[Function]}
                                   onMouseEnter={[Function]}
@@ -412,16 +412,16 @@ exports[`Filter default render 1`] = `
                     "active": "#F05781",
                     "alert": Object {
                       "error": Object {
-                        "background": "#F55459",
+                        "background": "#FCC6C8",
                         "backgroundLight": "#FCC6C8",
-                        "border": "#FD918F",
+                        "border": "#F55459",
                         "iconColor": "#F55459",
                         "textLight": "#FD918F",
                       },
                       "info": Object {
-                        "background": "#3D74DB",
+                        "background": "#D2DFF7",
                         "backgroundLight": "#D2DFF7",
-                        "border": "#D2DFF7",
+                        "border": "#3D74DB",
                         "iconColor": "#3D74DB",
                       },
                       "muted": Object {
@@ -431,19 +431,19 @@ exports[`Filter default render 1`] = `
                         "iconColor": "inherit",
                       },
                       "success": Object {
-                        "background": "#33BF9E",
+                        "background": "#B6ECDF",
                         "backgroundLight": "#B6ECDF",
-                        "border": "#7DD6BE",
+                        "border": "#33BF9E",
                         "iconColor": "#33BF9E",
                       },
                       "warn": Object {
-                        "background": "#FFC227",
+                        "background": "#FDE8b4",
                         "backgroundLight": "#FDE8b4",
                         "border": "#FFC227",
                         "iconColor": "#FFC227",
                       },
                       "warning": Object {
-                        "background": "#FFC227",
+                        "background": "#FDE8b4",
                         "backgroundLight": "#FDE8b4",
                         "border": "#FFC227",
                         "iconColor": "#FFC227",
@@ -453,7 +453,7 @@ exports[`Filter default render 1`] = `
                     "backgroundAccent": "#FAF9FB",
                     "badge": Object {
                       "alpha": Object {
-                        "background": "linear-gradient(90deg, #FD918F, undefined)",
+                        "background": "linear-gradient(90deg, #FD918F, #F55459)",
                         "indicatorColor": "#FD918F",
                       },
                       "beta": Object {
@@ -493,12 +493,12 @@ exports[`Filter default render 1`] = `
                         "focusShadow": "rgba(245, 84, 89, 0.5)",
                       },
                       "default": Object {
-                        "background": "#FFFFFF",
-                        "backgroundActive": "#FFFFFF",
-                        "border": "#d8d2de",
-                        "borderActive": "#c9c0d1",
-                        "color": "#2f2936",
-                        "colorActive": "#161319",
+                        "background": "transparent",
+                        "backgroundActive": "#6C5FC7",
+                        "border": "#6C5FC7",
+                        "borderActive": "#6C5FC7",
+                        "color": "#6C5FC7",
+                        "colorActive": "#6C5FC7",
                         "focusShadow": "rgba(198, 190, 207, 0.5)",
                       },
                       "disabled": Object {
@@ -617,6 +617,7 @@ exports[`Filter default render 1`] = `
                     "red100": "#FCC6C8",
                     "red200": "#FD918F",
                     "red300": "#F55459",
+                    "secondaryButton": "#6C5FC7",
                     "settings": Object {
                       "containerWidth": "1440px",
                       "headerHeight": "69px",

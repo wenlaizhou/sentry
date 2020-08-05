@@ -1219,7 +1219,7 @@ exports[`Sidebar SidebarPanel can show Incidents in Sidebar Panel 1`] = `
                 <Component
                   aria-disabled={false}
                   aria-label="Learn more"
-                  className="css-4qehto-StyledButton edwq9my0"
+                  className="css-kxyu85-StyledButton edwq9my0"
                   external={true}
                   forwardRef={null}
                   href="https://status.sentry.io"
@@ -1230,7 +1230,7 @@ exports[`Sidebar SidebarPanel can show Incidents in Sidebar Panel 1`] = `
                   <ForwardRef(ExternalLink)
                     aria-disabled={false}
                     aria-label="Learn more"
-                    className="css-4qehto-StyledButton edwq9my0"
+                    className="css-kxyu85-StyledButton edwq9my0"
                     href="https://status.sentry.io"
                     onClick={[Function]}
                     role="button"
@@ -1239,7 +1239,7 @@ exports[`Sidebar SidebarPanel can show Incidents in Sidebar Panel 1`] = `
                     <a
                       aria-disabled={false}
                       aria-label="Learn more"
-                      className="css-4qehto-StyledButton edwq9my0"
+                      className="css-kxyu85-StyledButton edwq9my0"
                       href="https://status.sentry.io"
                       onClick={[Function]}
                       rel="noreferrer noopener"
