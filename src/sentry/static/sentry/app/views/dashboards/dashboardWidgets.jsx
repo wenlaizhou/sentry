@@ -6,28 +6,33 @@ import {IconAdd} from 'app/icons';
 import SentryTypes from 'app/sentryTypes';
 import {t} from 'app/locale';
 import space from 'app/styles/space';
+import {openAddDashboardWidgetModal} from 'app/actionCreators/modal';
 
 import Widget from './widget';
 
 class DashboardWidgets extends React.Component {
   static propTypes = {
+    organization: SentryTypes.Organization,
+    dashboard: SentryTypes.Dashboard,
     releasesLoading: PropTypes.bool,
     releases: PropTypes.arrayOf(SentryTypes.Release),
     widgets: PropTypes.arrayOf(SentryTypes.Widget),
     router: PropTypes.object,
     isEditing: PropTypes.bool,
+    onAddWidget: PropTypes.func,
   };
 
   handleAdd = () => {
-    alert('Add a widget!');
+    const {organization, dashboard, onAddWidget} = this.props;
+    openAddDashboardWidgetModal({organization, dashboard, onAddWidget});
   };
 
   render() {
-    const {isEditing, releasesLoading, router, releases, widgets} = this.props;
+    const {isEditing, releasesLoading, router, releases, dashboard} = this.props;
 
     return (
       <Widgets>
-        {widgets.map((widget, i) => (
+        {dashboard.widgets.map((widget, i) => (
           <WidgetWrapper key={i}>
             <Widget
               releasesLoading={releasesLoading}

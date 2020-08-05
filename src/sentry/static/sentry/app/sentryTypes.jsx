@@ -548,6 +548,13 @@ export const Widget = PropTypes.shape({
   title: PropTypes.node,
 });
 
+export const Dashboard = PropTypes.shape({
+  title: PropTypes.string,
+  id: PropTypes.string,
+  widgets: PropTypes.arrayOf(Widget),
+  createdBy: User,
+});
+
 export const EChartsData = PropTypes.arrayOf(
   PropTypes.oneOfType([
     // `PercentageBarChart` has a fixed dataset of 0, 25, 50, 100
@@ -1291,6 +1298,7 @@ const SentryTypes = {
   SavedSearch,
   SentryApplication,
   Widget,
+  Dashboard,
 
   // echarts prop types
   EChartsSeries,

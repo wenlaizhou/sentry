@@ -2,7 +2,7 @@ import React from 'react';
 import {browserHistory, WithRouterProps} from 'react-router';
 
 import {t} from 'app/locale';
-import {Organization, Release, Dashboard} from 'app/types';
+import {Organization, Release, DashboardDetailed, DashboardWidget} from 'app/types';
 import AsyncView from 'app/views/asyncView';
 import {deleteDashboard} from 'app/actionCreators/dashboards';
 import Breadcrumbs from 'app/components/breadcrumbs';
@@ -11,6 +11,7 @@ import ButtonBar from 'app/components/buttonBar';
 import Button from 'app/components/button';
 import {IconDelete, IconEdit} from 'app/icons';
 import {addSuccessMessage} from 'app/actionCreators/indicator';
+import withOrganization from 'app/utils/withOrganization';
 
 import DashboardWidgets from './dashboardWidgets';
 
@@ -20,7 +21,7 @@ type Props = WithRouterProps<{orgId: string; id: string}, {}> & {
 
 type State = AsyncView['state'] & {
   isEditing: boolean;
-  dashboard: Dashboard | null;
+  dashboard: DashboardDetailed | null;
   releases: Release[] | null;
 };
 
@@ -47,11 +48,19 @@ class DashboardDetails extends AsyncView<Props, State> {
     this.setState({isEditing: false});
   };
 
+  handleAddWidget = (widget: DashboardWidget) => {
+    const {dashboard} = this.state;
+    if (!dashboard) {
+      return;
+    }
+    this.setState({dashboard: {...dashboard, widgets: [...dashboard.widgets, widget]}});
+  };
+
   getEndpoints(): Array<[string, string, any?, any?]> {
-    const {params} = this.props;
+    const {organization, params} = this.props;
     return [
-      ['dashboard', `/organizations/${params.orgId}/dashboards/${params.id}/`],
-      ['releases', `/organizations/${params.orgId}/releases/`],
+      ['dashboard', `/organizations/${organization.slug}/dashboards/${params.id}/`],
+      ['releases', `/organizations/${organization.slug}/releases/`],
     ];
   }
 
@@ -62,12 +71,12 @@ class DashboardDetails extends AsyncView<Props, State> {
   }
 
   getCrumbs() {
-    const {params} = this.props;
+    const {organization} = this.props;
     const {dashboard} = this.state;
 
     return [
       {
-        to: `/organizations/${params.orgId}/dashboards/`,
+        to: `/organizations/${organization.slug}/dashboards/`,
         label: t('Dashboards'),
       },
       {
@@ -77,7 +86,7 @@ class DashboardDetails extends AsyncView<Props, State> {
   }
 
   renderBody() {
-    const {router} = this.props;
+    const {router, organization} = this.props;
     const {dashboard, isEditing, releases, loading} = this.state;
 
     return (
@@ -114,15 +123,17 @@ class DashboardDetails extends AsyncView<Props, State> {
           </ButtonBar>
         </PageHeader>
         <DashboardWidgets
+          organization={organization}
           releases={releases}
           releasesLoading={loading}
           router={router}
+          dashboard={dashboard}
           isEditing={isEditing}
-          {...dashboard}
+          onAddWidget={this.handleAddWidget}
         />
       </React.Fragment>
     );
   }
 }
 
-export default DashboardDetails;
+export default withOrganization(DashboardDetails);
