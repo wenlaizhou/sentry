@@ -254,7 +254,7 @@ class Chart extends React.Component {
 
     const legend = showLegend && {
       right: 16,
-      top: 12,
+      top: 0,
       icon: 'circle',
       itemHeight: 8,
       itemWidth: 8,
@@ -273,7 +273,7 @@ class Chart extends React.Component {
       grid: {
         left: '24px',
         right: '24px',
-        top: '32px',
+        top: '10px',
         bottom: '12px',
       },
       seriesOptions: {

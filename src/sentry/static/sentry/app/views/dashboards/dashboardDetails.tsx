@@ -87,35 +87,30 @@ class DashboardDetails extends AsyncView<Props, State> {
           <ButtonBar gap={1}>
             {isEditing ? (
               <React.Fragment>
-                <Button
-                  size="small"
-                  onClick={this.handleCancel}
-                  icon={<IconNot />}
-                  title={t('Discard changes')}
-                />
-                <Button
-                  priority="primary"
-                  size="small"
-                  onClick={this.handleSave}
-                  icon={<IconPlay />}
-                  title={t('Save changes')}
-                />
+                <Button size="small" onClick={this.handleCancel}>
+                  {t('Cancel')}
+                </Button>
+                <Button priority="primary" size="small" onClick={this.handleSave}>
+                  {t('Save changes')}
+                </Button>
               </React.Fragment>
             ) : (
-              <Button
-                size="small"
-                onClick={this.handleEdit}
-                icon={<IconEdit />}
-                title={t('Edit this dashboard')}
-              />
+              <React.Fragment>
+                <Button
+                  size="small"
+                  onClick={this.handleEdit}
+                  icon={<IconEdit />}
+                  title={t('Edit this dashboard')}
+                />
+                <Button
+                  size="small"
+                  priority="danger"
+                  onClick={this.handleDelete}
+                  title={t('Delete this dashboard')}
+                  icon={<IconDelete />}
+                />
+              </React.Fragment>
             )}
-            <Button
-              size="small"
-              priority="danger"
-              onClick={this.handleDelete}
-              title={t('Delete this dashboard')}
-              icon={<IconDelete />}
-            />
           </ButtonBar>
         </PageHeader>
         <DashboardWidgets
