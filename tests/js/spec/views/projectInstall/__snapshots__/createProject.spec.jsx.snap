@@ -1676,7 +1676,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
                               >
                                 <Component
                                   aria-disabled={false}
-                                  className="css-rmnber-StyledButton edwq9my0"
+                                  className="css-41q4jx-StyledButton edwq9my0"
                                   data-test-id="create-team"
                                   forwardRef={null}
                                   onClick={[Function]}
@@ -1685,7 +1685,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
                                 >
                                   <button
                                     aria-disabled={false}
-                                    className="css-rmnber-StyledButton edwq9my0"
+                                    className="css-41q4jx-StyledButton edwq9my0"
                                     data-test-id="create-team"
                                     onClick={[Function]}
                                     role="button"
@@ -2297,7 +2297,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                         >
                           <Component
                             aria-disabled={false}
-                            className="exv4dm85 css-17jfpdr-StyledButton-ClearButton edwq9my0"
+                            className="exv4dm85 css-1w7u73q-StyledButton-ClearButton edwq9my0"
                             forwardRef={null}
                             onClick={[Function]}
                             role="button"
@@ -2305,7 +2305,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                           >
                             <button
                               aria-disabled={false}
-                              className="exv4dm85 css-17jfpdr-StyledButton-ClearButton edwq9my0"
+                              className="exv4dm85 css-1w7u73q-StyledButton-ClearButton edwq9my0"
                               onClick={[Function]}
                               role="button"
                               size="xsmall"
@@ -2790,7 +2790,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                               >
                                 <Component
                                   aria-disabled={false}
-                                  className="css-rmnber-StyledButton edwq9my0"
+                                  className="css-41q4jx-StyledButton edwq9my0"
                                   data-test-id="create-team"
                                   forwardRef={null}
                                   onClick={[Function]}
@@ -2799,7 +2799,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
                                 >
                                   <button
                                     aria-disabled={false}
-                                    className="css-rmnber-StyledButton edwq9my0"
+                                    className="css-41q4jx-StyledButton edwq9my0"
                                     data-test-id="create-team"
                                     onClick={[Function]}
                                     role="button"
@@ -3311,7 +3311,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                         >
                           <Component
                             aria-disabled={false}
-                            className="exv4dm85 css-17jfpdr-StyledButton-ClearButton edwq9my0"
+                            className="exv4dm85 css-1w7u73q-StyledButton-ClearButton edwq9my0"
                             forwardRef={null}
                             onClick={[Function]}
                             role="button"
@@ -3319,7 +3319,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                           >
                             <button
                               aria-disabled={false}
-                              className="exv4dm85 css-17jfpdr-StyledButton-ClearButton edwq9my0"
+                              className="exv4dm85 css-1w7u73q-StyledButton-ClearButton edwq9my0"
                               onClick={[Function]}
                               role="button"
                               size="xsmall"
@@ -4604,7 +4604,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                               >
                                 <Component
                                   aria-disabled={false}
-                                  className="css-rmnber-StyledButton edwq9my0"
+                                  className="css-41q4jx-StyledButton edwq9my0"
                                   data-test-id="create-team"
                                   forwardRef={null}
                                   onClick={[Function]}
@@ -4613,7 +4613,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
                                 >
                                   <button
                                     aria-disabled={false}
-                                    className="css-rmnber-StyledButton edwq9my0"
+                                    className="css-41q4jx-StyledButton edwq9my0"
                                     data-test-id="create-team"
                                     onClick={[Function]}
                                     role="button"

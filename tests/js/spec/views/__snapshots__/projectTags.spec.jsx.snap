@@ -406,7 +406,7 @@ exports[`ProjectTags renders 1`] = `
                                             >
                                               <Component
                                                 aria-disabled={false}
-                                                className="css-kxyu85-StyledButton edwq9my0"
+                                                className="css-1lmsfej-StyledButton edwq9my0"
                                                 data-test-id="delete"
                                                 forwardRef={null}
                                                 onClick={[Function]}
@@ -415,7 +415,7 @@ exports[`ProjectTags renders 1`] = `
                                               >
                                                 <button
                                                   aria-disabled={false}
-                                                  className="css-kxyu85-StyledButton edwq9my0"
+                                                  className="css-1lmsfej-StyledButton edwq9my0"
                                                   data-test-id="delete"
                                                   onClick={[Function]}
                                                   role="button"
@@ -620,7 +620,7 @@ exports[`ProjectTags renders 1`] = `
                                             >
                                               <Component
                                                 aria-disabled={false}
-                                                className="css-kxyu85-StyledButton edwq9my0"
+                                                className="css-1lmsfej-StyledButton edwq9my0"
                                                 data-test-id="delete"
                                                 forwardRef={null}
                                                 onClick={[Function]}
@@ -629,7 +629,7 @@ exports[`ProjectTags renders 1`] = `
                                               >
                                                 <button
                                                   aria-disabled={false}
-                                                  className="css-kxyu85-StyledButton edwq9my0"
+                                                  className="css-1lmsfej-StyledButton edwq9my0"
                                                   data-test-id="delete"
                                                   onClick={[Function]}
                                                   role="button"
@@ -834,7 +834,7 @@ exports[`ProjectTags renders 1`] = `
                                             >
                                               <Component
                                                 aria-disabled={false}
-                                                className="css-kxyu85-StyledButton edwq9my0"
+                                                className="css-1lmsfej-StyledButton edwq9my0"
                                                 data-test-id="delete"
                                                 forwardRef={null}
                                                 onClick={[Function]}
@@ -843,7 +843,7 @@ exports[`ProjectTags renders 1`] = `
                                               >
                                                 <button
                                                   aria-disabled={false}
-                                                  className="css-kxyu85-StyledButton edwq9my0"
+                                                  className="css-1lmsfej-StyledButton edwq9my0"
                                                   data-test-id="delete"
                                                   onClick={[Function]}
                                                   role="button"

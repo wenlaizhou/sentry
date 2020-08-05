@@ -232,7 +232,7 @@ exports[`Filter default render 1`] = `
                         type="button"
                       >
                         <forwardRef<Button>
-                          className="e1sx99c0 css-15ya2d6-StyledButton-StyledDropdownButton eenpoef1"
+                          className="e1sx99c0 css-1mpbjsa-StyledButton-StyledDropdownButton eenpoef1"
                           hasDarkBorderBottomColor={true}
                           hideBottomBorder={true}
                           isOpen={false}
@@ -251,7 +251,7 @@ exports[`Filter default render 1`] = `
                         >
                           <Button
                             align="center"
-                            className="e1sx99c0 css-15ya2d6-StyledButton-StyledDropdownButton eenpoef1"
+                            className="e1sx99c0 css-1mpbjsa-StyledButton-StyledDropdownButton eenpoef1"
                             disabled={false}
                             forwardRef={[Function]}
                             hasDarkBorderBottomColor={true}
@@ -272,7 +272,7 @@ exports[`Filter default render 1`] = `
                           >
                             <StyledButton
                               aria-disabled={false}
-                              className="e1sx99c0 css-15ya2d6-StyledButton-StyledDropdownButton eenpoef1"
+                              className="e1sx99c0 css-1mpbjsa-StyledButton-StyledDropdownButton eenpoef1"
                               disabled={false}
                               forwardRef={[Function]}
                               hasDarkBorderBottomColor={true}
@@ -294,7 +294,7 @@ exports[`Filter default render 1`] = `
                             >
                               <Component
                                 aria-disabled={false}
-                                className="e1sx99c0 eenpoef1 css-1qsjq1x-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
+                                className="e1sx99c0 eenpoef1 css-ubsfzm-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
                                 forwardRef={[Function]}
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
@@ -311,7 +311,7 @@ exports[`Filter default render 1`] = `
                               >
                                 <button
                                   aria-disabled={false}
-                                  className="e1sx99c0 eenpoef1 css-1qsjq1x-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
+                                  className="e1sx99c0 eenpoef1 css-ubsfzm-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
                                   onClick={[Function]}
                                   onKeyDown={[Function]}
                                   onMouseEnter={[Function]}
@@ -494,7 +494,7 @@ exports[`Filter default render 1`] = `
                       },
                       "default": Object {
                         "background": "transparent",
-                        "backgroundActive": "#6C5FC7",
+                        "backgroundActive": "transparent",
                         "border": "#6C5FC7",
                         "borderActive": "#6C5FC7",
                         "color": "#6C5FC7",
@@ -1529,11 +1529,11 @@ exports[`Filter default render 1`] = `
                                   color="blue300"
                                 >
                                   <Component
-                                    className="css-1egwhai-Tag-StyledTag eio8trv0"
+                                    className="css-sk8m9-Tag-StyledTag eio8trv0"
                                     color="blue300"
                                   >
                                     <div
-                                      className="css-1egwhai-Tag-StyledTag eio8trv0"
+                                      className="css-sk8m9-Tag-StyledTag eio8trv0"
                                       color="blue300"
                                     >
                                       <Highlight
@@ -1620,11 +1620,11 @@ exports[`Filter default render 1`] = `
                                   color="red300"
                                 >
                                   <Component
-                                    className="css-20p94o-Tag-StyledTag eio8trv0"
+                                    className="css-1rkh14m-Tag-StyledTag eio8trv0"
                                     color="red300"
                                   >
                                     <div
-                                      className="css-20p94o-Tag-StyledTag eio8trv0"
+                                      className="css-1rkh14m-Tag-StyledTag eio8trv0"
                                       color="red300"
                                     >
                                       <Highlight
