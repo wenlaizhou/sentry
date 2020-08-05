@@ -607,7 +607,7 @@ exports[`Project Ownership Input renders 1`] = `
           value=""
         >
           <input
-            className="css-1aa6wyj-Input-BuilderInput e1hyuoc77"
+            className="css-19dvrdd-Input-BuilderInput e1hyuoc77"
             onChange={[Function]}
             placeholder="src/example/*"
             value=""
@@ -1228,7 +1228,7 @@ tags.sku_class:enterprise #enterprise"
         autoCapitalize="off"
         autoComplete="off"
         autoCorrect="off"
-        className="css-177yau9-StyledTextArea en3n9di3"
+        className="css-zaodvs-StyledTextArea en3n9di3"
         onChange={[Function]}
         placeholder="#example usage
 path:src/example/pipeline/* person@sentry.io #infra
@@ -1242,7 +1242,7 @@ tags.sku_class:enterprise #enterprise"
           autoCapitalize="off"
           autoComplete="off"
           autoCorrect="off"
-          className="css-177yau9-StyledTextArea en3n9di3"
+          className="css-zaodvs-StyledTextArea en3n9di3"
           innerRef={null}
           onChange={[Function]}
           placeholder="#example usage
@@ -1258,7 +1258,7 @@ tags.sku_class:enterprise #enterprise"
             autoCapitalize="off"
             autoComplete="off"
             autoCorrect="off"
-            className="css-177yau9-StyledTextArea en3n9di3"
+            className="css-zaodvs-StyledTextArea en3n9di3"
             onChange={[Function]}
             placeholder="#example usage
 path:src/example/pipeline/* person@sentry.io #infra

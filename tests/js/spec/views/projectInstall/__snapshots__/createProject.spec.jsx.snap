@@ -363,7 +363,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
           </CategoryNav>
           <SearchBar>
             <div
-              className="css-11ck32b-SearchBar exv4dm81"
+              className="css-1mgmjc7-SearchBar exv4dm81"
             >
               <IconSearch
                 size="xs"
@@ -1325,7 +1325,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
           </FormLabel>
           <ProjectNameInput>
             <div
-              className="css-164fgrp-ProjectNameInput e19kiapg3"
+              className="css-1yfxicp-ProjectNameInput e19kiapg3"
             >
               <ProjectPlatformIcon
                 monoTone={true}
@@ -2066,7 +2066,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
           </CategoryNav>
           <SearchBar>
             <div
-              className="css-11ck32b-SearchBar exv4dm81"
+              className="css-1mgmjc7-SearchBar exv4dm81"
             >
               <IconSearch
                 size="xs"
@@ -2439,7 +2439,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
           </FormLabel>
           <ProjectNameInput>
             <div
-              className="css-164fgrp-ProjectNameInput e19kiapg3"
+              className="css-1yfxicp-ProjectNameInput e19kiapg3"
             >
               <ProjectPlatformIcon
                 monoTone={true}
@@ -3180,7 +3180,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
           </CategoryNav>
           <SearchBar>
             <div
-              className="css-11ck32b-SearchBar exv4dm81"
+              className="css-1mgmjc7-SearchBar exv4dm81"
             >
               <IconSearch
                 size="xs"
@@ -4253,7 +4253,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
           </FormLabel>
           <ProjectNameInput>
             <div
-              className="css-164fgrp-ProjectNameInput e19kiapg3"
+              className="css-1yfxicp-ProjectNameInput e19kiapg3"
             >
               <ProjectPlatformIcon
                 monoTone={true}

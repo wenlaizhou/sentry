@@ -619,6 +619,7 @@ exports[`Filter default render 1`] = `
                     "red100": "#FCC6C8",
                     "red200": "#FD918F",
                     "red300": "#F55459",
+                    "rowBackground": "#FAF9FB",
                     "secondaryButton": "#6C5FC7",
                     "settings": Object {
                       "containerWidth": "1440px",

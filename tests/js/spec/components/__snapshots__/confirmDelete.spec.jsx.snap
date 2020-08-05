@@ -131,7 +131,7 @@ exports[`ConfirmDelete renders 1`] = `
                                 value=""
                               >
                                 <input
-                                  className="css-iszv13-Input e1xej46s0"
+                                  className="css-1t3i9ju-Input e1xej46s0"
                                   onChange={[Function]}
                                   placeholder="CoolOrg"
                                   type="text"
