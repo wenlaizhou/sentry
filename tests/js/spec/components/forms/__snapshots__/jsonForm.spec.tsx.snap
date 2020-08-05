@@ -159,7 +159,7 @@ exports[`JsonForm fields prop default 1`] = `
                                 inline={true}
                               >
                                 <div
-                                  className="css-180lrvb-FieldWrapper-FieldWrapper e2iyls20"
+                                  className="css-5z0zlt-FieldWrapper-FieldWrapper e2iyls20"
                                 >
                                   <FieldDescription
                                     htmlFor="slug"
@@ -475,7 +475,7 @@ exports[`JsonForm fields prop default 1`] = `
                                 inline={true}
                               >
                                 <div
-                                  className="css-180lrvb-FieldWrapper-FieldWrapper e2iyls20"
+                                  className="css-5z0zlt-FieldWrapper-FieldWrapper e2iyls20"
                                 >
                                   <FieldDescription
                                     htmlFor="platform"
@@ -2907,7 +2907,7 @@ exports[`JsonForm form prop default 1`] = `
                                 inline={true}
                               >
                                 <div
-                                  className="css-180lrvb-FieldWrapper-FieldWrapper e2iyls20"
+                                  className="css-5z0zlt-FieldWrapper-FieldWrapper e2iyls20"
                                 >
                                   <FieldDescription
                                     htmlFor="name"

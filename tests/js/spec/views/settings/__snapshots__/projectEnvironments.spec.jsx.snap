@@ -1060,7 +1060,7 @@ exports[`ProjectEnvironments render hidden renders environment list 1`] = `
                     p={2}
                   >
                     <div
-                      className="css-zq2coz-PanelItem-EnvironmentItem e1pnz46f0"
+                      className="css-1jxjn8g-PanelItem-EnvironmentItem e1pnz46f0"
                     >
                       <Name>
                         <div

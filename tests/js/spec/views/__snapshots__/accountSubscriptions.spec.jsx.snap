@@ -126,7 +126,7 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                         p={2}
                       >
                         <div
-                          className="css-7wxu1g-PanelItem ej5ox20"
+                          className="css-1qqv0xa-PanelItem ej5ox20"
                         >
                           <SubscriptionDetails>
                             <div
@@ -220,7 +220,7 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                         p={2}
                       >
                         <div
-                          className="css-7wxu1g-PanelItem ej5ox20"
+                          className="css-1qqv0xa-PanelItem ej5ox20"
                         >
                           <SubscriptionDetails>
                             <div
@@ -272,7 +272,7 @@ exports[`AccountSubscriptions renders list and can toggle 1`] = `
                                 >
                                   <button
                                     aria-checked={false}
-                                    className="css-1buylav-SwitchButton ezmyi9u0"
+                                    className="css-1jbgjht-SwitchButton ezmyi9u0"
                                     data-test-id="switch"
                                     onClick={[Function]}
                                     role="checkbox"

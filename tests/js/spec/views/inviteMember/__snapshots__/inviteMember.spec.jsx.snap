@@ -254,7 +254,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                         p={2}
                       >
                         <div
-                          className="css-ikcim8-PanelItem ej5ox20"
+                          className="css-ht8cvo-PanelItem ej5ox20"
                           onClick={[Function]}
                         >
                           <Label>
@@ -270,7 +270,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                               >
                                 <input
                                   checked={false}
-                                  className="css-1tn3f1n-Radio e1d7o7s40"
+                                  className="css-lxli6f-Radio e1d7o7s40"
                                   id="1"
                                   readOnly={true}
                                   type="radio"
@@ -352,7 +352,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                         p={2}
                       >
                         <div
-                          className="css-ikcim8-PanelItem ej5ox20"
+                          className="css-ht8cvo-PanelItem ej5ox20"
                           onClick={[Function]}
                         >
                           <Label>
@@ -368,7 +368,7 @@ exports[`InviteMember should render roles when available and allowed, and handle
                               >
                                 <input
                                   checked={false}
-                                  className="css-1tn3f1n-Radio e1d7o7s40"
+                                  className="css-lxli6f-Radio e1d7o7s40"
                                   id="2"
                                   readOnly={true}
                                   type="radio"

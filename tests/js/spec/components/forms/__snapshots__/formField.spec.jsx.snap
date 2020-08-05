@@ -90,7 +90,7 @@ exports[`FormField + model renders with Form 1`] = `
                 inline={true}
               >
                 <div
-                  className="css-180lrvb-FieldWrapper-FieldWrapper e2iyls20"
+                  className="css-5z0zlt-FieldWrapper-FieldWrapper e2iyls20"
                 >
                   <FieldControl
                     alignRight={false}

@@ -337,7 +337,7 @@ exports[`OrganizationTeamProjects Should render 1`] = `
                 p={2}
               >
                 <div
-                  className="css-vkaxjn-PanelItem-StyledPanelItem eqsa6vb0"
+                  className="css-q4xktp-PanelItem-StyledPanelItem eqsa6vb0"
                 >
                   <ProjectItem
                     organization={
@@ -732,7 +732,7 @@ exports[`OrganizationTeamProjects Should render 1`] = `
                 p={2}
               >
                 <div
-                  className="css-vkaxjn-PanelItem-StyledPanelItem eqsa6vb0"
+                  className="css-q4xktp-PanelItem-StyledPanelItem eqsa6vb0"
                 >
                   <ProjectItem
                     organization={

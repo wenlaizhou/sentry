@@ -193,7 +193,7 @@ exports[`CreateProject should deal with incorrect platform name if its provided 
     >
       <NavContainer>
         <div
-          className="css-75hrn4-NavContainer exv4dm80"
+          className="css-d0nzis-NavContainer exv4dm80"
         >
           <CategoryNav>
             <NavTabs
@@ -1896,7 +1896,7 @@ exports[`CreateProject should fill in platform name if its provided by url 1`] =
     >
       <NavContainer>
         <div
-          className="css-75hrn4-NavContainer exv4dm80"
+          className="css-d0nzis-NavContainer exv4dm80"
         >
           <CategoryNav>
             <NavTabs
@@ -3010,7 +3010,7 @@ exports[`CreateProject should fill in project name if its empty when platform is
     >
       <NavContainer>
         <div
-          className="css-75hrn4-NavContainer exv4dm80"
+          className="css-d0nzis-NavContainer exv4dm80"
         >
           <CategoryNav>
             <NavTabs

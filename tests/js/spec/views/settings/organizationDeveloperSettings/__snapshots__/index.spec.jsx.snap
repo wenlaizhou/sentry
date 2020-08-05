@@ -219,7 +219,7 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
                   hasButtons={true}
                 >
                   <div
-                    className="css-3jfcyz-PanelHeader en8g1d30"
+                    className="css-tnpdpm-PanelHeader en8g1d30"
                   >
                     Public Integrations
                     <forwardRef<Button>
@@ -389,7 +389,7 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
                   hasButtons={true}
                 >
                   <div
-                    className="css-3jfcyz-PanelHeader en8g1d30"
+                    className="css-tnpdpm-PanelHeader en8g1d30"
                   >
                     Internal Integrations
                     <forwardRef<Button>

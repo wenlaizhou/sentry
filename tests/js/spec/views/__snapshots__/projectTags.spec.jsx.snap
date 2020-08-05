@@ -330,7 +330,7 @@ exports[`ProjectTags renders 1`] = `
                           p={2}
                         >
                           <div
-                            className="css-114mdxo-PanelItem-TagPanelItem e1s2odbs0"
+                            className="css-1vdy6dr-PanelItem-TagPanelItem e1s2odbs0"
                             data-test-id="tag-row"
                           >
                             <TagName>
@@ -544,7 +544,7 @@ exports[`ProjectTags renders 1`] = `
                           p={2}
                         >
                           <div
-                            className="css-114mdxo-PanelItem-TagPanelItem e1s2odbs0"
+                            className="css-1vdy6dr-PanelItem-TagPanelItem e1s2odbs0"
                             data-test-id="tag-row"
                           >
                             <TagName>
@@ -758,7 +758,7 @@ exports[`ProjectTags renders 1`] = `
                           p={2}
                         >
                           <div
-                            className="css-114mdxo-PanelItem-TagPanelItem e1s2odbs0"
+                            className="css-1vdy6dr-PanelItem-TagPanelItem e1s2odbs0"
                             data-test-id="tag-row"
                           >
                             <TagName>
@@ -972,7 +972,7 @@ exports[`ProjectTags renders 1`] = `
                           p={2}
                         >
                           <div
-                            className="css-114mdxo-PanelItem-TagPanelItem e1s2odbs0"
+                            className="css-1vdy6dr-PanelItem-TagPanelItem e1s2odbs0"
                             data-test-id="tag-row"
                           >
                             <TagName>
@@ -1212,7 +1212,7 @@ exports[`ProjectTags renders 1`] = `
                           p={2}
                         >
                           <div
-                            className="css-114mdxo-PanelItem-TagPanelItem e1s2odbs0"
+                            className="css-1vdy6dr-PanelItem-TagPanelItem e1s2odbs0"
                             data-test-id="tag-row"
                           >
                             <TagName>
