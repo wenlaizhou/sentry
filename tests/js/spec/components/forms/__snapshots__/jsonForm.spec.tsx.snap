@@ -179,7 +179,7 @@ exports[`JsonForm fields prop default 1`] = `
                                             Name
                                             <FieldRequiredBadge>
                                               <div
-                                                className="css-34gop3-FieldRequiredBadge e1uclnuk0"
+                                                className="css-19ojc76-FieldRequiredBadge e1uclnuk0"
                                               />
                                             </FieldRequiredBadge>
                                           </span>
@@ -2744,7 +2744,7 @@ exports[`JsonForm form prop default 1`] = `
             >
               <PanelHeader>
                 <div
-                  className="css-1hbezsa-PanelHeader en8g1d30"
+                  className="css-1frruf4-PanelHeader en8g1d30"
                 >
                   Account Details
                 </div>
@@ -2927,7 +2927,7 @@ exports[`JsonForm form prop default 1`] = `
                                             Name
                                             <FieldRequiredBadge>
                                               <div
-                                                className="css-34gop3-FieldRequiredBadge e1uclnuk0"
+                                                className="css-19ojc76-FieldRequiredBadge e1uclnuk0"
                                               />
                                             </FieldRequiredBadge>
                                           </span>

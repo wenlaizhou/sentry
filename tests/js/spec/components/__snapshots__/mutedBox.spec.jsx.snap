@@ -6,7 +6,7 @@ exports[`MutedBox render() handles default 1`] = `
 >
   <BannerSummary>
     <IconMute
-      color="red400"
+      color="red300"
       size="sm"
     />
     <span>
@@ -24,11 +24,11 @@ exports[`MutedBox render() handles ignoreCount 1`] = `
 >
   <BannerSummary>
     <IconMute
-      color="red400"
+      color="red300"
       size="sm"
     />
     <span>
-      This issue has been ignored until it affects 
+      This issue has been ignored until it affects
       <strong
         key="1"
       >
@@ -48,17 +48,17 @@ exports[`MutedBox render() handles ignoreCount with ignoreWindow 1`] = `
 >
   <BannerSummary>
     <IconMute
-      color="red400"
+      color="red300"
       size="sm"
     />
     <span>
-      This issue has been ignored until it occurs 
+      This issue has been ignored until it occurs
       <strong
         key="1"
       >
         100
       </strong>
-       time(s) in 
+       time(s) in
       <strong
         key="3"
       >
@@ -79,11 +79,11 @@ exports[`MutedBox render() handles ignoreUntil 1`] = `
 >
   <BannerSummary>
     <IconMute
-      color="red400"
+      color="red300"
       size="sm"
     />
     <span>
-      This issue has been ignored until 
+      This issue has been ignored until
       <strong
         key="1"
       >
@@ -105,11 +105,11 @@ exports[`MutedBox render() handles ignoreUserCount 1`] = `
 >
   <BannerSummary>
     <IconMute
-      color="red400"
+      color="red300"
       size="sm"
     />
     <span>
-      This issue has been ignored until it affects 
+      This issue has been ignored until it affects
       <strong
         key="1"
       >
@@ -129,17 +129,17 @@ exports[`MutedBox render() handles ignoreUserCount with ignoreUserWindow 1`] = `
 >
   <BannerSummary>
     <IconMute
-      color="red400"
+      color="red300"
       size="sm"
     />
     <span>
-      This issue has been ignored until it affects 
+      This issue has been ignored until it affects
       <strong
         key="1"
       >
         100
       </strong>
-       user(s) in 
+       user(s) in
       <strong
         key="3"
       >

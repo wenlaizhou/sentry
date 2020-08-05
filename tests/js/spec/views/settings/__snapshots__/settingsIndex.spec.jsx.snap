@@ -200,7 +200,7 @@ exports[`SettingsIndex renders 1`] = `
             isCentered={true}
           >
             <HomeIcon
-              color="orange400"
+              color="red200"
             >
               <IconDocs
                 size="lg"

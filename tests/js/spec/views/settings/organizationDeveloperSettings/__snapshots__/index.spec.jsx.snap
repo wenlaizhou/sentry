@@ -131,7 +131,7 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
               withoutMarginBottom={false}
             >
               <Component
-                className="css-1ua3c97-StyledLink e1ylhppg0"
+                className="css-5twnw5-StyledLink e1ylhppg0"
                 href="https://docs.sentry.io/workflow/integrations/integration-platform/"
                 openInNewTab={false}
                 priority="warning"
@@ -139,12 +139,12 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
                 withoutMarginBottom={false}
               >
                 <ForwardRef(ExternalLink)
-                  className="css-1ua3c97-StyledLink e1ylhppg0"
+                  className="css-5twnw5-StyledLink e1ylhppg0"
                   href="https://docs.sentry.io/workflow/integrations/integration-platform/"
                   openInNewTab={false}
                 >
                   <a
-                    className="css-1ua3c97-StyledLink e1ylhppg0"
+                    className="css-5twnw5-StyledLink e1ylhppg0"
                     href="https://docs.sentry.io/workflow/integrations/integration-platform/"
                   >
                     <AlertLinkText>
@@ -219,7 +219,7 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
                   hasButtons={true}
                 >
                   <div
-                    className="css-tnpdpm-PanelHeader en8g1d30"
+                    className="css-3jfcyz-PanelHeader en8g1d30"
                   >
                     Public Integrations
                     <forwardRef<Button>
@@ -389,7 +389,7 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
                   hasButtons={true}
                 >
                   <div
-                    className="css-tnpdpm-PanelHeader en8g1d30"
+                    className="css-3jfcyz-PanelHeader en8g1d30"
                   >
                     Internal Integrations
                     <forwardRef<Button>

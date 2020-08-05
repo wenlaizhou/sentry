@@ -67,7 +67,7 @@ exports[`ProjectPlugins renders 1`] = `
       >
         <PanelHeader>
           <div
-            className="css-1hbezsa-PanelHeader en8g1d30"
+            className="css-1frruf4-PanelHeader en8g1d30"
           >
             <div>
               Legacy Integration
@@ -105,7 +105,7 @@ exports[`ProjectPlugins renders 1`] = `
                     type="warning"
                   >
                     <Component
-                      className="e1cszazt0 css-jmjunw-Alert-PanelAlert ejthpj82"
+                      className="e1cszazt0 css-1o3wc9-Alert-PanelAlert ejthpj82"
                       icon={
                         <ForwardRef(IconFlag)
                           size="md"
@@ -115,7 +115,7 @@ exports[`ProjectPlugins renders 1`] = `
                       type="warning"
                     >
                       <div
-                        className="ref-warning e1cszazt0 css-jmjunw-Alert-PanelAlert ejthpj82"
+                        className="ref-warning e1cszazt0 css-1o3wc9-Alert-PanelAlert ejthpj82"
                       >
                         <IconWrapper>
                           <span
@@ -1068,7 +1068,7 @@ exports[`ProjectPlugins renders 1`] = `
                                             size="lg"
                                           >
                                             <span
-                                              className="css-1twp7ot-Toggle ezmyi9u1"
+                                              className="css-1q8be3o-Toggle ezmyi9u1"
                                               size="lg"
                                             />
                                           </Toggle>

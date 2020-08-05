@@ -265,7 +265,7 @@ exports[`OrganizationProjects should render the projects in the store 1`] = `
                   hasButtons={true}
                 >
                   <div
-                    className="css-tnpdpm-PanelHeader en8g1d30"
+                    className="css-3jfcyz-PanelHeader en8g1d30"
                   >
                     Projects
                     <withRouter(AsyncComponentSearchInput)

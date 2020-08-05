@@ -539,7 +539,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                 GitHub Repository
                                 <FieldRequiredBadge>
                                   <div
-                                    className="css-34gop3-FieldRequiredBadge e1uclnuk0"
+                                    className="css-19ojc76-FieldRequiredBadge e1uclnuk0"
                                   />
                                 </FieldRequiredBadge>
                               </span>
@@ -2536,7 +2536,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                 Issue
                                 <FieldRequiredBadge>
                                   <div
-                                    className="css-34gop3-FieldRequiredBadge e1uclnuk0"
+                                    className="css-19ojc76-FieldRequiredBadge e1uclnuk0"
                                   />
                                 </FieldRequiredBadge>
                               </span>

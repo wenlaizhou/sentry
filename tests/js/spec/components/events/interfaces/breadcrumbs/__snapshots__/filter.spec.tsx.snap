@@ -13,7 +13,7 @@ exports[`Filter default render 1`] = `
             "info",
           ],
           "symbol": <UNDEFINED
-            color="green400"
+            color="green300"
             icon={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -70,7 +70,7 @@ exports[`Filter default render 1`] = `
             "info",
           ],
           "symbol": <UNDEFINED
-            color="green500"
+            color="green300"
             icon={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -108,7 +108,7 @@ exports[`Filter default render 1`] = `
             "error",
           ],
           "symbol": <UNDEFINED
-            color="red400"
+            color="red300"
             icon={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
@@ -412,16 +412,16 @@ exports[`Filter default render 1`] = `
                     "active": "#F05781",
                     "alert": Object {
                       "error": Object {
-                        "background": "#FA4747",
-                        "backgroundLight": "#FFF5F7",
-                        "border": "#F4B1BB",
-                        "iconColor": "#FA4747",
-                        "textLight": "#F4B1BB",
+                        "background": "#F55459",
+                        "backgroundLight": "#FCC6C8",
+                        "border": "#FD918F",
+                        "iconColor": "#F55459",
+                        "textLight": "#FD918F",
                       },
                       "info": Object {
                         "background": "#3D74DB",
-                        "backgroundLight": "#F5F9FF",
-                        "border": "#AFC7EE",
+                        "backgroundLight": "#D2DFF7",
+                        "border": "#D2DFF7",
                         "iconColor": "#3D74DB",
                       },
                       "muted": Object {
@@ -431,46 +431,44 @@ exports[`Filter default render 1`] = `
                         "iconColor": "inherit",
                       },
                       "success": Object {
-                        "background": "#4DC771",
-                        "backgroundLight": "#F5FFFB",
-                        "border": "#8FE7BF",
-                        "iconColor": "#1C8952",
+                        "background": "#33BF9E",
+                        "backgroundLight": "#B6ECDF",
+                        "border": "#7DD6BE",
+                        "iconColor": "#33BF9E",
                       },
                       "warn": Object {
-                        "background": "#E2A301",
-                        "backgroundLight": "#FFFDF5",
+                        "background": "#FFC227",
+                        "backgroundLight": "#FDE8b4",
                         "border": "#FFC227",
-                        "iconColor": "#E2A301",
+                        "iconColor": "#FFC227",
                       },
                       "warning": Object {
-                        "background": "#E2A301",
-                        "backgroundLight": "#FFFDF5",
+                        "background": "#FFC227",
+                        "backgroundLight": "#FDE8b4",
                         "border": "#FFC227",
-                        "iconColor": "#E2A301",
+                        "iconColor": "#FFC227",
                       },
                     },
                     "background": "#FFFFFF",
                     "backgroundAccent": "#FAF9FB",
                     "badge": Object {
                       "alpha": Object {
-                        "background": "linear-gradient(90deg, #F69C7D, #BA4A23)",
-                        "indicatorColor": "#FF7738",
+                        "background": "linear-gradient(90deg, #FD918F, undefined)",
+                        "indicatorColor": "#FD918F",
                       },
                       "beta": Object {
                         "background": "linear-gradient(90deg, #F05781, #6C5FC7)",
                         "indicatorColor": "#6C5FC7",
                       },
                       "new": Object {
-                        "background": "linear-gradient(90deg, #4DC771, #1C8952)",
-                        "indicatorColor": "#4DC771",
+                        "background": "linear-gradient(90deg, #33BF9E, #33BF9E)",
+                        "indicatorColor": "#33BF9E",
                       },
                     },
                     "black": "#1D1127",
-                    "blue100": "#F5F9FF",
-                    "blue200": "#AFC7EE",
-                    "blue300": "#7199DD",
-                    "blue400": "#3D74DB",
-                    "blue500": "#194591",
+                    "blue100": "#D2DFF7",
+                    "blue200": "#92A8EA",
+                    "blue300": "#3D74DB",
                     "border": "#C6BECF",
                     "borderDark": "#C6BECF",
                     "borderLight": "#FAF9FB",
@@ -488,13 +486,13 @@ exports[`Filter default render 1`] = `
                     "button": Object {
                       "borderRadius": "3px",
                       "danger": Object {
-                        "background": "#FA4747",
+                        "background": "#F55459",
                         "backgroundActive": "#bf2a1d",
                         "border": "#bf2a1d",
                         "borderActive": "#7d1c13",
                         "color": "#FFFFFF",
                         "colorActive": "#FFFFFF",
-                        "focusShadow": "rgba(250, 71, 71, 0.5)",
+                        "focusShadow": "rgba(245, 84, 89, 0.5)",
                       },
                       "default": Object {
                         "background": "#FFFFFF",
@@ -534,12 +532,12 @@ exports[`Filter default render 1`] = `
                       },
                       "success": Object {
                         "background": "#3fa372",
-                        "backgroundActive": "#4DC771",
+                        "backgroundActive": "#33BF9E",
                         "border": "#7ccca5",
                         "borderActive": "#7ccca5",
                         "color": "#FFFFFF",
                         "colorActive": "#FFFFFF",
-                        "focusShadow": "rgba(77, 199, 113, 0.5)",
+                        "focusShadow": "rgba(51, 191, 158, 0.5)",
                       },
                     },
                     "charts": Object {
@@ -577,7 +575,7 @@ exports[`Filter default render 1`] = `
                     "dropShadowHeavy": "0 1px 4px 1px rgba(47,40,55,0.08), 0 4px 16px 0 rgba(47,40,55,0.12)",
                     "dropShadowLight": "0 2px 0 rgba(37, 11, 54, 0.04)",
                     "dropShadowLightest": "0 1px 2px rgba(0, 0, 0, 0.04)",
-                    "error": "#FA4747",
+                    "error": "#F55459",
                     "fontSizeExtraLarge": "18px",
                     "fontSizeExtraSmall": "11px",
                     "fontSizeLarge": "16px",
@@ -589,11 +587,9 @@ exports[`Filter default render 1`] = `
                     "gray300": "#9386A0",
                     "gray400": "#776589",
                     "gray500": "#2B1D38",
-                    "green100": "#F5FFFB",
-                    "green200": "#C0F3DD",
-                    "green300": "#8FE7BF",
-                    "green400": "#4DC771",
-                    "green500": "#1C8952",
+                    "green100": "#B6ECDF",
+                    "green200": "#7DD6BE",
+                    "green300": "#33BF9E",
                     "grid": 8,
                     "headerFontSize": "22px",
                     "headerSelectorLabelHeight": 28,
@@ -612,22 +608,15 @@ exports[`Filter default render 1`] = `
                       "xs": "12px",
                       "xxl": "72px",
                     },
-                    "orange100": "#FCF8F7",
-                    "orange200": "#F9C7B9",
-                    "orange300": "#F69C7D",
-                    "orange400": "#FF7738",
-                    "orange500": "#BA4A23",
                     "pink100": "#FDC9D7",
                     "pink200": "#FA93AB",
                     "pink300": "#F05781",
                     "purple100": "#D4D1EC",
                     "purple200": "#A396DA",
                     "purple300": "#6C5FC7",
-                    "red100": "#FFF5F7",
-                    "red200": "#F4B1BB",
-                    "red300": "#EA7282",
-                    "red400": "#FA4747",
-                    "red500": "#AC1025",
+                    "red100": "#FCC6C8",
+                    "red200": "#FD918F",
+                    "red300": "#F55459",
                     "settings": Object {
                       "containerWidth": "1440px",
                       "headerHeight": "69px",
@@ -662,7 +651,7 @@ exports[`Filter default render 1`] = `
                       20,
                       30,
                     ],
-                    "success": "#4DC771",
+                    "success": "#33BF9E",
                     "text": Object {
                       "family": "\\"Rubik\\", \\"Avenir Next\\", sans-serif",
                       "familyMono": "Monaco, Consolas, \\"Courier New\\", monospace",
@@ -671,11 +660,9 @@ exports[`Filter default render 1`] = `
                     },
                     "textColor": "#2B1D38",
                     "white": "#FFFFFF",
-                    "yellow100": "#FFFDF5",
-                    "yellow200": "#FFF8C4",
-                    "yellow300": "#FFF492",
-                    "yellow400": "#FFC227",
-                    "yellow500": "#E2A301",
+                    "yellow100": "#FDE8b4",
+                    "yellow200": "#FFD577",
+                    "yellow300": "#FFC227",
                     "zIndex": Object {
                       "breadcrumbs": Object {
                         "gridCellError": 1,
@@ -730,7 +717,7 @@ exports[`Filter default render 1`] = `
                             "info",
                           ],
                           "symbol": <UNDEFINED
-                            color="green400"
+                            color="green300"
                             icon={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
@@ -787,7 +774,7 @@ exports[`Filter default render 1`] = `
                             "info",
                           ],
                           "symbol": <UNDEFINED
-                            color="green500"
+                            color="green300"
                             icon={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
@@ -825,7 +812,7 @@ exports[`Filter default render 1`] = `
                             "error",
                           ],
                           "symbol": <UNDEFINED
-                            color="red400"
+                            color="red300"
                             icon={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
@@ -863,7 +850,7 @@ exports[`Filter default render 1`] = `
                               onClick={[Function]}
                             >
                               <Memo()
-                                color="green400"
+                                color="green300"
                                 icon={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
@@ -874,10 +861,10 @@ exports[`Filter default render 1`] = `
                                 size="xs"
                               >
                                 <IconWrapper
-                                  color="green400"
+                                  color="green300"
                                 >
                                   <div
-                                    className="css-1i4jl0w-IconWrapper e1oljvyu0"
+                                    className="css-1g6kf6j-IconWrapper e1oljvyu0"
                                   >
                                     <IconSwitch
                                       size="xs"
@@ -1184,7 +1171,7 @@ exports[`Filter default render 1`] = `
                               onClick={[Function]}
                             >
                               <Memo()
-                                color="green500"
+                                color="green300"
                                 icon={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
@@ -1195,10 +1182,10 @@ exports[`Filter default render 1`] = `
                                 size="xs"
                               >
                                 <IconWrapper
-                                  color="green500"
+                                  color="green300"
                                 >
                                   <div
-                                    className="css-1wgik3n-IconWrapper e1oljvyu0"
+                                    className="css-1g6kf6j-IconWrapper e1oljvyu0"
                                   >
                                     <IconLocation
                                       size="xs"
@@ -1393,7 +1380,7 @@ exports[`Filter default render 1`] = `
                               onClick={[Function]}
                             >
                               <Memo()
-                                color="red400"
+                                color="red300"
                                 icon={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
@@ -1404,10 +1391,10 @@ exports[`Filter default render 1`] = `
                                 size="xs"
                               >
                                 <IconWrapper
-                                  color="red400"
+                                  color="red300"
                                 >
                                   <div
-                                    className="css-1r54ggw-IconWrapper e1oljvyu0"
+                                    className="css-1qb319c-IconWrapper e1oljvyu0"
                                   >
                                     <IconFire
                                       size="xs"
@@ -1537,21 +1524,21 @@ exports[`Filter default render 1`] = `
                                 level="info"
                               >
                                 <StyledTag
-                                  color="blue400"
+                                  color="blue300"
                                 >
                                   <Component
                                     className="css-1egwhai-Tag-StyledTag eio8trv0"
-                                    color="blue400"
+                                    color="blue300"
                                   >
                                     <div
                                       className="css-1egwhai-Tag-StyledTag eio8trv0"
-                                      color="blue400"
+                                      color="blue300"
                                     >
                                       <Highlight
                                         text=""
                                       >
                                         <HighlightComponent
-                                          className="css-hywrkr-Highlight em9eqvp0"
+                                          className="css-1ucbpyf-Highlight em9eqvp0"
                                           text=""
                                         >
                                           info
@@ -1628,21 +1615,21 @@ exports[`Filter default render 1`] = `
                                 level="error"
                               >
                                 <StyledTag
-                                  color="red400"
+                                  color="red300"
                                 >
                                   <Component
-                                    className="css-gqhnot-Tag-StyledTag eio8trv0"
-                                    color="red400"
+                                    className="css-20p94o-Tag-StyledTag eio8trv0"
+                                    color="red300"
                                   >
                                     <div
-                                      className="css-gqhnot-Tag-StyledTag eio8trv0"
-                                      color="red400"
+                                      className="css-20p94o-Tag-StyledTag eio8trv0"
+                                      color="red300"
                                     >
                                       <Highlight
                                         text=""
                                       >
                                         <HighlightComponent
-                                          className="css-hywrkr-Highlight em9eqvp0"
+                                          className="css-1ucbpyf-Highlight em9eqvp0"
                                           text=""
                                         >
                                           error

@@ -302,7 +302,7 @@ exports[`OrganizationApiKeysList renders 1`] = `
             disablePadding={true}
           >
             <div
-              className="css-c7ktwd-PanelHeader en8g1d30"
+              className="css-1uogqvd-PanelHeader en8g1d30"
             >
               <Styled(div)
                 alignItems="center"

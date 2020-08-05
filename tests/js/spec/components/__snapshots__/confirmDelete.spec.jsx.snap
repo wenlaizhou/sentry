@@ -34,11 +34,11 @@ exports[`ConfirmDelete renders 1`] = `
             type="error"
           >
             <Component
-              className="css-10u5rob-Alert ejthpj82"
+              className="css-1l2iii3-Alert ejthpj82"
               type="error"
             >
               <div
-                className="ref-error css-10u5rob-Alert ejthpj82"
+                className="ref-error css-1l2iii3-Alert ejthpj82"
               >
                 <StyledTextBlock>
                   <span
@@ -131,7 +131,7 @@ exports[`ConfirmDelete renders 1`] = `
                                 value=""
                               >
                                 <input
-                                  className="css-1fw7r45-Input e1xej46s0"
+                                  className="css-iszv13-Input e1xej46s0"
                                   onChange={[Function]}
                                   placeholder="CoolOrg"
                                   type="text"
