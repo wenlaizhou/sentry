@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-restricted-imports
 import {Box} from 'reflexbox';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -138,7 +139,7 @@ const ProjectCardWrapper = styled(Box)`
 
 const StyledProjectCard = styled('div')`
   background-color: white;
-  border: 1px solid ${p => p.theme.borderDark};
+  border: 1px solid ${p => p.theme.border};
   border-radius: ${p => p.theme.borderRadius};
   box-shadow: ${p => p.theme.dropShadowLight};
 `;

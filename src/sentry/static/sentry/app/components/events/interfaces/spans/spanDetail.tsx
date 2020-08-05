@@ -475,7 +475,7 @@ const StyledDiscoverButton = styled(DiscoverButton)`
 `;
 
 const SpanDetailContainer = styled('div')`
-  border-bottom: 1px solid ${p => p.theme.borderDark};
+  border-bottom: 1px solid ${p => p.theme.border};
   cursor: auto;
 `;
 
