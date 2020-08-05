@@ -9,7 +9,7 @@ import Breadcrumbs from 'app/components/breadcrumbs';
 import {PageHeader} from 'app/styles/organization';
 import ButtonBar from 'app/components/buttonBar';
 import Button from 'app/components/button';
-import {IconDelete, IconEdit, IconPlay, IconNot} from 'app/icons';
+import {IconDelete, IconEdit} from 'app/icons';
 import {addSuccessMessage} from 'app/actionCreators/indicator';
 
 import DashboardWidgets from './dashboardWidgets';

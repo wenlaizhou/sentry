@@ -254,7 +254,7 @@ class Chart extends React.Component {
 
     const legend = showLegend && {
       right: 16,
-      top: 0,
+      top: 12,
       icon: 'circle',
       itemHeight: 8,
       itemWidth: 8,
@@ -273,7 +273,7 @@ class Chart extends React.Component {
       grid: {
         left: '24px',
         right: '24px',
-        top: '10px',
+        top: '12px',
         bottom: '12px',
       },
       seriesOptions: {
@@ -295,7 +295,6 @@ class Chart extends React.Component {
     const series = Array.isArray(releaseSeries)
       ? [...timeseriesData, ...releaseSeries]
       : timeseriesData;
-    console.log(series);
 
     return (
       <Component

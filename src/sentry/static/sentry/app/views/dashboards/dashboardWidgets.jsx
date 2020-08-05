@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Button from 'app/components/button';
+import {IconAdd} from 'app/icons';
 import SentryTypes from 'app/sentryTypes';
 import {t} from 'app/locale';
 import space from 'app/styles/space';
@@ -40,7 +40,10 @@ class DashboardWidgets extends React.Component {
         ))}
         {isEditing && (
           <WidgetWrapper key="add">
-            <Button onClick={this.handleAdd}>{t('Add widget')}</Button>
+            <AddWidgetWrapper key="add" onClick={this.handleAdd}>
+              <IconAdd size="xl" />
+              {t('Add widget')}
+            </AddWidgetWrapper>
           </WidgetWrapper>
         )}
       </Widgets>
@@ -58,5 +61,19 @@ const WidgetWrapper = styled('div')`
   width: 50%;
   :nth-child(odd) {
     padding-right: ${space(2)};
+  }
+`;
+
+const AddWidgetWrapper = styled('a')`
+  width: 100%;
+  height: 250px;
+  border: 1px solid ${p => p.theme.borderLight};
+  border-radius: ${p => p.theme.borderRadius};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > svg {
+    margin-right: ${space(1)};
   }
 `;
