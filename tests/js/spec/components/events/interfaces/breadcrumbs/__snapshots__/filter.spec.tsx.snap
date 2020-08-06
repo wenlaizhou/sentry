@@ -180,7 +180,7 @@ exports[`Filter default render 1`] = `
                   }
                 >
                   <ForwardRef
-                    className="css-3q3sgn-StyledDropdownButton e1sx99c0"
+                    className="css-159rqia-StyledDropdownButton e1sx99c0"
                     hasDarkBorderBottomColor={true}
                     isOpen={false}
                     onClick={[Function]}
@@ -196,7 +196,7 @@ exports[`Filter default render 1`] = `
                     }
                   >
                     <DropdownButton
-                      className="css-3q3sgn-StyledDropdownButton e1sx99c0"
+                      className="css-159rqia-StyledDropdownButton e1sx99c0"
                       forwardedRef={[Function]}
                       hasDarkBorderBottomColor={true}
                       isOpen={false}
@@ -214,7 +214,7 @@ exports[`Filter default render 1`] = `
                       }
                     >
                       <StyledButton
-                        className="css-3q3sgn-StyledDropdownButton e1sx99c0"
+                        className="css-159rqia-StyledDropdownButton e1sx99c0"
                         hasDarkBorderBottomColor={true}
                         hideBottomBorder={true}
                         isOpen={false}
@@ -232,7 +232,7 @@ exports[`Filter default render 1`] = `
                         type="button"
                       >
                         <forwardRef<Button>
-                          className="e1sx99c0 css-1br8n6y-StyledButton-StyledDropdownButton eenpoef1"
+                          className="e1sx99c0 css-11az4k0-StyledButton-StyledDropdownButton eenpoef1"
                           hasDarkBorderBottomColor={true}
                           hideBottomBorder={true}
                           isOpen={false}
@@ -251,7 +251,7 @@ exports[`Filter default render 1`] = `
                         >
                           <Button
                             align="center"
-                            className="e1sx99c0 css-1br8n6y-StyledButton-StyledDropdownButton eenpoef1"
+                            className="e1sx99c0 css-11az4k0-StyledButton-StyledDropdownButton eenpoef1"
                             disabled={false}
                             forwardRef={[Function]}
                             hasDarkBorderBottomColor={true}
@@ -272,7 +272,7 @@ exports[`Filter default render 1`] = `
                           >
                             <StyledButton
                               aria-disabled={false}
-                              className="e1sx99c0 css-1br8n6y-StyledButton-StyledDropdownButton eenpoef1"
+                              className="e1sx99c0 css-11az4k0-StyledButton-StyledDropdownButton eenpoef1"
                               disabled={false}
                               forwardRef={[Function]}
                               hasDarkBorderBottomColor={true}
@@ -294,7 +294,7 @@ exports[`Filter default render 1`] = `
                             >
                               <Component
                                 aria-disabled={false}
-                                className="e1sx99c0 eenpoef1 css-1hpln5-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
+                                className="e1sx99c0 eenpoef1 css-8ocri2-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
                                 forwardRef={[Function]}
                                 onClick={[Function]}
                                 onKeyDown={[Function]}
@@ -311,7 +311,7 @@ exports[`Filter default render 1`] = `
                               >
                                 <button
                                   aria-disabled={false}
-                                  className="e1sx99c0 eenpoef1 css-1hpln5-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
+                                  className="e1sx99c0 eenpoef1 css-8ocri2-StyledButton-StyledButton-StyledDropdownButton edwq9my0"
                                   onClick={[Function]}
                                   onKeyDown={[Function]}
                                   onMouseEnter={[Function]}
@@ -522,8 +522,8 @@ exports[`Filter default render 1`] = `
                       "primary": Object {
                         "background": "#6C5FC7",
                         "backgroundActive": "#4e3fb4",
-                        "border": "#3d328e",
-                        "borderActive": "#352b7b",
+                        "border": "#6C5FC7",
+                        "borderActive": "#6C5FC7",
                         "color": "#FFFFFF",
                         "colorActive": "#FFFFFF",
                         "focusShadow": "rgba(108, 95, 199, 0.4)",
@@ -706,7 +706,7 @@ exports[`Filter default render 1`] = `
                 width="240px"
               >
                 <div
-                  className="css-1pa22ky-DropdownBubble-Content e1r8p2re2"
+                  className="css-1829wgf-DropdownBubble-Content e1r8p2re2"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}

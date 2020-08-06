@@ -3434,7 +3434,7 @@ exports[`RuleBuilder renders with suggestions 1`] = `
             >
               <Component
                 aria-disabled={false}
-                className="e1hyuoc711 css-cdfv3-StyledButton-AddButton edwq9my0"
+                className="e1hyuoc711 css-17lm8o9-StyledButton-AddButton edwq9my0"
                 forwardRef={null}
                 onClick={[Function]}
                 role="button"
@@ -3442,7 +3442,7 @@ exports[`RuleBuilder renders with suggestions 1`] = `
               >
                 <button
                   aria-disabled={false}
-                  className="e1hyuoc711 css-cdfv3-StyledButton-AddButton edwq9my0"
+                  className="e1hyuoc711 css-17lm8o9-StyledButton-AddButton edwq9my0"
                   onClick={[Function]}
                   role="button"
                   size="small"
