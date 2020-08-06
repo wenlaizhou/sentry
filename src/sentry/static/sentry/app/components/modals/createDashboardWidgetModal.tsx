@@ -19,14 +19,8 @@ type Props = ModalRenderProps & {
 };
 
 type State = {
-  savedQuery?: SavedQuery;
-};
-
-type SelectedValue = {
-  label: string;
-  value: string;
-  query: SavedQuery;
-  searchKey: string;
+  selectedQuery?: SavedQuery;
+  savedQueries: SavedQuery[];
 };
 
 const DISPLAY_TYPE_CHOICES = [
@@ -38,7 +32,8 @@ const DISPLAY_TYPE_CHOICES = [
 
 class CreateDashboardWidgetModal extends React.Component<Props, State> {
   state: State = {
-    savedQuery: undefined,
+    selectedQuery: undefined,
+    savedQueries: [],
   };
 
   handleSuccess = (data: object) => {
@@ -52,6 +47,12 @@ class CreateDashboardWidgetModal extends React.Component<Props, State> {
     addErrorMessage(t('Failed to add widget.'));
   };
 
+  handleSubmit = (data: object, onSubmitSuccess, _onSubmitError) => {
+    console.log('submit data', data);
+    // TODO do API request, transform data into a widget shape.
+    onSubmitSuccess(data);
+  };
+
   handleLoadOptions = (inputValue: string) => {
     const {api, organization} = this.props;
     return new Promise((resolve, reject) => {
@@ -60,29 +61,27 @@ class CreateDashboardWidgetModal extends React.Component<Props, State> {
           const results = queries.map(query => ({
             label: query.name,
             value: query.id,
-            query,
-            test: 'yes',
           }));
+          this.setState({savedQueries: queries});
           resolve({options: results});
         })
         .catch(reject);
     });
   };
 
-  handleSavedQueryChange = (choice: SelectedValue, other) => {
-    // TODO how do I get the selecte option and not just the ID here?
-    // I don't really want to have to load the query again
-    this.setState({savedQuery: choice.query});
+  handleSavedQueryChange = (choice: string) => {
+    const selected = this.state.savedQueries.find(item => item.id === choice);
+    this.setState({selectedQuery: selected});
   };
 
   render() {
-    const {Body, Header, closeModal, organization, dashboard} = this.props;
-    const {savedQuery} = this.state;
+    const {Body, Header, closeModal} = this.props;
+    const {selectedQuery} = this.state;
 
-    const hasQuery = savedQuery !== undefined;
+    const hasQuery = selectedQuery !== undefined;
     const axisOptions =
-      savedQuery !== undefined
-        ? savedQuery.fields.filter(item => item.includes('('))
+      selectedQuery !== undefined
+        ? selectedQuery.fields.filter(item => item.includes('('))
         : [];
 
     return (
@@ -92,9 +91,8 @@ class CreateDashboardWidgetModal extends React.Component<Props, State> {
         </Header>
         <Body>
           <Form
-            apiMethod="POST"
-            apiEndpoint={`/organizations/${organization.slug}/dashboards/${dashboard.id}/widgets/`}
             submitLabel={t('Create')}
+            onSubmit={this.handleSubmit}
             onSubmitSuccess={this.handleSuccess}
             onSubmitError={this.handleError}
           >
@@ -110,29 +108,29 @@ class CreateDashboardWidgetModal extends React.Component<Props, State> {
               onChange={this.handleSavedQueryChange}
               name="savedQuery"
               label={t('Saved Query')}
-              value={savedQuery !== undefined ? savedQuery.id : undefined}
+              value={selectedQuery !== undefined ? selectedQuery.id : undefined}
               cache={false}
               onSelectResetsInput={false}
               onCloseResetsInput={false}
               onBlurResetsInput={false}
             />
             <SelectField
+              deprecatedSelectControl
               required
               disabled={!hasQuery}
               choices={axisOptions}
-              name="displayOptions.yAxis"
+              name="yAxis"
               label={t('Display Series')}
               multiple
             />
-            {/*
             <SelectField
+              deprecatedSelectControl
               required
               disabled={!hasQuery}
-              choices={DISPLAY_TYPE_CHOICES}
+              options={DISPLAY_TYPE_CHOICES.slice()}
               name="displayType"
               label={t('Chart Style')}
             />
-             */}
           </Form>
         </Body>
       </React.Fragment>
