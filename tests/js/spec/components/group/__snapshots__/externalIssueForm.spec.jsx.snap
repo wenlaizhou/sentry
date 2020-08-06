@@ -118,7 +118,7 @@ exports[`ExternalIssueForm create renders 1`] = `
         saveOnBlur={false}
       >
         <div
-          className="modal-footer css-yfxs1k-StyledFooter e1r1zmbj0"
+          className="modal-footer css-qsauj9-StyledFooter e1r1zmbj0"
         >
           <DefaultButtons>
             <div
@@ -709,7 +709,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                   alignRight={false}
                                 >
                                   <div
-                                    className="css-q2zc01-FieldControlStyled e12jpfuq1"
+                                    className="css-su9yan-FieldControlStyled e12jpfuq1"
                                   >
                                     <Observer>
                                       <ForwardRef(RefForwardedSelectControl)
@@ -2706,7 +2706,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                   alignRight={false}
                                 >
                                   <div
-                                    className="css-q2zc01-FieldControlStyled e12jpfuq1"
+                                    className="css-su9yan-FieldControlStyled e12jpfuq1"
                                   >
                                     <Observer>
                                       <ForwardRef(RefForwardedSelectControl)
@@ -4566,7 +4566,7 @@ exports[`ExternalIssueForm link renders 1`] = `
                                   alignRight={false}
                                 >
                                   <div
-                                    className="css-q2zc01-FieldControlStyled e12jpfuq1"
+                                    className="css-su9yan-FieldControlStyled e12jpfuq1"
                                   >
                                     <Observer>
                                       <TextArea
@@ -4926,7 +4926,7 @@ exports[`ExternalIssueForm link renders 1`] = `
         saveOnBlur={false}
       >
         <div
-          className="modal-footer css-yfxs1k-StyledFooter e1r1zmbj0"
+          className="modal-footer css-qsauj9-StyledFooter e1r1zmbj0"
         >
           <DefaultButtons>
             <div

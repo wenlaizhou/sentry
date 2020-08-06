@@ -254,7 +254,7 @@ exports[`JsonForm fields prop default 1`] = `
                                               alignRight={false}
                                             >
                                               <div
-                                                className="css-q2zc01-FieldControlStyled e12jpfuq1"
+                                                className="css-su9yan-FieldControlStyled e12jpfuq1"
                                               >
                                                 <Observer>
                                                   <Input
@@ -567,7 +567,7 @@ exports[`JsonForm fields prop default 1`] = `
                                               alignRight={false}
                                             >
                                               <div
-                                                className="css-q2zc01-FieldControlStyled e12jpfuq1"
+                                                className="css-su9yan-FieldControlStyled e12jpfuq1"
                                               >
                                                 <Observer>
                                                   <ForwardRef(RefForwardedSelectControl)
@@ -3012,7 +3012,7 @@ exports[`JsonForm form prop default 1`] = `
                                               alignRight={false}
                                             >
                                               <div
-                                                className="css-q2zc01-FieldControlStyled e12jpfuq1"
+                                                className="css-su9yan-FieldControlStyled e12jpfuq1"
                                               >
                                                 <Observer>
                                                   <Input

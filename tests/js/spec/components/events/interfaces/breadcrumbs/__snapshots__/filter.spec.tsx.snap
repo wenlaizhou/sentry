@@ -538,6 +538,8 @@ exports[`Filter default render 1`] = `
                         "focusShadow": "rgba(51, 191, 158, 0.5)",
                       },
                     },
+                    "chartLabel": "#9386A0",
+                    "chartLineColor": "#C6BECF",
                     "charts": Object {
                       "colors": Array [
                         "#444674",

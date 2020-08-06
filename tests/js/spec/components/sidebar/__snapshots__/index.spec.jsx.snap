@@ -8,7 +8,7 @@ exports[`Sidebar SidebarDropdown can open "Switch Organization" sub-menu 1`] = `
   onMouseLeave={[Function]}
 >
   <div
-    className="css-1h6rmll-SwitchOrganizationMenu-SidebarDropdownMenu ev3suul4"
+    className="css-l065zr-SwitchOrganizationMenu-SidebarDropdownMenu ev3suul4"
     data-test-id="sidebar-switch-org-menu"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -133,7 +133,7 @@ exports[`Sidebar SidebarDropdown can open Sidebar org/name dropdown menu 1`] = `
   onMouseLeave={[Function]}
 >
   <div
-    className="css-8bmues-OrgAndUserMenu-SidebarDropdownMenu e10773n39"
+    className="css-15wmrq-OrgAndUserMenu-SidebarDropdownMenu e10773n39"
     onClick={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
@@ -951,7 +951,7 @@ exports[`Sidebar SidebarHelp can toggle help menu 1`] = `
   onMouseLeave={[Function]}
 >
   <div
-    className="css-sqtrwv-HelpMenu-SidebarDropdownMenu e6tkw732"
+    className="css-wyy0vu-HelpMenu-SidebarDropdownMenu e6tkw732"
     onClick={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
@@ -1277,7 +1277,7 @@ exports[`Sidebar renders without org and router 1`] = `
   onMouseLeave={[Function]}
 >
   <div
-    className="css-8bmues-OrgAndUserMenu-SidebarDropdownMenu e10773n39"
+    className="css-15wmrq-OrgAndUserMenu-SidebarDropdownMenu e10773n39"
     onClick={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}

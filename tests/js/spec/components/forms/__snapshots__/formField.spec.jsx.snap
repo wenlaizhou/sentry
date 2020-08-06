@@ -163,7 +163,7 @@ exports[`FormField + model renders with Form 1`] = `
                               alignRight={false}
                             >
                               <div
-                                className="css-q2zc01-FieldControlStyled e12jpfuq1"
+                                className="css-su9yan-FieldControlStyled e12jpfuq1"
                               >
                                 <Observer>
                                   <Input
@@ -312,7 +312,7 @@ exports[`FormField + model renders with Form 1`] = `
       saveOnBlur={false}
     >
       <div
-        className="css-yfxs1k-StyledFooter e1r1zmbj0"
+        className="css-qsauj9-StyledFooter e1r1zmbj0"
       >
         <DefaultButtons>
           <div
