@@ -9,7 +9,7 @@ import {
   deleteDashboard,
   deleteDashboardWidget,
 } from 'app/actionCreators/dashboards';
-import Breadcrumbs from 'app/components/breadcrumbs';
+import Breadcrumbs, {Crumb} from 'app/components/breadcrumbs';
 import {PageHeader} from 'app/styles/organization';
 import ButtonBar from 'app/components/buttonBar';
 import Button from 'app/components/button';
@@ -89,6 +89,22 @@ class DashboardDetails extends AsyncView<Props, State> {
     }
   };
 
+  handleReorderWidgets = async (widgets: DashboardWidget[]) => {
+    const {dashboard} = this.state;
+    if (!dashboard) {
+      return;
+    }
+    const {organization} = this.props;
+    const reordered = widgets.map((item, i) => ({...item, order: i}));
+    try {
+      const updated: DashboardDetailed = {...dashboard, widgets: reordered};
+      await updateDashboard(this.api, organization.slug, updated);
+      this.setState({dashboard: updated});
+    } catch (e) {
+      // Do nothing action creator shows an indicator.
+    }
+  };
+
   getEndpoints(): Array<[string, string, any?, any?]> {
     const {organization, params} = this.props;
     return [
@@ -107,16 +123,14 @@ class DashboardDetails extends AsyncView<Props, State> {
     const {organization} = this.props;
     const {dashboard, isEditing} = this.state;
 
-    const crumbs = [
+    const crumbs: Crumb[] = [
       {
         to: `/organizations/${organization.slug}/dashboards/`,
         label: t('Dashboards'),
       },
     ];
-    let terminal;
-
     if (isEditing && dashboard) {
-      terminal = {
+      crumbs.push({
         label: (
           <BufferedInput
             type="text"
@@ -125,19 +139,21 @@ class DashboardDetails extends AsyncView<Props, State> {
             onUpdate={this.handleUpdateTitle}
           />
         ),
-      };
+      });
     } else {
-      terminal = {
+      crumbs.push({
         label: dashboard ? dashboard.title : '\u2016',
-      };
+      });
     }
-    crumbs.push(terminal);
     return crumbs;
   }
 
   renderBody() {
     const {router, organization} = this.props;
     const {dashboard, isEditing, releases, loading} = this.state;
+    if (!dashboard) {
+      return null;
+    }
 
     return (
       <React.Fragment>
@@ -178,6 +194,7 @@ class DashboardDetails extends AsyncView<Props, State> {
           isEditing={isEditing}
           onAddWidget={this.handleAddWidget}
           onDeleteWidget={this.handleDeleteWidget}
+          onReorderWidget={this.handleReorderWidgets}
         />
       </React.Fragment>
     );

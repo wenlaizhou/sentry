@@ -25,7 +25,7 @@ class WidgetSerializer(Serializer):
     def serialize(self, obj, attrs, user, **kwargs):
         return {
             "id": six.text_type(obj.id),
-            "order": six.text_type(obj.order),
+            "order": obj.order,
             "title": obj.title,
             "displayType": WidgetDisplayTypes.get_type_name(obj.display_type),
             "displayOptions": obj.display_options,
