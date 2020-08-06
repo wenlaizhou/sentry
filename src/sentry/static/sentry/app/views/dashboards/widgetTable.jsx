@@ -54,7 +54,7 @@ class WidgetTable extends React.Component {
       // Copy current selection parameters in so dashboard
       // reflects global selection header.
       projects: selection.projects,
-      environment: selection.environment,
+      environment: selection.environments,
       start: selection.datetime.start,
       end: selection.datetime.end,
       range: selection.datetime.period,

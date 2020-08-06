@@ -209,7 +209,11 @@ class DashboardWidgets extends React.Component<Props, State> {
 
   handleAdd = () => {
     const {organization, dashboard, onAddWidget} = this.props;
-    openAddDashboardWidgetModal({organization, dashboard, onAddWidget});
+    openAddDashboardWidgetModal({
+      organization,
+      dashboard,
+      onAddWidget,
+    });
   };
 
   renderWidget(index: number, widget: DashboardWidget, isGhost: boolean = false) {

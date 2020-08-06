@@ -1361,7 +1361,7 @@ export type NewDashboardWidget = {
   savedQuery: string;
 };
 
-export type DashboardWidget = NewDashboardWidget & {
+export type DashboardWidget = Omit<NewDashboardWidget, 'savedQuery'> & {
   id: string;
   order: number;
   savedQuery: SavedQuery;

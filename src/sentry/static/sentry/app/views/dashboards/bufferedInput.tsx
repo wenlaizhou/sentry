@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Input from 'app/components/forms/input';
+import Input from 'app/views/settings/components/forms/controls/input';
 
 type InputProps = React.HTMLProps<HTMLInputElement> & {
   className?: string;
