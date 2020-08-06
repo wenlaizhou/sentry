@@ -6,9 +6,8 @@ import SentryTypes from 'app/sentryTypes';
 import space from 'app/styles/space';
 import withOrganization from 'app/utils/withOrganization';
 import Button from 'app/components/button';
-import {IconChevron, IconStack, IconTelescope} from 'app/icons';
+import {IconChevron} from 'app/icons';
 import {getDiscover2UrlPathFromDiscoverQuery} from 'app/views/dashboards/utils/getDiscoverUrlPathFromDiscoverQuery';
-import {getEventsUrlPathFromDiscoverQuery} from 'app/views/dashboards/utils/getEventsUrlPathFromDiscoverQuery';
 
 class ExploreWidget extends React.Component {
   static propTypes = {

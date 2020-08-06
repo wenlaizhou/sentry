@@ -4,6 +4,7 @@ import {addErrorMessage, addSuccessMessage} from 'app/actionCreators/indicator';
 import {Organization, Dashboard, DashboardWidget, SavedQuery} from 'app/types';
 import {t} from 'app/locale';
 import {fetchSavedQueries} from 'app/actionCreators/discoverSavedQueries';
+import {createDashboardWidget} from 'app/actionCreators/dashboards';
 import Form from 'app/views/settings/components/forms/form';
 import TextField from 'app/views/settings/components/forms/textField';
 import SelectField from 'app/views/settings/components/forms/selectField';
@@ -47,7 +48,7 @@ class CreateDashboardWidgetModal extends React.Component<Props, State> {
     addErrorMessage(t('Failed to add widget.'));
   };
 
-  handleSubmit = (data: any, onSubmitSuccess, onSubmitError) => {
+  handleSubmit = async (data: any, onSubmitSuccess, onSubmitError) => {
     const {api, dashboard, organization} = this.props;
     try {
       const widget = {
@@ -58,18 +59,13 @@ class CreateDashboardWidgetModal extends React.Component<Props, State> {
           yAxis: data.yAxis,
         },
       };
-      // Not sure why, but I'm not getting a response back here?
-      const resp = api.requestPromise(
-        `/organizations/${organization.slug}/dashboards/${dashboard.id}/widgets/`,
-        {
-          method: 'POST',
-          data: widget,
-        }
+      const resp = await createDashboardWidget(
+        api,
+        organization.slug,
+        dashboard.id,
+        widget
       );
-      // Temporary hack
-      widget.savedQuery = this.state.selectedQuery;
-
-      onSubmitSuccess(widget);
+      onSubmitSuccess(resp);
     } catch (e) {
       onSubmitError(e);
     }

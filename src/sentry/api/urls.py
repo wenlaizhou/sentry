@@ -715,7 +715,7 @@ urlpatterns = [
                     name="sentry-api-0-organization-dashboard-widgets",
                 ),
                 url(
-                    r"^(?P<organization_slug>[^\/]+)/dashboards/(?P<dashboard_id>[^\/]+)/widgets/(?P<widget_id>[^\/]+)$",
+                    r"^(?P<organization_slug>[^\/]+)/dashboards/(?P<dashboard_id>[^\/]+)/widgets/(?P<widget_id>[^\/]+)/$",
                     OrganizationDashboardWidgetDetailsEndpoint.as_view(),
                     name="sentry-api-0-organization-dashboard-widget-details",
                 ),

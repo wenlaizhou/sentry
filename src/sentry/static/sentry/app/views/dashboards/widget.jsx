@@ -5,6 +5,9 @@ import styled from '@emotion/styled';
 import {Panel, PanelBody} from 'app/components/panels';
 import {t} from 'app/locale';
 import ErrorBoundary from 'app/components/errorBoundary';
+import ButtonBar from 'app/components/buttonBar';
+import Button from 'app/components/button';
+import {IconDelete} from 'app/icons';
 import SentryTypes from 'app/sentryTypes';
 import space from 'app/styles/space';
 import withGlobalSelection from 'app/utils/withGlobalSelection';
@@ -17,13 +20,13 @@ import WidgetTable from './widgetTable';
 
 class Widget extends React.Component {
   static propTypes = {
-    api: PropTypes.object,
-    releasesLoading: PropTypes.bool,
     releases: PropTypes.arrayOf(SentryTypes.Release),
     widget: SentryTypes.Widget,
     organization: SentryTypes.Organization,
     selection: SentryTypes.GlobalSelection,
     router: PropTypes.object,
+    isEditing: PropTypes.bool,
+    onDelete: PropTypes.func,
   };
 
   getVisualizationComponent() {
@@ -39,15 +42,23 @@ class Widget extends React.Component {
   }
 
   render() {
-    const {organization, router, widget, releases, selection} = this.props;
-    const {title, savedQuery} = widget;
+    const {
+      isEditing,
+      organization,
+      router,
+      widget,
+      releases,
+      selection,
+      onDelete,
+    } = this.props;
     const Visualization = this.getVisualizationComponent();
 
     return (
       <ErrorBoundary customComponent={<ErrorCard>{t('Error loading widget')}</ErrorCard>}>
         <WidgetWrapperForMask>
           <StyledPanel>
-            <WidgetHeader>{title}</WidgetHeader>
+            <WidgetHeader>{widget.title}</WidgetHeader>
+            {isEditing && <WidgetToolbar widget={widget} onDelete={onDelete} />}
             <StyledPanelBody>
               <Visualization
                 widget={widget}
@@ -59,11 +70,37 @@ class Widget extends React.Component {
             </StyledPanelBody>
             <WidgetFooter>
               <div />
-              <ExploreWidget {...{widget, savedQuery, router, selection}} />
+              <ExploreWidget widget={widget} router={router} selection={selection} />
             </WidgetFooter>
           </StyledPanel>
         </WidgetWrapperForMask>
       </ErrorBoundary>
+    );
+  }
+}
+
+class WidgetToolbar extends React.Component {
+  static propTypes = {
+    onDelete: PropTypes.func,
+    widget: SentryTypes.Widget,
+  };
+
+  handleDelete = () => {
+    const {onDelete, widget} = this.props;
+    onDelete(widget);
+  };
+
+  render() {
+    return (
+      <StyledButtonBar gap={1}>
+        <Button
+          size="xsmall"
+          priority="danger"
+          onClick={this.handleDelete}
+          icon={<IconDelete size="xs" />}
+          title={t('Delete this widget')}
+        />
+      </StyledButtonBar>
     );
   }
 }
@@ -108,4 +145,13 @@ const WidgetHeader = styled('div')`
 const WidgetFooter = styled(WidgetHeader)`
   border-top: 1px solid ${p => p.theme.borderLight};
   padding: 0;
+`;
+const StyledButtonBar = styled(ButtonBar)`
+  position: absolute;
+  z-index: ${p => p.theme.zIndex.header};
+  top: 0;
+  right: 0;
+  padding: ${space(1)} ${space(2)};
+  border-radius: ${p => p.theme.borderRadius};
+  background: rgba(255, 255, 255, 0.4);
 `;

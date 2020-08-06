@@ -271,7 +271,7 @@ class Chart extends React.Component {
     const chartOptions = {
       colors: theme.charts.getColorPalette(timeseriesData.length - 2),
       grid: {
-        left: '24px',
+        left: '16px',
         right: '24px',
         top: '12px',
         bottom: '12px',

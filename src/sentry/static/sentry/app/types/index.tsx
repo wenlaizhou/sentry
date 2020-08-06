@@ -1350,9 +1350,7 @@ export type Frame = {
   instructionAddr?: string;
 };
 
-export type DashboardWidget = {
-  id: string;
-  order: string;
+export type NewDashboardWidget = {
   title: string;
   displayType: WIDGET_DISPLAY;
   displayOptions: {
@@ -1360,9 +1358,15 @@ export type DashboardWidget = {
     yAxis?: string[];
     includeReleases?: boolean;
   };
-  dateCreated: string;
+  savedQuery: string;
+};
+
+export type DashboardWidget = NewDashboardWidget & {
+  id: string;
+  order: string;
   savedQuery: SavedQuery;
-  createdBy: User;
+  dateCreated?: string;
+  createdBy?: User;
 };
 
 export type Dashboard = {

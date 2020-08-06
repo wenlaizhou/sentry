@@ -76,8 +76,8 @@ class WidgetTable extends React.Component {
                 <tbody>
                   {isLoading && (
                     <tr>
-                      <td>
-                        <LoadingIndicator />
+                      <td colSpan={columns.length}>
+                        <LoadingIndicator hideMessage mini />
                       </td>
                     </tr>
                   )}

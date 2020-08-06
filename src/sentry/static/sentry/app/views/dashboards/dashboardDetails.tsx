@@ -4,7 +4,11 @@ import {browserHistory, WithRouterProps} from 'react-router';
 import {t} from 'app/locale';
 import {Organization, Release, DashboardDetailed, DashboardWidget} from 'app/types';
 import AsyncView from 'app/views/asyncView';
-import {deleteDashboard} from 'app/actionCreators/dashboards';
+import {
+  updateDashboard,
+  deleteDashboard,
+  deleteDashboardWidget,
+} from 'app/actionCreators/dashboards';
 import Breadcrumbs from 'app/components/breadcrumbs';
 import {PageHeader} from 'app/styles/organization';
 import ButtonBar from 'app/components/buttonBar';
@@ -13,6 +17,7 @@ import {IconDelete, IconEdit} from 'app/icons';
 import {addSuccessMessage} from 'app/actionCreators/indicator';
 import withOrganization from 'app/utils/withOrganization';
 
+import BufferedInput from './bufferedInput';
 import DashboardWidgets from './dashboardWidgets';
 
 type Props = WithRouterProps<{orgId: string; id: string}, {}> & {
@@ -30,11 +35,6 @@ class DashboardDetails extends AsyncView<Props, State> {
     this.setState({isEditing: !this.state.isEditing});
   };
 
-  handleSave = () => {
-    this.setState({isEditing: !!this.state.isEditing});
-    alert('Should save now!');
-  };
-
   handleDelete = () => {
     const {params} = this.props;
 
@@ -44,8 +44,22 @@ class DashboardDetails extends AsyncView<Props, State> {
     });
   };
 
-  handleCancel = () => {
-    this.setState({isEditing: false});
+  handleUpdateTitle = async (title: string) => {
+    const {organization} = this.props;
+    const {dashboard} = this.state;
+    if (!dashboard) {
+      return;
+    }
+    // Remove widgets so they don't get reordered.
+    const updated = {...dashboard, title, widgets: undefined};
+
+    try {
+      await updateDashboard(this.api, organization.slug, updated);
+      addSuccessMessage(t('Dashboard renamed.'));
+      this.setState({dashboard: {...dashboard, title}});
+    } catch (e) {
+      // Do nothing action creator handles indicator.
+    }
   };
 
   handleAddWidget = (widget: DashboardWidget) => {
@@ -54,6 +68,25 @@ class DashboardDetails extends AsyncView<Props, State> {
       return;
     }
     this.setState({dashboard: {...dashboard, widgets: [...dashboard.widgets, widget]}});
+  };
+
+  handleDeleteWidget = async (widget: DashboardWidget) => {
+    const {organization} = this.props;
+    const {dashboard} = this.state;
+    if (!dashboard) {
+      return;
+    }
+    try {
+      await deleteDashboardWidget(this.api, organization.slug, dashboard.id, widget.id);
+      this.setState({
+        dashboard: {
+          ...dashboard,
+          widgets: dashboard.widgets.filter(item => item.id !== widget.id),
+        },
+      });
+    } catch (e) {
+      // Do nothing, action creator shows a message.
+    }
   };
 
   getEndpoints(): Array<[string, string, any?, any?]> {
@@ -72,17 +105,34 @@ class DashboardDetails extends AsyncView<Props, State> {
 
   getCrumbs() {
     const {organization} = this.props;
-    const {dashboard} = this.state;
+    const {dashboard, isEditing} = this.state;
 
-    return [
+    const crumbs = [
       {
         to: `/organizations/${organization.slug}/dashboards/`,
         label: t('Dashboards'),
       },
-      {
-        label: dashboard ? dashboard.title : '\u2016',
-      },
     ];
+    let terminal;
+
+    if (isEditing && dashboard) {
+      terminal = {
+        label: (
+          <BufferedInput
+            type="text"
+            name="title"
+            value={dashboard.title}
+            onUpdate={this.handleUpdateTitle}
+          />
+        ),
+      };
+    } else {
+      terminal = {
+        label: dashboard ? dashboard.title : '\u2016',
+      };
+    }
+    crumbs.push(terminal);
+    return crumbs;
   }
 
   renderBody() {
@@ -96,11 +146,15 @@ class DashboardDetails extends AsyncView<Props, State> {
           <ButtonBar gap={1}>
             {isEditing ? (
               <React.Fragment>
-                <Button size="small" onClick={this.handleCancel}>
-                  {t('Cancel')}
-                </Button>
-                <Button priority="primary" size="small" onClick={this.handleSave}>
-                  {t('Save changes')}
+                <Button
+                  size="small"
+                  priority="danger"
+                  onClick={this.handleDelete}
+                  title={t('Delete this dashboard')}
+                  icon={<IconDelete />}
+                />
+                <Button priority="primary" size="small" onClick={this.handleEdit}>
+                  {t('Done Editing')}
                 </Button>
               </React.Fragment>
             ) : (
@@ -110,13 +164,6 @@ class DashboardDetails extends AsyncView<Props, State> {
                   onClick={this.handleEdit}
                   icon={<IconEdit />}
                   title={t('Edit this dashboard')}
-                />
-                <Button
-                  size="small"
-                  priority="danger"
-                  onClick={this.handleDelete}
-                  title={t('Delete this dashboard')}
-                  icon={<IconDelete />}
                 />
               </React.Fragment>
             )}
@@ -130,6 +177,7 @@ class DashboardDetails extends AsyncView<Props, State> {
           dashboard={dashboard}
           isEditing={isEditing}
           onAddWidget={this.handleAddWidget}
+          onDeleteWidget={this.handleDeleteWidget}
         />
       </React.Fragment>
     );

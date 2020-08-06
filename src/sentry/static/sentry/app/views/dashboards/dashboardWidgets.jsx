@@ -20,6 +20,7 @@ class DashboardWidgets extends React.Component {
     router: PropTypes.object,
     isEditing: PropTypes.bool,
     onAddWidget: PropTypes.func,
+    onDeleteWidget: PropTypes.func,
   };
 
   handleAdd = () => {
@@ -28,7 +29,14 @@ class DashboardWidgets extends React.Component {
   };
 
   render() {
-    const {isEditing, releasesLoading, router, releases, dashboard} = this.props;
+    const {
+      isEditing,
+      releasesLoading,
+      router,
+      releases,
+      dashboard,
+      onDeleteWidget,
+    } = this.props;
 
     return (
       <Widgets>
@@ -40,6 +48,7 @@ class DashboardWidgets extends React.Component {
               widget={widget}
               router={router}
               isEditing={isEditing}
+              onDelete={onDeleteWidget}
             />
           </WidgetWrapper>
         ))}
