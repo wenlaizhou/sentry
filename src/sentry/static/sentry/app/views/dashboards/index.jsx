@@ -23,7 +23,7 @@ class Dashboards extends React.Component {
         renderDisabled
         requireAll={false}
       >
-        <GlobalSelectionHeader showEnvironmentSelector={false}>
+        <GlobalSelectionHeader>
           <PageContent>
             <LightWeightNoProjectMessage organization={organization}>
               {children}

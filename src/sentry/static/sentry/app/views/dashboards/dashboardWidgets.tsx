@@ -300,10 +300,10 @@ class WidgetToolbar extends React.Component<WidgetToolbarProps> {
         <StyledIconGrabbable size="md" onMouseDown={onDragStart} />
         <StyledButtonBar gap={1}>
           <Button
-            size="small"
+            size="xsmall"
             priority="danger"
             onClick={this.handleDelete}
-            icon={<IconDelete size="sm" />}
+            icon={<IconDelete size="xs" />}
             title={t('Delete this widget')}
           />
         </StyledButtonBar>
