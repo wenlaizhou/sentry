@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from '@emotion/styled';
+import isEqual from 'lodash/isEqual';
 
 import {Panel, PanelBody} from 'app/components/panels';
 import {t} from 'app/locale';
@@ -23,6 +24,17 @@ class Widget extends React.Component {
     selection: SentryTypes.GlobalSelection,
     router: PropTypes.object,
   };
+
+  shouldComponentUpdate(nextProps) {
+    if (
+      !isEqual(nextProps.widget.savedQuery, this.props.widget.savedQuery) ||
+      !isEqual(nextProps.selection, this.props.selection) ||
+      nextProps.widget.title !== this.props.widget.title
+    ) {
+      return true;
+    }
+    return false;
+  }
 
   getVisualizationComponent() {
     const {widget} = this.props;

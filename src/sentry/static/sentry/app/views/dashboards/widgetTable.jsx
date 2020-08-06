@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
+import isEqual from 'lodash/isEqual';
 
 import SentryTypes from 'app/sentryTypes';
 import EventView from 'app/utils/discover/eventView';
@@ -18,6 +19,16 @@ class WidgetTable extends React.Component {
     router: PropTypes.object,
     selection: SentryTypes.GlobalSelection,
   };
+
+  shouldComponentUpdate(nextProps) {
+    if (
+      !isEqual(nextProps.widget.savedQuery, this.props.widget.savedQuery) ||
+      !isEqual(nextProps.selection, this.props.selection)
+    ) {
+      return true;
+    }
+    return false;
+  }
 
   renderRow(index, row, tableMeta, columns) {
     const {organization, router} = this.props;

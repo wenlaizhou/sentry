@@ -44,7 +44,7 @@ enum PlaceholderPosition {
 }
 
 const DRAG_CLASS = 'draggable-item';
-const GRAB_HANDLE_FUDGE = 25;
+const GRAB_HANDLE_FUDGE = Math.floor(475 / 2);
 
 class DashboardWidgets extends React.Component<Props, State> {
   state: State = {
@@ -125,19 +125,24 @@ class DashboardWidgets extends React.Component<Props, State> {
       const ghostDOM = this.dragGhostRef.current;
       // Adjust so cursor is over the grab handle.
       ghostDOM.style.left = `${event.pageX - GRAB_HANDLE_FUDGE}px`;
-      ghostDOM.style.top = `${event.pageY - GRAB_HANDLE_FUDGE}px`;
+      ghostDOM.style.top = `${event.pageY - 16}px`;
     }
 
     const dragItems = document.querySelectorAll(`.${DRAG_CLASS}`);
+
     // Find the item that the ghost is currently over.
     const targetIndex = Array.from(dragItems).findIndex(dragItem => {
       const rects = dragItem.getBoundingClientRect();
       const top = event.clientY;
+      const left = event.clientX;
 
-      const thresholdStart = rects.top;
-      const thresholdEnd = rects.top + rects.height;
+      const topStart = rects.top;
+      const topEnd = rects.top + rects.height;
 
-      return top >= thresholdStart && top <= thresholdEnd;
+      const leftStart = rects.left;
+      const leftEnd = rects.left + rects.width;
+
+      return top >= topStart && top <= topEnd && left >= leftStart && left <= leftEnd;
     });
 
     if (targetIndex >= 0 && targetIndex !== this.state.draggingTargetIndex) {
@@ -230,7 +235,7 @@ class DashboardWidgets extends React.Component<Props, State> {
         ? PlaceholderPosition.BEFORE
         : PlaceholderPosition.AFTER;
 
-    const key = `${index}:${widget.id}:${isGhost}`;
+    const key = `${widget.id}:${isGhost}`;
 
     return (
       <React.Fragment key={key}>
