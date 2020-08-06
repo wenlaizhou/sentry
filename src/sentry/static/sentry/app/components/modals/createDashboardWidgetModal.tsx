@@ -47,10 +47,32 @@ class CreateDashboardWidgetModal extends React.Component<Props, State> {
     addErrorMessage(t('Failed to add widget.'));
   };
 
-  handleSubmit = (data: object, onSubmitSuccess, _onSubmitError) => {
-    console.log('submit data', data);
-    // TODO do API request, transform data into a widget shape.
-    onSubmitSuccess(data);
+  handleSubmit = (data: any, onSubmitSuccess, onSubmitError) => {
+    const {api, dashboard, organization} = this.props;
+    try {
+      const widget = {
+        title: data.title,
+        savedQuery: data.savedQuery,
+        displayType: data.displayType,
+        displayOptions: {
+          yAxis: data.yAxis,
+        },
+      };
+      // Not sure why, but I'm not getting a response back here?
+      const resp = api.requestPromise(
+        `/organizations/${organization.slug}/dashboards/${dashboard.id}/widgets/`,
+        {
+          method: 'POST',
+          data: widget,
+        }
+      );
+      // Temporary hack
+      widget.savedQuery = this.state.selectedQuery;
+
+      onSubmitSuccess(widget);
+    } catch (e) {
+      onSubmitError(e);
+    }
   };
 
   handleLoadOptions = (inputValue: string) => {

@@ -39,7 +39,7 @@ class WidgetSerializer(Serializer):
 class DashboardSerializer(Serializer):
     def get_attrs(self, item_list, user):
         result = {}
-        widgets = serialize(list(Widget.objects.filter(dashboard_id__in=[i.id for i in item_list])))
+        widgets = serialize(list(Widget.objects.filter(dashboard_id__in=[i.id for i in item_list]).order_by('order')))
 
         for dashboard in item_list:
             dashboard_widgets = [

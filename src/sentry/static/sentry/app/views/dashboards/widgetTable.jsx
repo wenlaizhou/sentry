@@ -67,9 +67,11 @@ class WidgetTable extends React.Component {
             <TableWrapper>
               <ChartTable>
                 <thead>
-                  {columns.map(({key}, index) => (
-                    <th key={index}>{key}</th>
-                  ))}
+                  <tr>
+                    {columns.map(({key}, index) => (
+                      <th key={index}>{key}</th>
+                    ))}
+                  </tr>
                 </thead>
                 <tbody>
                   {isLoading && (

@@ -71,7 +71,7 @@ const WidgetWrapper = styled('div')`
 
 const AddWidgetWrapper = styled('a')`
   width: 100%;
-  height: 250px;
+  height: 275px;
   border: 1px solid ${p => p.theme.borderLight};
   border-radius: ${p => p.theme.borderRadius};
   display: flex;
