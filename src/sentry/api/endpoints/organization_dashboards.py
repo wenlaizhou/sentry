@@ -8,7 +8,7 @@ from sentry.api.bases.organization import OrganizationEndpoint
 from sentry.api.paginator import OffsetPaginator
 from sentry.api.serializers.models.organization_dashboard import DashboardIndexSerializer
 from sentry.api.serializers import serialize
-from sentry.models import Dashboard
+from sentry.models import Dashboard, ObjectStatus
 from rest_framework.response import Response
 
 
@@ -29,7 +29,10 @@ class OrganizationDashboardsEndpoint(OrganizationEndpoint):
         :qparam string query: the title of the dashboard being searched for.
         :auth: required
         """
-        dashboards = Dashboard.objects.filter(organization_id=organization.id)
+        dashboards = Dashboard.objects.filter(
+            organization_id=organization.id,
+            status=ObjectStatus.ACTIVE
+        )
         query = request.GET.get("query")
         if query:
             dashboards = dashboards.filter(title__icontains=query)

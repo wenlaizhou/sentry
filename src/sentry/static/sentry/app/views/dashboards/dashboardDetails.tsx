@@ -154,6 +154,7 @@ class DashboardDetails extends AsyncView<Props, State> {
     if (!dashboard) {
       return null;
     }
+    const showEditing = isEditing || dashboard.widgets.length === 0;
 
     return (
       <React.Fragment>
@@ -191,7 +192,7 @@ class DashboardDetails extends AsyncView<Props, State> {
           releasesLoading={loading}
           router={router}
           dashboard={dashboard}
-          isEditing={isEditing}
+          isEditing={showEditing}
           onAddWidget={this.handleAddWidget}
           onDeleteWidget={this.handleDeleteWidget}
           onReorderWidget={this.handleReorderWidgets}

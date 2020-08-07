@@ -367,8 +367,8 @@ const Ghost = styled('div')`
 const StyledButtonBar = styled(ButtonBar)`
   position: absolute;
   z-index: ${p => p.theme.zIndex.header};
-  top: 0;
-  right: 0;
+  top: 1px;
+  right: 1px;
   padding: ${space(1)} ${space(2)};
   border-radius: ${p => p.theme.borderRadius};
   background: rgba(255, 255, 255, 0.4);
