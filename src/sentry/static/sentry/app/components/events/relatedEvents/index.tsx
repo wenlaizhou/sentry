@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {Location} from 'history';
 import uniqBy from 'lodash/uniqBy';
+import capitalize from 'lodash/capitalize';
 
 import space from 'app/styles/space';
 import {t, tct} from 'app/locale';
@@ -22,7 +23,6 @@ import {DEFAULT_RELATIVE_PERIODS} from 'app/constants';
 import withGlobalSelection from 'app/utils/withGlobalSelection';
 import TimeSince from 'app/components/timeSince';
 import {IconClock, IconFire, IconSpan} from 'app/icons';
-import {capitalize} from 'lodash';
 
 enum CURRENT_LOCATION {
   DISCOVER = 'discover',
