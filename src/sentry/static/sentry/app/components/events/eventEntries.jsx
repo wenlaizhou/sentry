@@ -180,6 +180,7 @@ class EventEntries extends React.Component {
 
     const features = new Set(organization.features);
     const hasQueryFeature = features.has('discover-query');
+    const isIssuesPage = location?.pathname.split('/')[3] === 'issues';
 
     if (!event) {
       return (
@@ -242,7 +243,7 @@ class EventEntries extends React.Component {
         {!isShare && event.sdkUpdates && event.sdkUpdates.length > 0 && (
           <EventSdkUpdates event={event} />
         )}
-        <RelatedEvents event={event} organization={organization} location={location} />
+        {!isIssuesPage && <RelatedEvents location={location} event={event} />}
         {!isShare && event.groupID && (
           <EventGroupingInfo
             projectId={project.slug}

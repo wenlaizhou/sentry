@@ -147,6 +147,7 @@ class GroupEventDetails extends React.Component<Props, State> {
     const releasesCompletionPromise = api.requestPromise(
       `/projects/${orgSlug}/${projSlug}/releases/completion/`
     );
+
     const fetchGroupEventPromise = fetchGroupEventAndMarkSeen(
       api,
       orgSlug,

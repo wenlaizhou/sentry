@@ -1,69 +1,71 @@
 import React from 'react';
-import styled from '@emotion/styled';
 import {Location} from 'history';
 import uniqBy from 'lodash/uniqBy';
-import {capitalize} from 'lodash';
+import styled from '@emotion/styled';
 
-import space from 'app/styles/space';
 import {t, tct} from 'app/locale';
-import DateTime from 'app/components/dateTime';
-import {Organization, Event, GlobalSelection} from 'app/types';
+import {Organization, GlobalSelection, Event} from 'app/types';
 import EventView from 'app/utils/discover/eventView';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import {transactionSummaryRouteWithQuery} from 'app/views/performance/transactionSummary/utils';
-import EventDataSection from 'app/components/events/eventDataSection';
-import {PanelTable, PanelItem} from 'app/components/panels';
-import PlatformIcon from 'app/components/platformIcon';
-import Link from 'app/components/links/link';
-import Button from 'app/components/button';
+import EmptyStateWarning from 'app/components/emptyStateWarning';
+import {Panel} from 'app/components/panels';
 import DiscoverQuery, {TableDataRow} from 'app/utils/discover/discoverQuery';
-import Tooltip from 'app/components/tooltip';
-import {generateEventSlug, eventDetailsRouteWithEventView} from 'app/utils/discover/urls';
-import {DEFAULT_RELATIVE_PERIODS} from 'app/constants';
 import withGlobalSelection from 'app/utils/withGlobalSelection';
-import TimeSince from 'app/components/timeSince';
-import {IconClock, IconFire, IconSpan} from 'app/icons';
+import withOrganization from 'app/utils/withOrganization';
+import {DEFAULT_RELATIVE_PERIODS} from 'app/constants';
+import LoadingIndicator from 'app/components/loadingIndicator';
+import EventDataSection from 'app/components/events/eventDataSection';
+import Button from 'app/components/button';
+import {IconTelescope} from 'app/icons';
+import space from 'app/styles/space';
 
-enum CURRENT_LOCATION {
-  DISCOVER = 'discover',
-  ISSUES = 'issues',
-  PERFORMANCE = 'performance',
-}
+import Content, {CURRENT_LOCATION} from './content';
 
-enum EVENT_TYPE {
-  ERROR = 'error',
-  TRANSACTION = 'transaction',
-}
+export type RelatedEventsProps = {
+  location: Location;
+  event?: Event;
+  relatedEvents?: Array<TableDataRow>;
+  eventView?: EventView;
+};
 
 type Props = {
   organization: Organization;
-  event: Event;
-  location: Location;
   selection: GlobalSelection;
+} & RelatedEventsProps;
+
+type State = {
+  relatedEvents: Array<TableDataRow>;
+  isLoading: boolean;
+  orgFeatures: Set<string>;
+  orgSlug: string;
+  eventView?: EventView;
 };
 
-// List events that have the same tracing ID as the current Event
-const RelatedEvents = ({organization, location, event, selection}: Props) => {
-  const orgSlug = organization.slug;
-  const orgFeatures = new Set(organization.features);
-
-  const getCurrentLocation = () => {
-    const pathname = location.pathname.split('/');
-    switch (pathname[3]) {
-      case 'discover':
-        return CURRENT_LOCATION.DISCOVER;
-      case 'issues':
-        return CURRENT_LOCATION.ISSUES;
-      default:
-        return CURRENT_LOCATION.PERFORMANCE;
-    }
+class RelatedEvents extends React.Component<Props, State> {
+  state: State = {
+    relatedEvents: this.props.relatedEvents ?? [],
+    eventView: this.props.eventView,
+    isLoading: true,
+    orgFeatures: new Set(this.props.organization.slug),
+    orgSlug: this.props.organization.slug,
   };
 
-  const getEventView = () => {
+  componentDidMount() {
+    this.getEventView();
+  }
+
+  getEventView = () => {
+    const {event, organization} = this.props;
+
+    if (this.props.eventView || !event) {
+      this.setState({isLoading: false});
+      return;
+    }
+
     // traceId should always be defined
     const traceId = event.contexts?.trace?.trace_id;
+    const orgFeatures = new Set(organization.features);
 
-    return EventView.fromSavedQuery({
+    const eventFromSavedQuery = EventView.fromSavedQuery({
       id: undefined,
       name: `Events with Trace ID ${traceId}`,
       fields: [
@@ -82,54 +84,52 @@ const RelatedEvents = ({organization, location, event, selection}: Props) => {
       version: 2,
       range: '90d',
     });
+
+    this.setState({eventView: eventFromSavedQuery, isLoading: false});
   };
 
-  const getTransactionLink = (projectId: string, transationName: string) => {
-    return transactionSummaryRouteWithQuery({
-      orgSlug,
-      transaction: transationName,
-      projectID: projectId,
-      query: {
-        statsPeriod: '90d',
-      },
-    });
-  };
-
-  const getEventTarget = (
-    dataRow: TableDataRow,
-    eventView: EventView,
-    currentLocation: CURRENT_LOCATION
-  ) => {
-    if (currentLocation === CURRENT_LOCATION.DISCOVER) {
-      const eventSlug = generateEventSlug(dataRow);
-
-      return eventDetailsRouteWithEventView({
-        orgSlug,
-        eventSlug,
-        eventView,
-      });
+  getCurrentLocation = () => {
+    const pathname = location.pathname.split('/');
+    switch (pathname[3]) {
+      case 'discover':
+        return CURRENT_LOCATION.DISCOVER;
+      case 'issues':
+        return CURRENT_LOCATION.ISSUES;
+      default:
+        return CURRENT_LOCATION.PERFORMANCE;
     }
-
-    return dataRow['event.type'] === 'error'
-      ? `/organizations/${orgSlug}/issues/${dataRow['issue.id']}/`
-      : getTransactionLink(String(dataRow['project.id']), String(dataRow.title));
   };
 
-  const renderEventId = (
-    dataRow: TableDataRow,
-    eventView: EventView,
-    currentLocation: CURRENT_LOCATION
-  ) => {
+  renderEmptyMessage = () => {
+    const {
+      selection: {
+        datetime: {period},
+      },
+    } = this.props;
+
+    const selectedTimePeriod = period && DEFAULT_RELATIVE_PERIODS[period];
+
+    const displayedPeriod = selectedTimePeriod
+      ? selectedTimePeriod.toLowerCase()
+      : t('given timeframe');
+
     return (
-      <Tooltip title={t('View Event')}>
-        <StyledLink to={getEventTarget(dataRow, eventView, currentLocation)}>
-          {dataRow.id as React.ReactNode}
-        </StyledLink>
-      </Tooltip>
+      <Panel>
+        <EmptyStateWarning small>
+          {tct('No related events have been found for the [timePeriod].', {
+            timePeriod: displayedPeriod,
+          })}
+        </EmptyStateWarning>
+      </Panel>
     );
   };
 
-  const renderActions = (eventView: EventView, currentLocation: CURRENT_LOCATION) => {
+  renderOpenInDiscoverButton = (
+    eventView: EventView,
+    currentLocation: CURRENT_LOCATION
+  ) => {
+    const {orgFeatures, orgSlug} = this.state;
+
     if (
       !orgFeatures.has('discover-basic') ||
       currentLocation === CURRENT_LOCATION.DISCOVER
@@ -140,139 +140,79 @@ const RelatedEvents = ({organization, location, event, selection}: Props) => {
     const discoverURL = eventView.getResultsViewUrlTarget(orgSlug);
 
     return (
-      <Button size="small" to={discoverURL}>
+      <Button size="small" to={discoverURL} icon={<IconTelescope size="xs" />}>
         {t('Open in Discover')}
       </Button>
     );
   };
 
-  const renderEmptyMessage = () => {
-    const {
-      datetime: {period},
-    } = selection;
+  render() {
+    const {relatedEvents, location, event, organization} = this.props;
+    const {isLoading, eventView} = this.state;
 
-    const selectedTimePeriod = period && DEFAULT_RELATIVE_PERIODS[period];
-    const displayedPeriod = selectedTimePeriod
-      ? selectedTimePeriod.toLowerCase()
-      : t('given timeframe');
-
-    return tct('No related events have been found for the [timePeriod].', {
-      timePeriod: displayedPeriod,
-    });
-  };
-
-  const renderIcon = (type: EVENT_TYPE) => {
-    if (type === EVENT_TYPE.ERROR) {
-      return <IconFire color="red400" />;
+    if (isLoading) {
+      return <LoadingIndicator />;
     }
-    return <IconSpan color="pink400" />;
-  };
 
-  const eventView = getEventView();
-  const currentLocation = getCurrentLocation();
+    if (!eventView) {
+      return this.renderEmptyMessage();
+    }
 
-  return (
-    <DiscoverQuery location={location} eventView={eventView} orgSlug={orgSlug}>
-      {({isLoading, tableData}) => {
-        if (isLoading) {
-          return <LoadingIndicator />;
-        }
+    const currentLocation = this.getCurrentLocation();
+    const discoverButton = this.renderOpenInDiscoverButton(eventView, currentLocation);
 
-        const data = uniqBy(tableData?.data, 'id').filter(evt => evt.id !== event.id);
-
-        if (!data.length) {
-          return null;
-        }
-
-        return (
-          <EventDataSection
-            type="related-events"
-            title={t('Related Events')}
-            actions={renderActions(eventView, currentLocation)}
+    if (!relatedEvents?.length && event) {
+      return (
+        <EventDataSection
+          type="related-events"
+          title={t('Related Events')}
+          actions={discoverButton}
+        >
+          <DiscoverQuery
+            location={location}
+            eventView={eventView}
+            orgSlug={organization.slug}
           >
-            <PanelTable
-              emptyMessage={renderEmptyMessage()}
-              headers={[t('Id'), t('Title'), t('Type'), t('Project'), t('Created')]}
-            >
-              {data.map((row, index) => {
-                const {id, title, project, timestamp} = row;
+            {discoverData => {
+              if (discoverData.isLoading) {
+                return <LoadingIndicator />;
+              }
 
-                const eventType = row['event.type'] as EVENT_TYPE;
-                const panelItemProps = {
-                  isLast: index === data.length - 1,
-                };
+              const events = uniqBy(discoverData.tableData?.data, 'id').filter(
+                evt => evt.id !== event?.id
+              );
 
-                return (
-                  <React.Fragment key={id}>
-                    <StyledPanelItem {...panelItemProps}>
-                      {renderEventId(row, eventView, currentLocation)}
-                    </StyledPanelItem>
-                    <StyledPanelItem {...panelItemProps}>{title}</StyledPanelItem>
-                    <StyledPanelItem {...panelItemProps}>
-                      <TypeWrapper>
-                        {renderIcon(eventType)}
-                        {capitalize(eventType)}
-                      </TypeWrapper>
-                    </StyledPanelItem>
-                    <StyledPanelItem {...panelItemProps}>
-                      <StyledPlatformIcon platform={String(project)} size="16px" />
-                      {project}
-                    </StyledPanelItem>
-                    <StyledPanelItem {...panelItemProps}>
-                      <TimeWrapper>
-                        <IconClock size="16px" />
-                        <StyledTimeSince date={timestamp} />
-                        <div>{'-'}</div>
-                        <DateTime date={timestamp} />
-                      </TimeWrapper>
-                    </StyledPanelItem>
-                  </React.Fragment>
-                );
-              })}
-            </PanelTable>
-          </EventDataSection>
-        );
-      }}
-    </DiscoverQuery>
-  );
-};
+              return (
+                <Content
+                  relatedEvents={events}
+                  eventView={eventView}
+                  currentLocation={currentLocation}
+                  isEventDataSection
+                />
+              );
+            }}
+          </DiscoverQuery>
+        </EventDataSection>
+      );
+    }
 
-export default withGlobalSelection(RelatedEvents);
-
-const StyledPanelItem = styled(PanelItem)<{isLast: boolean}>`
-  padding: ${space(1)} ${space(2)};
-  font-size: ${p => p.theme.fontSizeMedium};
-  align-items: center;
-  ${p => p.isLast && `border-bottom: none`};
-`;
-
-const StyledPlatformIcon = styled(PlatformIcon)`
-  border-radius: ${p => p.theme.borderRadius};
-  box-shadow: 0 0 0 1px ${p => p.theme.white};
-  margin-right: ${space(1)};
-`;
-
-const StyledTimeSince = styled(TimeSince)`
-  color: #2f2936;
-`;
-
-const StyledLink = styled(Link)`
-  > div {
-    display: inline;
+    return (
+      <React.Fragment>
+        <Action>{discoverButton}</Action>
+        <Content
+          relatedEvents={relatedEvents}
+          eventView={eventView}
+          currentLocation={currentLocation}
+        />
+      </React.Fragment>
+    );
   }
-`;
+}
 
-const TimeWrapper = styled('div')`
-  display: grid;
-  grid-template-columns: max-content max-content max-content max-content;
-  grid-gap: ${space(1)};
-  align-items: center;
-  color: ${p => p.theme.gray500};
-`;
+export default withOrganization(withGlobalSelection(RelatedEvents));
 
-const TypeWrapper = styled('div')`
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  grid-gap: ${space(1)};
-  align-items: center;
+const Action = styled('div')`
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: ${space(2)};
 `;
