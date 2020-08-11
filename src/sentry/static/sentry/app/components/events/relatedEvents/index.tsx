@@ -33,7 +33,6 @@ type Props = {
 } & RelatedEventsProps;
 
 type State = {
-  relatedEvents: Array<TableDataRow>;
   isLoading: boolean;
   orgFeatures: Set<string>;
   orgSlug: string;
@@ -42,7 +41,6 @@ type State = {
 
 class RelatedEvents extends React.Component<Props, State> {
   state: State = {
-    relatedEvents: this.props.relatedEvents ?? [],
     eventView: this.props.eventView,
     isLoading: true,
     orgFeatures: new Set(this.props.organization.slug),
@@ -147,7 +145,7 @@ class RelatedEvents extends React.Component<Props, State> {
   };
 
   render() {
-    const {relatedEvents, location, event, organization} = this.props;
+    const {relatedEvents = [], location, event, organization} = this.props;
     const {isLoading, eventView} = this.state;
 
     if (isLoading) {
@@ -161,7 +159,7 @@ class RelatedEvents extends React.Component<Props, State> {
     const currentLocation = this.getCurrentLocation();
     const discoverButton = this.renderOpenInDiscoverButton(eventView, currentLocation);
 
-    if (!relatedEvents?.length && event) {
+    if (event) {
       return (
         <EventDataSection
           type="related-events"
@@ -182,6 +180,10 @@ class RelatedEvents extends React.Component<Props, State> {
                 evt => evt.id !== event?.id
               );
 
+              if (!events.length) {
+                return this.renderEmptyMessage();
+              }
+
               return (
                 <Content
                   relatedEvents={events}
@@ -194,6 +196,10 @@ class RelatedEvents extends React.Component<Props, State> {
           </DiscoverQuery>
         </EventDataSection>
       );
+    }
+
+    if (!relatedEvents.length) {
+      return this.renderEmptyMessage();
     }
 
     return (
