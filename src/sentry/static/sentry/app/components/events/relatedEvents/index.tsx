@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {Location} from 'history';
 import uniqBy from 'lodash/uniqBy';
-import capitalize from 'lodash/capitalize';
+import {capitalize} from 'lodash';
 
 import space from 'app/styles/space';
 import {t, tct} from 'app/locale';
