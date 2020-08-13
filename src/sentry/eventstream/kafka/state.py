@@ -101,7 +101,11 @@ class SynchronizedPartitionStateManager(object):
         """
         with self.__lock:
             previous_state, previous_offsets = self.partitions[(topic, partition)]
-            if local_offset < previous_offsets.local:
+            if (
+                local_offset is None
+                or previous_offsets.local is None
+                or local_offset < previous_offsets.local
+            ):
                 logger.info(
                     "Local offset for %s/%s has moved backwards (current: %s, previous: %s)",
                     topic,
@@ -146,7 +150,11 @@ class SynchronizedPartitionStateManager(object):
         """
         with self.__lock:
             previous_state, previous_offsets = self.partitions[(topic, partition)]
-            if remote_offset < previous_offsets.remote:
+            if (
+                remote_offset is None
+                or previous_offsets.remote is None
+                or remote_offset < previous_offsets.remote
+            ):
                 logger.info(
                     "Remote offset for %s/%s has moved backwards (current: %s, previous: %s)",
                     topic,
