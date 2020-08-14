@@ -34,11 +34,11 @@ import StacktraceInterface from 'app/components/events/interfaces/stacktrace';
 import TemplateInterface from 'app/components/events/interfaces/template';
 import ThreadsInterface from 'app/components/events/interfaces/threads/threads';
 import {DataSection} from 'app/components/events/styles';
-import RelatedEvents from 'app/components/events/relatedEvents';
 import space from 'app/styles/space';
 import withOrganization from 'app/utils/withOrganization';
 
 import BreadcrumbsInterface from './eventEntriesBreadcrumbs';
+import EventRelatedEvents from './eventRelatedEvents';
 
 export const INTERFACES = {
   exception: ExceptionInterface,
@@ -243,7 +243,13 @@ class EventEntries extends React.Component {
         {!isShare && event.sdkUpdates && event.sdkUpdates.length > 0 && (
           <EventSdkUpdates event={event} />
         )}
-        {!isIssuesPage && <RelatedEvents location={location} event={event} />}
+        {!isIssuesPage && (
+          <EventRelatedEvents
+            location={location}
+            event={event}
+            organization={organization}
+          />
+        )}
         {!isShare && event.groupID && (
           <EventGroupingInfo
             projectId={project.slug}

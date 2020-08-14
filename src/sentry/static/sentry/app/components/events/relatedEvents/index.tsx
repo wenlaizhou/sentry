@@ -1,224 +1,158 @@
 import React from 'react';
-import {Location} from 'history';
-import uniqBy from 'lodash/uniqBy';
 import styled from '@emotion/styled';
+import capitalize from 'lodash/capitalize';
 
-import {t, tct} from 'app/locale';
-import {Organization, GlobalSelection, Event} from 'app/types';
-import EventView from 'app/utils/discover/eventView';
-import EmptyStateWarning from 'app/components/emptyStateWarning';
-import {Panel} from 'app/components/panels';
-import DiscoverQuery, {TableDataRow} from 'app/utils/discover/discoverQuery';
-import withGlobalSelection from 'app/utils/withGlobalSelection';
-import withOrganization from 'app/utils/withOrganization';
-import {DEFAULT_RELATIVE_PERIODS} from 'app/constants';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import EventDataSection from 'app/components/events/eventDataSection';
-import Button from 'app/components/button';
-import {IconTelescope} from 'app/icons';
 import space from 'app/styles/space';
+import {t} from 'app/locale';
+import DateTime from 'app/components/dateTime';
+import {Organization} from 'app/types';
+import EventView from 'app/utils/discover/eventView';
+import {transactionSummaryRouteWithQuery} from 'app/views/performance/transactionSummary/utils';
+import {PanelTable, PanelItem} from 'app/components/panels';
+import PlatformIcon from 'app/components/platformIcon';
+import Link from 'app/components/links/link';
+import {TableDataRow} from 'app/utils/discover/discoverQuery';
+import Tooltip from 'app/components/tooltip';
+import {generateEventSlug, eventDetailsRouteWithEventView} from 'app/utils/discover/urls';
+import {IconClock, IconFire, IconSpan} from 'app/icons';
+import TimeSince from 'app/components/timeSince';
 
-import Content, {CURRENT_LOCATION} from './content';
+import {CURRENT_LOCATION} from './types';
 
-export type RelatedEventsProps = {
-  location: Location;
-  event?: Event;
-  relatedEvents?: Array<TableDataRow>;
-  eventView?: EventView;
-};
-
-type Props = {
-  organization: Organization;
-  selection: GlobalSelection;
-} & RelatedEventsProps;
-
-type State = {
-  isLoading: boolean;
-  orgFeatures: Set<string>;
-  orgSlug: string;
-  eventView?: EventView;
-};
-
-class RelatedEvents extends React.Component<Props, State> {
-  state: State = {
-    eventView: this.props.eventView,
-    isLoading: true,
-    orgFeatures: new Set(this.props.organization.slug),
-    orgSlug: this.props.organization.slug,
-  };
-
-  componentDidMount() {
-    this.getEventView();
-  }
-
-  getEventView = () => {
-    const {event, organization} = this.props;
-
-    if (this.props.eventView || !event) {
-      this.setState({isLoading: false});
-      return;
-    }
-
-    // traceId should always be defined
-    const traceId = event.contexts?.trace?.trace_id;
-    const orgFeatures = new Set(organization.features);
-
-    const eventFromSavedQuery = EventView.fromSavedQuery({
-      id: undefined,
-      name: `Events with Trace ID ${traceId}`,
-      fields: [
-        'title',
-        'event.type',
-        'project',
-        'project.id',
-        'trace.span',
-        'timestamp',
-        'lastSeen',
-        'issue',
-      ],
-      orderby: '-timestamp',
-      query: `trace:${traceId}`,
-      projects: orgFeatures.has('global-views') ? [-1] : [Number(event.projectID)],
-      version: 2,
-      range: '90d',
-    });
-
-    this.setState({eventView: eventFromSavedQuery, isLoading: false});
-  };
-
-  getCurrentLocation = () => {
-    const pathname = location.pathname.split('/');
-    switch (pathname[3]) {
-      case 'discover':
-        return CURRENT_LOCATION.DISCOVER;
-      case 'issues':
-        return CURRENT_LOCATION.ISSUES;
-      default:
-        return CURRENT_LOCATION.PERFORMANCE;
-    }
-  };
-
-  renderEmptyMessage = () => {
-    const {
-      selection: {
-        datetime: {period},
-      },
-    } = this.props;
-
-    const selectedTimePeriod = period && DEFAULT_RELATIVE_PERIODS[period];
-
-    const displayedPeriod = selectedTimePeriod
-      ? selectedTimePeriod.toLowerCase()
-      : t('given timeframe');
-
-    return (
-      <Panel>
-        <EmptyStateWarning small>
-          {tct('No related events have been found for the [timePeriod].', {
-            timePeriod: displayedPeriod,
-          })}
-        </EmptyStateWarning>
-      </Panel>
-    );
-  };
-
-  renderOpenInDiscoverButton = (
-    eventView: EventView,
-    currentLocation: CURRENT_LOCATION
-  ) => {
-    const {orgFeatures, orgSlug} = this.state;
-
-    if (
-      !orgFeatures.has('discover-basic') ||
-      currentLocation === CURRENT_LOCATION.DISCOVER
-    ) {
-      return undefined;
-    }
-
-    const discoverURL = eventView.getResultsViewUrlTarget(orgSlug);
-
-    return (
-      <Button size="small" to={discoverURL} icon={<IconTelescope size="xs" />}>
-        {t('Open in Discover')}
-      </Button>
-    );
-  };
-
-  render() {
-    const {relatedEvents = [], location, event, organization} = this.props;
-    const {isLoading, eventView} = this.state;
-
-    if (isLoading) {
-      return <LoadingIndicator />;
-    }
-
-    if (!eventView) {
-      return this.renderEmptyMessage();
-    }
-
-    const currentLocation = this.getCurrentLocation();
-    const discoverButton = this.renderOpenInDiscoverButton(eventView, currentLocation);
-
-    if (event) {
-      return (
-        <EventDataSection
-          type="related-events"
-          title={t('Related Events')}
-          actions={discoverButton}
-        >
-          <DiscoverQuery
-            location={location}
-            eventView={eventView}
-            orgSlug={organization.slug}
-          >
-            {discoverData => {
-              if (discoverData.isLoading) {
-                return <LoadingIndicator />;
-              }
-
-              const events = uniqBy(discoverData.tableData?.data, 'id').filter(
-                evt => evt.id !== event?.id
-              );
-
-              if (!events.length) {
-                return this.renderEmptyMessage();
-              }
-
-              return (
-                <Content
-                  relatedEvents={events}
-                  eventView={eventView}
-                  currentLocation={currentLocation}
-                  isEventDataSection
-                />
-              );
-            }}
-          </DiscoverQuery>
-        </EventDataSection>
-      );
-    }
-
-    if (!relatedEvents.length) {
-      return this.renderEmptyMessage();
-    }
-
-    return (
-      <React.Fragment>
-        <Action>{discoverButton}</Action>
-        <Content
-          relatedEvents={relatedEvents}
-          eventView={eventView}
-          currentLocation={currentLocation}
-        />
-      </React.Fragment>
-    );
-  }
+enum EVENT_TYPE {
+  ERROR = 'error',
+  TRANSACTION = 'transaction',
 }
 
-export default withOrganization(withGlobalSelection(RelatedEvents));
+type Props = {
+  relatedEvents: Array<TableDataRow>;
+  eventView: EventView;
+  orgSlug: Organization['slug'];
+  currentLocation: CURRENT_LOCATION;
+};
 
-const Action = styled('div')`
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: ${space(2)};
+// List events that have the same tracing ID as the current Event
+const RelatedEvents = ({currentLocation, orgSlug, eventView, relatedEvents}: Props) => {
+  const getTransactionLink = (projectId: string, transationName: string) => {
+    return transactionSummaryRouteWithQuery({
+      orgSlug,
+      transaction: transationName,
+      projectID: projectId,
+      query: {
+        ...eventView.clone().getGlobalSelectionQuery(),
+        query: eventView.query,
+      },
+    });
+  };
+
+  const getEventTarget = (dataRow: TableDataRow & {type: EVENT_TYPE}) => {
+    if (currentLocation === CURRENT_LOCATION.DISCOVER) {
+      const eventSlug = generateEventSlug(dataRow);
+
+      return eventDetailsRouteWithEventView({
+        orgSlug,
+        eventSlug,
+        eventView,
+      });
+    }
+
+    return dataRow.type === EVENT_TYPE.ERROR
+      ? `/organizations/${orgSlug}/issues/${dataRow['issue.id']}/`
+      : getTransactionLink(String(dataRow['project.id']), String(dataRow.title));
+  };
+
+  const renderEventId = (dataRow: TableDataRow & {type: EVENT_TYPE}) => {
+    return (
+      <Tooltip title={t('View Event')}>
+        <StyledLink to={getEventTarget(dataRow)}>
+          {dataRow.id as React.ReactNode}
+        </StyledLink>
+      </Tooltip>
+    );
+  };
+
+  const renderIcon = (type: EVENT_TYPE) => {
+    if (type === EVENT_TYPE.ERROR) {
+      return <IconFire color="red400" />;
+    }
+    return <IconSpan color="pink400" />;
+  };
+
+  return (
+    <PanelTable headers={[t('Id'), t('Title'), t('Type'), t('Project'), t('Created')]}>
+      {relatedEvents.map((row, index) => {
+        const {id, title, project, timestamp} = row;
+
+        const eventType = row['event.type'] as EVENT_TYPE;
+        const isLast = index === relatedEvents.length - 1;
+
+        return (
+          <React.Fragment key={id}>
+            <StyledPanelItem isLast={isLast}>
+              {renderEventId({...row, type: eventType})}
+            </StyledPanelItem>
+            <StyledPanelItem isLast={isLast}>{title}</StyledPanelItem>
+            <StyledPanelItem isLast={isLast}>
+              <TypeWrapper>
+                {renderIcon(eventType)}
+                {capitalize(eventType)}
+              </TypeWrapper>
+            </StyledPanelItem>
+            <StyledPanelItem isLast={isLast}>
+              <StyledPlatformIcon platform={String(project)} size="16px" />
+              {project}
+            </StyledPanelItem>
+            <StyledPanelItem isLast={isLast}>
+              <TimeWrapper>
+                <IconClock size="16px" />
+                <StyledTimeSince date={timestamp} />
+                <div>{'-'}</div>
+                <DateTime date={timestamp} />
+              </TimeWrapper>
+            </StyledPanelItem>
+          </React.Fragment>
+        );
+      })}
+    </PanelTable>
+  );
+};
+
+export default RelatedEvents;
+
+const StyledPanelItem = styled(PanelItem)<{isLast: boolean}>`
+  padding: ${space(1)} ${space(2)};
+  font-size: ${p => p.theme.fontSizeMedium};
+  align-items: center;
+  ${p => p.isLast && `border-bottom: none`};
+`;
+
+const StyledPlatformIcon = styled(PlatformIcon)`
+  border-radius: ${p => p.theme.borderRadius};
+  box-shadow: 0 0 0 1px ${p => p.theme.white};
+  margin-right: ${space(1)};
+`;
+
+const StyledTimeSince = styled(TimeSince)`
+  color: #2f2936;
+`;
+
+const StyledLink = styled(Link)`
+  > div {
+    display: inline;
+  }
+`;
+
+const TimeWrapper = styled('div')`
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content;
+  grid-gap: ${space(1)};
+  align-items: center;
+  color: ${p => p.theme.gray500};
+`;
+
+const TypeWrapper = styled('div')`
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-gap: ${space(1)};
+  align-items: center;
 `;
